@@ -19,7 +19,7 @@
 
 # **C Language Syllabus (2nd Dec 2025)**
 
-## **Unit 1: Introduction to C Programming**
+## **Introduction to C Programming**
 
 * History and importance of C
 * Structure of a C program
@@ -27,7 +27,7 @@
 * Tokens: keywords, identifiers, constants, variables
 * Input and output in C
 
-## **Unit 2: Data Types**
+## **Data Types**
 
 * Data types and modifiers
 * Primitive types: `int`, `float`, `char`, `double`, `void`
@@ -37,7 +37,7 @@
 * Type casting (implicit and explicit)
 * Brief intro to strings as character arrays (`\0` terminated)
 
-## **Unit 3: Operators & Expressions**
+## **Operators & Expressions**
 
 * Arithmetic operators
 * Relational operators
@@ -54,14 +54,14 @@
   * Use bits to track attendance
 * Operator precedence and associativity
 
-## **Unit 4: Control Flow**
+## **Control Flow**
 
 * Conditional statements: `if`, `if-else`, nested `if`, `switch-case`
 * Loops: `for`, `while`, `do-while`
 * Nested loops
 * `break`, `continue`, `goto`
 
-## **Unit 5: Arrays & Strings**
+## **Arrays & Strings**
 
 * Arrays
 
@@ -74,7 +74,7 @@
   * String input/output (`scanf`, `printf`, `gets`, `puts`, `fgets`)
   * String functions (`strlen`, `strcpy`, `strcat`, `strcmp`)
 
-## **Unit 6: Functions & Debugging**
+## **Functions & Debugging**
 
 * Function declaration, definition, and calling
 * Parameters vs arguments
@@ -86,7 +86,7 @@
   * Common runtime errors
   * Intro to `gdb` (optional)
 
-## **Unit 8: User-Defined Data Types**
+## **User-Defined Data Types**
 
 * **Structures**
 
