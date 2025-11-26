@@ -86,24 +86,6 @@
   * Common runtime errors
   * Intro to `gdb` (optional)
 
-## **Unit 7: Program Structure & Memory**
-
-* Modular programming & header files
-* Splitting into `.h` and `.c` files
-* Function prototypes
-* Code reusability
-* **Pointers (Basics)**
-
-  * Memory addresses and dereferencing
-  * Pointers with variables & arrays
-  * Call by reference
-* **Storage Classes:** `auto`, `extern`, `register`, `static`
-* Scope, lifetime, visibility
-* **Preprocessor Directives**
-
-  * `#include`, `#define`, macros
-  * Conditional compilation (`#ifdef`, `#ifndef`, `#endif`)
-
 ## **Unit 8: User-Defined Data Types**
 
 * **Structures**
