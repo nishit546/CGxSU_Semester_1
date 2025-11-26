@@ -127,8 +127,6 @@
 
 ## **Unit 1: HTML**
 
-* (Add detailed topics here if needed)
-
 ## **Unit 2: CSS**
 
 * Introduction to CSS
