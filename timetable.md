@@ -278,6 +278,8 @@
 | 4:40–6:00   | Skill Development & Assignment Hours | 4:40–6:00  | Skill Development & Assignment Hours                 |
 | 6:00–7:00   | Skill Development & Assignment Hours| 6:00–7:00  | Skill Development & Assignment Hours                  |
 
+### Assignment for JS: https://github.com/codinggita/CGxSU_Semester_1/blob/main/JavaScript_for_backend/00.assignment/06.async_concepts.md
+
 ### 3 Jan
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
 |-------------|------------------------------|-------------|-------------------------|
