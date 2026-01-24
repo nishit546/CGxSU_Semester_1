@@ -24,7 +24,8 @@ Each field has **proper validation rules**.
 ```text
 src/
 ├── forms/
-│   └── RegisterForm.jsx
+│   └── loginForm.jsx
+|   └── loginForm.css
 │
 ├── App.jsx
 └── main.jsx
@@ -51,7 +52,7 @@ npm install formik yup
 
 ## 🧩 Step 2: Create Form Component File
 
-📄 **File Path:** `src/forms/RegisterForm.jsx`
+📄 **File Path:** `src/forms/loginForm.jsx`
 
 ---
 
@@ -60,6 +61,7 @@ npm install formik yup
 ```js
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import './loginForm.css'
 ```
 
 ### Explanation
