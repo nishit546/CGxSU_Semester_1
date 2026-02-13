@@ -1,7 +1,6 @@
-
 # 🧪 React Practice Questions (Hands-on)
 
-This file contains **React coding practice questions** .  
+This file contains **React coding practice questions**.  
 Try to solve each question by writing clean, functional React components.
 
 ---
@@ -14,7 +13,7 @@ Write a simple React component that displays **"Hello, World!"** on the screen.
 ---
 
 ### Q2. Toggle Component
-Write a component that toggles between two states (ON / OFF) using a button.
+Write a component that toggles between two states (**ON / OFF**) using a button.
 
 ---
 
@@ -71,7 +70,7 @@ Demonstrate using `useState`.
 ### Q11. Conditional Rendering
 How do you implement **conditional rendering** in React?  
 Show examples using:
-- if/else
+- if / else
 - ternary operator
 - logical `&&`
 
@@ -127,12 +126,44 @@ How do you create a form with controlled components in React?
 
 ---
 
+## 🧩 Mini Projects
+
 ### Q20. Input to UI List
 Create a component where:
 - The user types text into an input field
 - On clicking a button, the input text is displayed on the UI
 - Each new entry appears **one after another** (as a list)
 - After clicking the button, the input field is **cleared**
+
+---
+
+### Q21. Filter Items from a List
+You are given an array of strings representing a list of items.
+
+Create a React component that:
+- Displays the list of items
+- Provides an input field to type a search term
+- Filters and displays only the items that **match the input text**
+- Filtering should happen in **real time**
+
+**Example:**  
+["Apple", "Banana", "Mango", "Orange", "Grapes"]
+
+---
+
+### Q22. Sort Items Alphabetically
+You are given an array of strings representing a list of items.
+
+Create a React component that:
+- Displays the list of items
+- Provides buttons or a dropdown to sort the list:
+  - **Alphabetically (A → Z)**
+  - **Alphabetically (Z → A)**
+- Uses React state to update the sorted list
+- Does **not mutate** the original array
+
+**Example:**  
+["Dog", "Cat", "Elephant", "Ant", "Lion"]
 
 ---
 
