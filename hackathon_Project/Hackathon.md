@@ -101,7 +101,7 @@ A basic authentication system must be implemented including:
 - **Signup Page**
 - **Login Page**
 - Password validation
-- Authentication handling (JWT or session based)
+- Authentication handling (Use LocalStorage for storing and verification purposes)
 - Protected routes for logged-in users
 
 ---
@@ -166,39 +166,7 @@ These operations must interact with **Node.js + Express APIs** and **MongoDB dat
 
 ---
 
-### 🔟 MongoDB Indexing
-
-Projects must demonstrate the use of **MongoDB indexing** to improve query performance.
-
-Examples:
-
-- Index on frequently searched fields
-- Index for authentication (email/username)
-- Index for filtering queries
-
----
-
-### 1️⃣1️⃣ MongoDB Aggregation
-
-Projects must implement at least one **MongoDB Aggregation Pipeline**.
-
-Examples:
-
-- Data analytics
-- Grouping records
-- Counting records
-- Generating reports
-- Calculating totals
-
-Example use cases:
-
-- Total orders per user
-- Most popular products
-- Monthly statistics
-
----
-
-### 1️⃣2️⃣ API Integration
+### 🔟 API Integration
 
 - Use **REST APIs** built with Node.js and Express.
 - Proper error handling for API responses.
@@ -206,7 +174,7 @@ Example use cases:
 
 ---
 
-### 1️⃣3️⃣ Form Handling & Validation
+### 1️⃣1️⃣ Form Handling & Validation
 
 Forms must include:
 
@@ -217,7 +185,7 @@ Forms must include:
 
 ---
 
-### 1️⃣4️⃣ Responsive UI
+### 1️⃣2️⃣ Responsive UI
 
 The UI must be **fully responsive** using **Tailwind CSS**, ensuring proper display across:
 
@@ -227,7 +195,7 @@ The UI must be **fully responsive** using **Tailwind CSS**, ensuring proper disp
 
 ---
 
-### 1️⃣5️⃣ Error Handling
+### 1️⃣3️⃣ Error Handling
 
 Applications should handle errors properly:
 
