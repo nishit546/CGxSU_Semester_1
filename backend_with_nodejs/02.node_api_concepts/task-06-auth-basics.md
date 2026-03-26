@@ -1,4 +1,4 @@
-# Task 09 — Authentication Basics 
+# Task 06 — Authentication Basics 
 
 **Topic:** Register & Login with bcrypt password hashing | **Database:** MongoDB + Mongoose
 
