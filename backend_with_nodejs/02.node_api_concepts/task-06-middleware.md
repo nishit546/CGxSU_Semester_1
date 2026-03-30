@@ -509,17 +509,23 @@ As your application grows, keeping all code in a single file becomes unmanageabl
 my-app/
 │
 ├── src/
-│   ├── index.js                  ← Entry point — starts the server
-│   ├── app.js                    ← Express setup, middleware, routes
-│   │
-│   ├── routes/
-│   │   ├── index.js              ← Combines all route files
-│   │   └── user.routes.js        ← Routes for /users
-│   │
-│   └── middlewares/
-│       ├── logger.js             ← Custom request logger
-│       ├── auth.js               ← Token validation
-│       └── errorHandler.js       ← Global error handler
+│   ├── config/           # DB connection
+│   │   └── db.js
+│
+│   ├── models/           # Schema / Database logic
+│   │   └── user.model.js
+│
+│   ├── controllers/      # Business logic
+│   │   └── user.controller.js
+│
+│   ├── routes/           # API routes
+│   │   └── user.routes.js
+│
+│   ├── middlewares/      # Auth, logger etc
+│   │   └── auth.js
+│
+│   ├── app.js            # Express setup
+│   └── index.js          # Server start
 │
 ├── package.json
 └── .env
@@ -527,13 +533,41 @@ my-app/
 
 **Each file has one responsibility:**
 
+## 📁 File Responsibility (MVC Structure)
+
 | File / Folder | Responsibility |
 |---|---|
-| `index.js` | Start the HTTP server — nothing else |
-| `app.js` | Register all middleware and route files |
-| `routes/` | Define URL paths and HTTP methods |
-| `middlewares/` | All reusable middleware functions |
+| `index.js` | Starts the HTTP server (port listen) — no business logic |
+| `app.js` | Sets up Express app — registers middleware and routes |
+| `config/` | Handles configuration (e.g., database connection) |
+| `models/` | Defines database schemas and data structure |
+| `controllers/` | Contains business logic (CRUD operations, processing) |
+| `routes/` | Defines API endpoints and connects them to controllers |
+| `middlewares/` | Reusable middleware (auth, logger, validation, error handling) |
+| `.env` | Stores sensitive data (DB URI, JWT secret, PORT, etc.) |
+| `package.json` | Project metadata, dependencies, and scripts |
 
+---
+
+## 🔄 Request Flow (MVC)
+
+| Step | Layer |
+|------|------|
+| Request received | `routes/` |
+| Logic execution | `controllers/` |
+| Database interaction | `models/` |
+| Response sent | `controllers/` |
+
+---
+
+##  MVC Summary
+
+- **Model → Data layer**
+- **Controller → Logic layer**
+- **Route → Flow control**
+
+---
+> Route request ko controller tak le jata hai, controller model se baat karta hai
 ---
 
 ## 10. Mini Project
