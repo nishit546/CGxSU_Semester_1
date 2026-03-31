@@ -1,4 +1,4 @@
-#  Searching in APIs 
+#  Search APIs 
 
 **Topic:** Text-based searching with `$regex` | **Database:** MongoDB + Mongoose
 
