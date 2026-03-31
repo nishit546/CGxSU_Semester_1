@@ -1,4 +1,4 @@
-# Task 04 — Sorting 
+#  Sorting 
 
  **Topic:** Sorting results by Price using `asc` and `desc` | **Database:** MongoDB + Mongoose
 
