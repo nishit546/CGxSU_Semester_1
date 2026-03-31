@@ -1,4 +1,4 @@
-# Task 02 — Query Parameters 
+# Query Parameters 
 
  **Topic:** Filtering data with `req.query` | **Database:** MongoDB + Mongoose
 
