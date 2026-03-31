@@ -154,19 +154,6 @@ app.use(express.urlencoded({ extended: true }));
 
 ---
 
-### 4.3 `express.static()`
-
-Serves static files — HTML, CSS, images, fonts — directly from a folder. No route needed.
-
-```js
-app.use(express.static('public'));
-
-// A file at /public/logo.png is now accessible at:
-// http://localhost:3000/logo.png
-```
-
----
-
 ## 5. Custom Middleware
 
 Custom middleware is code you write for your specific application needs. The key benefit is reusability — write once, apply anywhere.
