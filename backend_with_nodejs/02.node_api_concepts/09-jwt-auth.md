@@ -1,4 +1,4 @@
-# Task 8 — JWT Authentication 
+# JWT Authentication 
 
 **Topic:** Creating and verifying JSON Web Tokens | **Database:** MongoDB + Mongoose
 ---
