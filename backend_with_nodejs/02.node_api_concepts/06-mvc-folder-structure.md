@@ -161,19 +161,6 @@ npm install --save-dev nodemon
 }
 ```
 
-### Create all folders and files at once
-
-```bash
-mkdir -p src/config src/models src/controllers src/routes src/middlewares
-touch src/config/db.js
-touch src/models/user.model.js
-touch src/controllers/user.controller.js
-touch src/routes/user.routes.js
-touch src/app.js
-touch src/index.js
-touch .env
-```
-
 ---
 
 ## 6. Step 1 — Config: Database Connection
