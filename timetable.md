@@ -2,8 +2,8 @@
 
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
 |-------------|------------------------------|-------------|-------------------------|
-| 9:00–10:30  | Neel Sir (Node)                | 9:00–10:30   | Ashish Sir (React)    |
-| 10:30–12:00 | Samir Sir (React)            | 10:30–12:00 | Neel Sir (Node)        |
+| 9:00–10:30  | Neel Sir (SEO)                | 9:00–10:30   | Ashish Sir (React)    |
+| 10:30–12:00 | Samir Sir (React)            | 10:30–12:00 | Neel Sir (SEO)        |
 | 12:00–1:00  | Break                              | 12:00–1:00  | Break            |
 | 1:00–2:00   | Ranjan Sir (React)                   | 1:00–2:00    | Yogesh Sir (Node)         |
 | 2:00–3:00   | Yogesh Sir (Node)                  | 2:00–3:00      |   Samir Sir (C++)    |
