@@ -2,8 +2,8 @@
 
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
 |-------------|------------------------------|-------------|-------------------------|
-| 9:00–10:30  | Ashish Sir (Maths)                | 9:00–10:30   | Neel Sir (Node)    |
-| 10:30–12:00 | Neel Sir (Node)            | 10:30–12:00 | Ashish Sir (Maths)        |
+| 9:00–10:30  | Ashish Sir (Maths)                | 9:00–10:30   | Neel Sir (Backend)    |
+| 10:30–12:00 | Neel Sir (Backend)            | 10:30–12:00 | Ashish Sir (Maths)        |
 | 12:00–1:00  | Break                              | 12:00–1:00  | Break            |
 | 1:00–2:00   | English                            | 1:00–2:00    |   Samir Sir          |
 | 2:00–3:00   | Ranjan Sir (React)                  | 2:00–3:00      |   English    |
