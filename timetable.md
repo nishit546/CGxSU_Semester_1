@@ -1,3 +1,11 @@
+### 1 June
+
+| Time | CG LAB 2 |
+|------|----------|
+| 10:00–12:00 | Samir Sir (DSA) |
+| 12:00–1:00 | Break |
+| 1:00–4:00 | Project Presentation |
+
 ### 18 April
 
 | Time        | CG LAB 1                     | Time        | CG LAB 2               |
