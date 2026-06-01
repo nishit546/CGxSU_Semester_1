@@ -1,3 +1,29 @@
+### 3 June
+
+| Time | CG LAB 2 |
+|------|----------|
+| 9:00–11:00 | Ranjan Sir (React Revision) |
+| 11:00–12:00 | Samir Sir (DSA) |
+| 12:00–1:00 | Break |
+| 1:00–2:30 | Yogesh Sir (Node Revision) |
+| 2:30–4:00 | Samir Sir (DSA Revision) |
+| 4:00–4:15 | Break |
+| 4:15–6:00 | Industry Readiness |
+
+
+### 2 June
+
+| Time | CG LAB 2 |
+|------|----------|
+| 9:00–11:00 | Ranjan Sir (React Revision) |
+| 11:00–12:00 | Samir Sir (DSA) |
+| 12:00–1:00 | Break |
+| 1:00–2:30 | Yogesh Sir (Node Revision) |
+| 2:30–4:00 | Samir Sir (DSA Revision) |
+| 4:00–4:15 | Break |
+| 4:15–6:00 | Industry Readiness |
+
+
 ### 1 June
 
 | Time | CG LAB 2 |
@@ -5,6 +31,7 @@
 | 10:00–12:00 | Samir Sir (DSA) |
 | 12:00–1:00 | Break |
 | 1:00–4:00 | Project Presentation |
+
 
 ### 18 April
 
