@@ -107,15 +107,16 @@ Tables are connected using Foreign Keys.
 
     Example:
     
-    Student Table
-    
-    RollNo	Name	CourseID
-    101	    Rahul	CS101
+        Student Table
+        
+        RollNo	Name	CourseID
+        101	    Rahul	CS101
 
-    Course Table
-    
-    CourseID	    CourseName
-    CS101	    Database Management System
+        
+        Course Table
+        
+        CourseID	    CourseName
+        CS101	    Database Management System
 
 The CourseID connects both tables.
 
