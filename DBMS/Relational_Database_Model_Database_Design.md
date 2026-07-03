@@ -110,12 +110,12 @@ Tables are connected using Foreign Keys.
     Student Table
     
     RollNo	Name	CourseID
-    101	Rahul	CS101
+    101	    Rahul	CS101
 
     Course Table
     
-    CourseID	CourseName
-    CS101	Database Management System
+    CourseID	    CourseName
+    CS101	    Database Management System
 
 The CourseID connects both tables.
 
