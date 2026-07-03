@@ -64,3 +64,28 @@ These values are data because they are raw facts.
       Documents
 
 
+## 2. What is Information?
+Information is processed, organized, and meaningful data that helps in decision making.
+Information is obtained after processing raw data.
+
+Formula
+Data + Processing = Information
+
+            Example
+            Student	Marks
+            Rahul	85
+            Priya	91
+            Aman	78
+#### After Processing
+
+            Highest Marks = 91
+            Average Marks = 84.67
+            Student Passed = 3
+
+Now the data becomes information.
+
+## Difference Between Data and Information
+        Data	    Information
+        Raw facts	Processed data
+        No meaning	Meaningful
+       
