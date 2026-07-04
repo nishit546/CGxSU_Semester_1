@@ -261,4 +261,90 @@ Result:
     Identify relationships.
     Draw a simple ER diagram.
     Suggest primary keys.
-                        
+
+
+   ## 12 Uses of ER Diagrams in DBMS
+
+    ER diagrams represent the E-R model in a database, making them easy to convert into relations (tables).
+    These diagrams serve the purpose of real-world modeling of objects which makes them intently useful.
+    Unlike technical schemas, ER diagrams require no technical knowledge of the underlying DBMS used.
+    They visually model data and its relationships, making complex systems easier to understand.
+
+## Types of Attributes
+### 1. Key Attribute
+
+The attribute which uniquely identifies each entity in the entity set is called the key attribute.
+For example, Roll_No will be unique for each student. In ER diagram,
+the key attribute is represented by an oval with an underline. 
+
+<img width="268" height="151" alt="frame_3253" src="https://github.com/user-attachments/assets/926002a7-3ef1-4a60-910a-fd88deccd04f" />
+
+
+### 2. Composite Attribute
+
+An attribute composed of many other attributes is called a composite attribute. 
+For example, the Address attribute of the student Entity type consists of Street, City, State, and Country. 
+In ER diagram, the composite attribute is represented by an oval comprising of ovals. 
+
+<img width="800" height="250" alt="frame_3257" src="https://github.com/user-attachments/assets/31261377-15f2-492f-96c9-d8ea0fae4563" />
+
+
+###  3. Multivalued Attribute 
+
+An attribute consisting of more than one value for a given entity. 
+For example, Phone_No (can be more than one for a given student). 
+In ER diagram, a multivalued attribute is represented by a double oval. 
+
+<img width="268" height="151" alt="frame_3254" src="https://github.com/user-attachments/assets/9f4c8c77-3e05-4624-a33b-f7c7c5c1e0c4" />
+
+
+ ### 4. Derived Attribute
+
+An attribute that can be derived from other attributes of the entity type is known as a derived attribute.
+e.g.; Age (can be derived from DOB). In ER diagram, the derived attribute is represented by a dashed oval. 
+
+<img width="268" height="151" alt="frame_3255" src="https://github.com/user-attachments/assets/ea418941-a86b-4b9d-8ee3-2a5fced096f5" />
+
+ The Complete Entity Type Student with its Attributes can be represented as: 
+
+ <img width="800" height="400" alt="frame_3256" src="https://github.com/user-attachments/assets/4b2e9039-5abd-46c7-84e7-1c0ad593237d" />
+
+
+
+## Relationship Type and Relationship Set 
+
+A Relationship Type represents the association between entity types. For example, 
+‘Enrolled in’ is a relationship type that exists between entity type Student and Course.
+In ER diagram, the relationship type is represented by a diamond and connecting the entities with lines. 
+
+<img width="800" height="245" alt="frame_3239" src="https://github.com/user-attachments/assets/dccc0f2d-5604-447d-a5c9-b98bd3033821" />
+
+A set of relationships of the same type is known as a relationship set. 
+The following relationship set depicts S1 as enrolled in C2, S2 as enrolled in C1,
+and S3 as registered in C3. 
+
+<img width="629" height="308" alt="frame_3245" src="https://github.com/user-attachments/assets/dabd2881-74fc-4b98-92e9-21ead78698ba" />
+
+
+
+## Degree of a Relationship Set 
+
+The number of different entity sets participating in a relationship set is called the degree of a relationship set.
+
+### 1. Unary/Recursive Relationship: When there is only ONE entity set participating in a relation.
+For example, one person is married to only one person. 
+
+<img width="539" height="188" alt="frame_3251" src="https://github.com/user-attachments/assets/5346e43e-7ed8-4e5f-98b0-38c0e2f85866" />
+
+### 2. Binary Relationship: When there are TWO entities set participating in a relationship. For example, a Student is enrolled in a Course. 
+
+<img width="800" height="245" alt="frame_3239" src="https://github.com/user-attachments/assets/e42d206e-99f3-426a-9634-d212a3f19d68" />
+
+### 3. Ternary Relationship: When there are three entity sets participating in a relationship.
+
+ <img width="800" height="323" alt="ternary_relationship" src="https://github.com/user-attachments/assets/e17f4012-37c7-45ed-8336-72a8f537ee2b" />
+
+### 4. N-ary Relationship: When there are n entities set participating in a relationship, the relationship is called an n-ary relationship. 
+
+<img width="800" height="380" alt="n_ary_relationship" src="https://github.com/user-attachments/assets/513f02ca-af11-491d-9fb1-95d73b6bf3c1" />
+
