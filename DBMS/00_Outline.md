@@ -94,13 +94,17 @@
 
 ### 7. Transaction Management
 
-  1.Transaction: A sequence of database operations performed as a single unit.
-  
-  2.ACID Properties: Rules that ensure reliable transaction processing.
-  
-  3.Atomicity: Either all operations occur or none occur.
-  
-  4.Consistency: The database remains valid before and after the transaction.
+   1.Transaction: A transaction is a sequence of one or more database operations performed as a 
+   single logical unit of work.
+
+  2.Atomicity: Either all operations of a transaction are completed successfully, or none of them 
+  are performed.
+
+  3.Consistency: A transaction ensures that the database moves from one valid state to another without 
+    violating any rules or constraints.
+
+  4.Isolation: Multiple transactions can run simultaneously without affecting each other's intermediate 
+  results.
   
   5.Isolation: Transactions do not interfere with each other.
   
