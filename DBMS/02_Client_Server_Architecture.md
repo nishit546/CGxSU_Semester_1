@@ -145,4 +145,19 @@ Disadvantages
     Difficult to Interact: This sort of interaction to take place due to the presence of middle layers.
     Slower Response Time: Since the request passes through an extra layer (application server), it may take more time to get a response compared to 2-Tier systems.
     Higher Cost: Setting up and maintaining three separate layers (client, server and database) requires more hardware, software and skilled people. This makes it more expensive.
-    
+
+
+  ## Difference Between 2-Tier and 3-Tier Architecture
+
+
+    | Feature           | 2-Tier Architecture                           | 3-Tier Architecture                                                       |
+    | ----------------- | --------------------------------------------- | ------------------------------------------------------------------------- |
+    | Number of Layers  | 2 Layers                                      | 3 Layers                                                                  |
+    | Layers            | Client + Database Server                      | Client + Application Server + Database Server                             |
+    | Client Connection | Client directly connects to the database      | Client connects to the application server, which connects to the database |
+    | Business Logic    | Stored in the client application              | Stored in the application server                                          |
+    | Security          | Less secure (database exposed to clients)     | More secure (database hidden from clients)                                |
+    | Performance       | Good for small applications                   | Better for large applications                                             |
+    | Scalability       | Limited                                       | Highly scalable                                                           |
+    | Maintenance       | Difficult                                     | Easier because logic is centralized                                       |
+    | Example           | College library software, small office system | Banking apps, Amazon, Flipkart, Facebook                                  |
