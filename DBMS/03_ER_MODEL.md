@@ -151,6 +151,77 @@ Result:
     One faculty teaches many students.
     Every course belongs to one department.
 
+
+# 5. Strong Entity
+
+## Definition
+
+A **Strong Entity** is an entity that can be uniquely identified using its own attributes.
+
+It has its own **Primary Key**.
+
+### Characteristics
+
+- Exists independently
+- Has a Primary Key
+- Does not depend on another entity
+
+### Examples
+
+- Student
+- Customer
+- Employee
+- Product
+
+Example
+
+Student
+
+- Student_ID (Primary Key)
+- Name
+- Course
+
+Student_ID uniquely identifies every student.
+
+---
+
+# 6. Weak Entity
+
+## Definition
+
+A **Weak Entity** is an entity that cannot be uniquely identified by its own attributes.
+
+It depends on another **Strong Entity** for its existence.
+
+### Characteristics
+
+- Does not have a complete Primary Key
+- Depends on Strong Entity
+- Has Total Participation
+- Uses a Partial Key
+
+### Example
+
+Loan System
+
+Loan
+
+- Loan_ID
+- Amount
+
+Payment
+
+- Installment Number
+- Payment Date
+- Amount
+
+A Payment cannot exist without a Loan.
+
+Therefore,
+
+- Loan → Strong Entity
+- Payment → Weak Entity
+
   ## 5. ER Model Symbols
             | Symbol               | Meaning                  |
             | -------------------- | ------------------------ |
@@ -190,6 +261,25 @@ Result:
                     │
                     ▼
             Create SQL Tables
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
 
 ## 9. Real-World Example: College Management System
 
@@ -347,4 +437,111 @@ For example, one person is married to only one person.
 ### 4. N-ary Relationship: When there are n entities set participating in a relationship, the relationship is called an n-ary relationship. 
 
 <img width="800" height="380" alt="n_ary_relationship" src="https://github.com/user-attachments/assets/513f02ca-af11-491d-9fb1-95d73b6bf3c1" />
+
+# 13. Mapping Cardinality
+
+Mapping Cardinality specifies how many entities of one set can be associated with entities of another set.
+
+There are four types.
+
+---
+
+## One-to-One (1:1)
+
+Each entity is associated with only one entity.
+
+Example
+
+Citizen ↔ Aadhaar Card
+
+One Citizen has one Aadhaar.
+
+---
+
+## One-to-Many (1:N)
+
+One entity is associated with many entities.
+
+Example
+
+Customer owns multiple Vehicles.
+
+One Customer
+
+↓
+
+Vehicle 1
+
+Vehicle 2
+
+Vehicle 3
+
+---
+
+## Many-to-One (N:1)
+
+Many entities are associated with one entity.
+
+Example
+
+Many Courses are taught by one Professor.
+
+---
+
+## Many-to-Many (M:N)
+
+Many entities are associated with many entities.
+
+Examples
+
+- Student attends Course
+- Customer buys Product
+
+---
+
+
+# 14. Participation Constraints
+
+Participation Constraint defines whether participation in a relationship is mandatory or optional.
+
+There are two types.
+
+---
+
+## Partial Participation
+
+Not all entities participate in the relationship.
+
+### Example
+
+Customer
+
+Some customers have loans.
+
+Some customers do not.
+
+Therefore Customer has Partial Participation.
+
+---
+
+## Total Participation
+
+Every entity must participate in the relationship.
+
+### Example
+
+Loan
+
+Every Loan belongs to one Customer.
+
+Loan cannot exist without Customer.
+
+Therefore Loan has Total Participation.
+
+
+### Important Note
+
+Weak Entities always have **Total Participation**.
+
+Strong Entities may have **Partial Participation**.
 
