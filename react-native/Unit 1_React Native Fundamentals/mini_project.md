@@ -1,11 +1,10 @@
 
-# Mini Project 1 — Profile Card App
+### **Mini Project 1 — Profile Card App**
 
 ### **What We Are Going to Build**
-
 In this mini project, we will create a **beautiful, modern Profile Card** component.  
+The final result will be a **centered card** on the screen featuring:
 
-The final result will be a centered card on the screen featuring:
 - A circular profile picture
 - Name and professional role
 - Short bio text
@@ -15,14 +14,11 @@ This is a very common UI pattern used in social media, networking, and portfolio
 
 ---
 
-### Step 1: Create the Project
-
-Open your terminal and run:
+### **Step 1: Create the Project**
 
 ```bash
 npx create-expo-app@latest ProfileCardApp
 cd ProfileCardApp
-code .
 ```
 
 Start the development server:
@@ -35,148 +31,212 @@ Scan the QR code using the **Expo Go** app on your phone.
 
 ---
 
-### Step 2: Project Folder Structure
+### **Step 2: Install Required Dependencies**
+
+Run the following commands:
+
+```bash
+npx expo install react-native-safe-area-context
+npx expo install @expo/vector-icons
+```
+
+> These two packages are required for safe area handling and icon support in the tab navigation.
+
+---
+
+### **Step 3: Project Folder Structure**
 
 Create the following structure inside your project:
 
 ```bash
 ProfileCardApp/
-├── assets/
-│   └── images/
-│       └── profile.jpg     # Add your profile picture here
-├── components/
-│   └── ProfileCard.js
-├── App.js
-├── app.json
-├── package.json
-└── babel.config.js
+├── app/
+│   ├── _layout.tsx
+│   ├── modal.tsx
+│   └── (tabs)/
+│       ├── _layout.tsx
+│       ├── index.tsx
+│       ├── profile.tsx          ← Profile Card Screen
+│       └── explore.tsx
+└── assets/
+    └── images/
+        └── icon.png             ← (Place your profile image here)
 ```
 
 ---
 
-### Step 3: Create ProfileCard Component
+### **Step 4: Create Profile Card Screen**
 
-Create file: **`components/ProfileCard.js`**
+**File:** `app/(tabs)/profile.tsx`
 
-```jsx
-import React from 'react';
-import { View, Text, Image, Pressable, StyleSheet, Alert } from 'react-native';
+```tsx
+import React from "react";
+import { View, Text, Image, Pressable, StyleSheet, Alert } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-const ProfileCard = () => {
+const Profile = () => {
   const handleFollow = () => {
-    Alert.alert('Success', 'You are now following John Doe!');
+    Alert.alert("Success", "You are now following John Doe!");
   };
 
   return (
-    <View style={styles.card}>
-      {/* Profile Image */}
-      <Image
-        source={require('../assets/images/profile.jpg')}
-        style={styles.image}
-      />
+    <SafeAreaView style={styles.container}>
+      <View style={styles.card}>
+        {/* Profile Image */}
+        <Image
+          source={require("../../assets/images/icon.png")}
+          style={styles.image}
+        />
 
-      {/* Name */}
-      <Text style={styles.name}>John Doe</Text>
+        {/* Name */}
+        <Text style={styles.name}>John Doe</Text>
 
-      {/* Role */}
-      <Text style={styles.role}>React Native Developer</Text>
+        {/* Role */}
+        <Text style={styles.role}>React Native Developer</Text>
 
-      {/* Bio */}
-      <Text style={styles.bio}>
-        Passionate about building beautiful and performant mobile applications 
-        using React Native and Expo. Love turning ideas into reality.
-      </Text>
+        {/* Bio */}
+        <Text style={styles.bio}>
+          Passionate about building beautiful and performant mobile applications
+          using React Native and Expo. Love turning ideas into reality.
+        </Text>
 
-      {/* Follow Button */}
-      <Pressable style={styles.button} onPress={handleFollow}>
-        <Text style={styles.buttonText}>Follow</Text>
-      </Pressable>
-    </View>
+        <Pressable
+          onPress={handleFollow}
+          android_ripple={{
+            color: "rgba(55, 255, 0, 0.6)",
+            borderless: false,
+            foreground: true,
+          }}
+          style={styles.button}
+        >
+          <Text style={styles.buttonText}>Follow</Text>
+        </Pressable>
+      </View>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#f8fafc",
+    justifyContent: "center",
+    alignItems: "center",
+  },
   card: {
-    backgroundColor: '#ffffff',
+    backgroundColor: "#ffffff",
     width: 340,
     borderRadius: 24,
-    padding: 24,
-    alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.1,
-    shadowRadius: 15,
-    elevation: 10, // For Android shadow
+    padding: 32,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 12 },
+    shadowOpacity: 0.12,
+    shadowRadius: 20,
+    elevation: 15,
   },
   image: {
     width: 130,
     height: 130,
     borderRadius: 65,
-    borderWidth: 4,
-    borderColor: '#f8fafc',
-    marginBottom: 16,
+    borderWidth: 5,
+    borderColor: "#ffffff",
+    marginBottom: 20,
   },
   name: {
     fontSize: 26,
-    fontWeight: 'bold',
-    color: '#1e2937',
-    marginBottom: 4,
+    fontWeight: "bold",
+    color: "#1e2937",
+    marginBottom: 6,
   },
   role: {
     fontSize: 16,
-    color: '#64748b',
-    marginBottom: 16,
+    color: "#64748b",
+    marginBottom: 20,
   },
   bio: {
     fontSize: 15,
-    color: '#475569',
-    textAlign: 'center',
-    lineHeight: 22,
-    marginBottom: 24,
+    color: "#475569",
+    textAlign: "center",
+    lineHeight: 23,
+    marginBottom: 28,
   },
   button: {
-    backgroundColor: '#0ea5e9',
-    paddingVertical: 14,
-    paddingHorizontal: 48,
-    borderRadius: 12,
-    marginTop: 8,
+    width: "100%",
+    height: 58,
+    backgroundColor: "#1976D2",
+    borderRadius: 14,
+    justifyContent: "center",
+    alignItems: "center",
+    overflow: "hidden",
+    elevation: 6,
   },
   buttonText: {
-    color: 'white',
-    fontSize: 17,
-    fontWeight: 'bold',
+    color: "#fff",
+    fontSize: 18,
+    fontWeight: "600",
   },
 });
 
-export default ProfileCard;
+export default Profile;
 ```
 
 ---
 
-### Step 4: Update App.js
+### **Step 5: Update Tab Layout**
 
-Replace the content of **`App.js`** with:
+**File:** `app/(tabs)/_layout.tsx`
 
-```jsx
-import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
-import ProfileCard from './components/ProfileCard';
+```tsx
+import { Tabs } from "expo-router";
+import React from "react";
 
-export default function App() {
+import { HapticTab } from "@/components/haptic-tab";
+import { IconSymbol } from "@/components/ui/icon-symbol";
+import { Colors } from "@/constants/theme";
+import { useColorScheme } from "@/hooks/use-color-scheme";
+import { Ionicons } from "@expo/vector-icons";
+
+export default function TabLayout() {
+  const colorScheme = useColorScheme();
+
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#f8fafc" />
-      <ProfileCard />
-    </SafeAreaView>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+        headerShown: false,
+        tabBarButton: HapticTab,
+      }}
+    >
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <IconSymbol size={28} name="house.fill" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="explore"
+        options={{
+          title: "Explore",
+          tabBarIcon: ({ color }) => (
+            <IconSymbol size={28} name="paperplane.fill" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "Profile",
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="person" size={24} color={color} />
+          ),
+        }}
+      />
+    </Tabs>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f1f5f9',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
-});
 ```
+
