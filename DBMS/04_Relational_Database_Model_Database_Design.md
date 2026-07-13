@@ -15,7 +15,8 @@ Almost every modern database system, including MySQL, PostgreSQL, Oracle, SQL Se
 
 ## 2. What is the Relational Model?
 The Relational Model is a database model that organizes data into tables, called relations. Each table consists of rows (tuples) and columns (attributes).
-The model was proposed by Dr. Edgar F. Codd in 1970 while working at IBM.
+The relational model is the theoretical basis of relational databases 
+A 'relation' is a mathematical conceept based on the ideas of sets.
 
 In the Relational Model:
 
@@ -30,6 +31,10 @@ The Relational Model is a way of storing and organizing data in the form of tabl
 
     A Relational Model is a collection of relations (tables) where each relation contains tuples (rows) and
     attributes (columns), and relationships among tables are established using keys.
+
+->After designing the conceptual model of Database using ER diagram , we need to convert the conceptual model int the relational model 
+which can be implemented using any RDBMS language 
+RDBMS Language - oracle , SQL , MySql.
 
 ## 3. Why Do We Need the Relational Model?
 
@@ -158,6 +163,8 @@ The Relational Model consists of the following components:
     Domain
     Keys
     Constraints
+    Degree- The total number of columns or attributes in the relation
+    Cardinality - Total number of rows present in the table
 Each of these concepts will be studied in detail in the following chapters.
 
 ## 7. Real-Life Example
