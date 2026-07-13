@@ -545,3 +545,34 @@ Weak Entities always have **Total Participation**.
 
 Strong Entities may have **Partial Participation**.
 
+
+
+## 1. Hospital Management System (Medium)
+    Requirements:
+    A patient can consult multiple doctors.
+    A doctor can treat many patients.
+    Every doctor belongs to exactly one department.
+    Store appointment date, time, and diagnosis.
+    Patients may be admitted into rooms.
+    A room can accommodate multiple patients over time but only one patient at a time.
+
+## 2. E-Commerce Platform (Hard)
+    Requirements:
+    Customers place orders.
+    Orders contain multiple products.
+    Products belong to categories.
+    Sellers list products.
+    Customers write reviews for products.
+    Coupons can be applied to orders.
+    Payments are made using different payment methods.
+
+## 3. Learning Management System (Hard)
+    Requirements:
+    Instructors create courses.
+    Courses contain multiple modules.
+    Modules contain quizzes.
+    Students enroll in courses.
+    Students submit assignments.
+    Grades are given by instructors.
+    Certificates are generated after course completion.
+        
