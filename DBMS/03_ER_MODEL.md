@@ -547,7 +547,7 @@ Strong Entities may have **Partial Participation**.
 
 
 
-## 1. Hospital Management System (Medium)
+## 1. Hospital Management System 
     Requirements:
     A patient can consult multiple doctors.
     A doctor can treat many patients.
@@ -556,7 +556,7 @@ Strong Entities may have **Partial Participation**.
     Patients may be admitted into rooms.
     A room can accommodate multiple patients over time but only one patient at a time.
 
-## 2. E-Commerce Platform (Hard)
+## 2. E-Commerce Platform 
     Requirements:
     Customers place orders.
     Orders contain multiple products.
@@ -566,7 +566,7 @@ Strong Entities may have **Partial Participation**.
     Coupons can be applied to orders.
     Payments are made using different payment methods.
 
-## 3. Learning Management System (Hard)
+## 3. Learning Management System 
     Requirements:
     Instructors create courses.
     Courses contain multiple modules.
@@ -575,4 +575,13 @@ Strong Entities may have **Partial Participation**.
     Students submit assignments.
     Grades are given by instructors.
     Certificates are generated after course completion.
-        
+
+## 4. Hotel Reservation System 
+    Requirements:
+    Hotels contain multiple rooms.
+    Guests reserve rooms.
+    A reservation may include multiple rooms.
+    Rooms belong to room categories.
+    Guests can order room services.
+    Employees provide room services.
+    Store check-in and check-out dates.     
