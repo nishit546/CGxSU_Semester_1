@@ -32,6 +32,18 @@ Create a React Native application that allows users to manage students, fetch da
 
 ---
 
+### Install the package
+
+Run this command in your terminal:
+
+```bash
+
+npm install @react-navigation/drawer
+
+```
+
+---
+
 ## Folder Structure
 
 ```bash
