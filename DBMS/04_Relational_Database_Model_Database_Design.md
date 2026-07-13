@@ -23,7 +23,6 @@ In the Relational Model:
     Data is stored in tables.
     Tables are related using keys.
     SQL is used to retrieve and manipulate data.
-    Simple Definition
 
 The Relational Model is a way of storing and organizing data in the form of tables that are connected through relationships.
 
@@ -32,9 +31,8 @@ The Relational Model is a way of storing and organizing data in the form of tabl
     A Relational Model is a collection of relations (tables) where each relation contains tuples (rows) and
     attributes (columns), and relationships among tables are established using keys.
 
-->After designing the conceptual model of Database using ER diagram , we need to convert the conceptual model int the relational model 
+->After designing the conceptual model of Database using ER diagram , we need to convert the conceptual model into the relational model 
 which can be implemented using any RDBMS language 
-RDBMS Language - oracle , SQL , MySql.
 
 ## 3. Why Do We Need the Relational Model?
 
@@ -153,7 +151,7 @@ Rules ensure only valid data is stored.
 
 Changing the storage structure does not require changes in application programs.
 
-## 5. Components of the Relational Model
+## 8. Components of the Relational Model
 
 The Relational Model consists of the following components:
 
@@ -169,8 +167,7 @@ Each of these concepts will be studied in detail in the following chapters.
 
 
 
-
-## 7. properties of relational model
+## 9. properties of relational model
 ### 1. Relation (Table)
     Data is organized into tables called relations.
     Each table has a unique name.
@@ -236,7 +233,7 @@ This creates an invalid reference.
 
 
 
-## Rules for Refrential Integrity 
+## 10.  Rules for Refrential Integrity 
 
 ### Rule 1: Foreign Key must match an existing Primary Key
     Every Foreign Key value must exist in the referenced parent table.
@@ -305,74 +302,172 @@ This creates an invalid reference.
 ❌ Not allowed because Employee 101 still references it.
 
         
-## 8. Real-Life Example
+## 11. Relational Query Language
 
-  #### Find students with marks greater than 90.
+A Relational Query Language is a language used to retrieve and manipulate data stored in a relational database. It allows users to specify what data they want without describing how the database should retrieve it.
 
-      | RollNo | Name  | Semester | Branch | Marks |
-      | ------ | ----- | -------- | ------ | ----- |
-      | 101    | Rahul | 3        | CSE    | 90    |
-      | 102    | Amit  | 3        | IT     | 82    |
-      | 103    | Neha  | 3        | CSE    | 95    |
+The relational model provides two main types of query languages:
 
-
-Only one SQL query is needed.
-
-## 9. Real-Life Applications
-
-The Relational Model is used in almost every industry.
-
-### Banking
-
-    Stores:
+    Relational Algebra (Procedural Query Language)
+    Relational Calculus (Non-Procedural Query Language)
     
-        Customers
-        Accounts
-        Transactions
-        Loans
+## 12 Why Do We Need a Relational Query Language?
 
-### Hospital
+Data in a relational database is stored in the form of tables (relations). To interact with this data—such as retrieving, inserting, updating, or deleting records—we need a query language.
 
-     Stores:
-      
-        Patients
-        Doctors
-        Medicines
-        Appointments
-
-### College ERP
-
-     Stores:
-      
-        Students
-        Faculty
-        Attendance
-        Fees
-        Results
-
-### Railway Reservation
-
-    Stores:
-      
-        Passengers
-        Trains
-        Tickets
-        Stations
-
-
-### E-Commerce
-
-    Stores:
-
-        Products
-        Customers
-        Orders
-        Payments
-
-### Social Media
-    Stores:
+### A relational query language helps users to:
     
-        Users
-        Posts
-        Comments
-        Followers
+    Retrieve specific data from one or more tables.
+    Insert new records.
+    Update existing records.
+    Delete records.
+    Perform operations on relations.
+
+    
+## 13. Types of Relational Query Languages
+
+## 1. Relational Algebra (Procedural)
+
+Relational Algebra is a procedural query language. In this language, the user specifies what data is required and how to obtain it.
+
+It consists of operations such as:
+
+Selection (σ)
+Projection (π)
+Union (∪)
+Set Difference (−)
+Cartesian Product (×)
+Rename (ρ)
+Join (⨝)
+
+Example
+
+Find students whose marks are greater than 80:
+
+σ Marks > 80 (Student)
+
+## 2. Relational Calculus (Non-Procedural)
+
+Relational Calculus is a non-procedural (declarative) query language. The user specifies what data is required, while the database system decides how to retrieve it.
+
+
+Although SQL is the standard language used in relational databases, it is based on the concepts of Relational Algebra and Relational Calculus.
+
+For example:
+
+SELECT Name
+FROM Student
+WHERE Marks > 80;
+
+Internally, the database converts this SQL query into Relational Algebra operations before executing it.
+
+## 14. Difference Between Relational Algebra and Relational Calculus
+            | Relational Algebra                      | Relational Calculus                     |
+            | --------------------------------------- | --------------------------------------- |
+            | Procedural query language               | Non-procedural query language           |
+            | Specifies **what** and **how**          | Specifies only **what**                 |
+            | Uses algebraic operations               | Uses logical expressions                |
+            | Forms the basis of SQL query processing | Forms the theoretical foundation of SQL |
+
+
+
+## 15. Procedural and Non-Procedural Query Language
+
+### 1. Procedural Query Language
+
+    A Procedural Query Language requires the user to specify:
+    
+    What data is needed
+    How to retrieve the data
+    
+    User tells what data to be retrieved from the database and how to retrieve it
+        | RollNo | Name  | Branch | Marks |
+        | ------ | ----- | ------ | ----: |
+        | 101    | Rahul | CSE    |    90 |
+        | 102    | Amit  | IT     |    75 |
+        | 103    | Priya | CSE    |    95 |
+
+### 2. Non-Procedural Query Language
+    A Non-Procedural Query Language requires the user to specify only:
+        
+        What data is needed
+        
+        The database management system decides how to retrieve the data.
+
+    User tells what data to be retrieved from the database but doesnt tell how to retrieve it
+        Example
+
+        Using SQL:
+        
+        SELECT Name
+        FROM Student
+        WHERE Marks > 80;
+        
+        The user only specifies the required result. The DBMS determines the execution plan.
+
+
+## 16. Relational Algebra Operations
+Relational Algebra is a procedural query language used to perform operations on relations (tables). It forms the theoretical foundation of SQL.
+
+In Relational Algebra, the user specifies:
+
+What data is required.
+How to retrieve the data.
+
+It consists of a set of operations that take one or more relations as input and produce another relation as output.
+
+### Types of Relational Algebra Operations
+
+Relational Algebra operations are classified into two categories:
+
+### 1. Unary Operations
+
+Unary operations work on only one relation (table).
+
+They are:
+    
+    Selection (σ)
+    Projection (π)
+    Rename (ρ)
+
+### 2. Binary Operations
+
+Binary operations work on two relations (tables).
+
+They are:
+
+    Union (∪)
+    Set Difference (−)
+    Intersection (∩)
+    Cartesian Product (×)
+    Join (⨝)
+    Division (÷)
+
+
+
+## Selection (σ)
+Selection is used to select rows from a relation based on a specified condition.
+            
+            σ Branch = 'CSE' (Student)
+
+Select all students whose branch is CSE.
+
+ Multiple Conditions
+AND (∧)
+            
+            σ Branch='CSE' ∧ Marks>90 (Student)
+
+OR (∨)
+
+            σ Branch='IT' ∨ Marks>90 (Student)
+
+NOT (¬)
+
+            σ ¬(Branch='CSE') (Student)
+
+## Projection (π)
+Projection is a relational algebra operation used to retrieve specific columns (attributes) from a relation.
+
+        π Name, Branch (Student)
+
+    
