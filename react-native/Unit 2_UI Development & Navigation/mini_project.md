@@ -1,4 +1,6 @@
-Mini Project 2 — Student Management App
+
+### **Mini Project 2 — Student Management App**
+
 
 ## Objective
 Create a React Native application that allows users to manage students, fetch data from an API, and navigate between different screens using **Bottom Tabs** and **Drawer Navigation**.
