@@ -546,6 +546,7 @@ Weak Entities always have **Total Participation**.
 Strong Entities may have **Partial Participation**.
 
 
+# Practice Problems
 
 ## 1. Hospital Management System 
     Requirements:
