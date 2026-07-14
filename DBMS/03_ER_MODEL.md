@@ -574,8 +574,6 @@ Strong Entities may have **Partial Participation**.
     Modules contain quizzes.
     Students enroll in courses.
     Students submit assignments.
-    Grades are given by instructors.
-    Certificates are generated after course completion.
 
 ## 4. Hotel Reservation System 
     Requirements:
@@ -585,4 +583,15 @@ Strong Entities may have **Partial Participation**.
     Rooms belong to room categories.
     Guests can order room services.
     Employees provide room services.
-    Store check-in and check-out dates.     
+    Store check-in and check-out dates.    
+
+## 5. Inventory Management System
+    Requirements
+    Suppliers supply products.
+    Products are stored in warehouses.
+    Employees manage inventory.
+    Customers purchase products.
+    Purchase orders are created.
+    Sales invoices are generated.
+    Store stock quantity.
+    Record reorder level.
