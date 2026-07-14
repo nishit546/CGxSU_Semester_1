@@ -39,7 +39,7 @@ into account and not the composite attribute itself.
 <img width="518" height="367" alt="Screenshot 2026-07-14 110246" src="https://github.com/user-attachments/assets/d5c48b01-b817-4ae0-beb1-1a34492af28f" />
 
 
-Attributes of the table are:
+Attributes of the table are 
 Primary key attributes of the participating entity sets.
 Its own descriptive attributes (if any).
 
