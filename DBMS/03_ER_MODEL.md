@@ -577,13 +577,10 @@ Strong Entities may have **Partial Participation**.
 
 ## 4. Hotel Reservation System 
     Requirements:
-    Hotels contain multiple rooms.
+    A hotel has many rooms.
     Guests reserve rooms.
-    A reservation may include multiple rooms.
-    Rooms belong to room categories.
-    Guests can order room services.
-    Employees provide room services.
-    Store check-in and check-out dates.    
+    Each room belongs to one room category.
+    Store check-in date and check-out date.    
 
 ## 5. Inventory Management System
     Requirements
