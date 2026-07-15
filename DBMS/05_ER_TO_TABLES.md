@@ -51,3 +51,54 @@ For the given ER diagram, three tables will be required in the relational model:
 One table for the entity set Employee
 One table for the entity set Department
 One table for the relationship set Works In
+
+
+## Rule 5: For Binary Relationships for Cardinality ratios
+    
+### Case-1 For Binary Relationship with Cardinality ratio m:n
+<img width="686" height="182" alt="Screenshot 2026-07-15 162136" src="https://github.com/user-attachments/assets/c998d434-da7b-4fed-b1d4-03520da4089c" />
+
+In Many-to-Many relationships , Three Tables will be required
+
+1.A(a1',a2)
+2.R(a1',b1')
+3.B(b1',b2')
+
+
+### Case-2 For Binary Relationship with Cardinality ratio 1:m
+
+<img width="742" height="163" alt="Screenshot 2026-07-15 162726" src="https://github.com/user-attachments/assets/1e26d32e-0bfc-4e20-896b-ac15333606bd" />
+
+In one-to-Many relationships , Two Tables will be required
+
+1.A(a1',a2)
+2.BR(b1',b2,a1)
+
+
+### Case-3 For Binary Relationship with Cardinality ratio m:1
+
+<img width="718" height="173" alt="Screenshot 2026-07-15 162854" src="https://github.com/user-attachments/assets/9c83c73f-fc02-4f04-8037-2ac6cc948065" />
+
+In Many-to-one relationships , Two Tables will be required
+
+1.AR(a1',a2,b1)
+2.R(b1',b2)
+
+
+
+### Case-4 For Binary Relationship with Cardinality ratio 1:1
+
+<img width="758" height="160" alt="Screenshot 2026-07-15 163024" src="https://github.com/user-attachments/assets/49effd3d-4a72-43aa-887d-e30d15f4c8ad" />
+
+In one-to-one relationships , Two Tables will be required
+
+Way-1 
+    1.AR(a1',a2,b1)
+    2.B(b1,b2)
+
+Way-2 
+    1.A(a1',a2)
+    2.B(b1',b2.a1)
+
+
+
