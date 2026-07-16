@@ -2,6 +2,9 @@
 
 Before learning SQL or designing databases, it is important to understand how data is organized.
 
+Relational model represents how data is stored in Relational Databases. A relational databases stores data in the form of relations(tables)
+
+
 There are many ways to organize data, such as:
 
     Hierarchical Model
@@ -231,6 +234,159 @@ Each of these concepts will be studied in detail in the following chapters.
 
 This creates an invalid reference.
 
+
+
+
+## What is a Key?
+
+A Key is an attribute or a set of attributes that is used to identify a tuple (row) uniquely in a relation (table).
+
+Keys are used to:
+
+Identify records uniquely.
+Prevent duplicate records.
+Establish relationships between tables.
+Maintain data integrity.
+Example Table
+
+    | RollNo | AadhaarNo    | Email                                     | Name  | Branch |
+    | -----: | ------------ | ----------------------------------------- | ----- | ------ |
+    |    101 | 123456789012 | [rahul@gmail.com](mailto:rahul@gmail.com) | Rahul | CSE    |
+    |    102 | 234567890123 | [amit@gmail.com](mailto:amit@gmail.com)   | Amit  | IT     |
+    |    103 | 345678901234 | [priya@gmail.com](mailto:priya@gmail.com) | Priya | ECE    |
+
+Here,
+
+RollNo is unique.
+AadhaarNo is unique.
+Email is unique.
+
+## 1. Super Key
+
+Definition
+
+A Super Key is any attribute or combination of attributes that can uniquely identify each row in a table.
+A super key may contain extra attributes that are not required for uniqueness.
+
+Example
+
+The following are Super Keys:
+    RollNo
+    
+    AadhaarNo
+    
+    Email
+    
+    RollNo + Name
+    
+    RollNo + Branch
+    
+    RollNo + Email
+    
+    AadhaarNo + Name
+    
+    Email + Branch
+    
+All these combinations uniquely identify a student.
+Important Point
+Every Candidate Key is a Super Key.
+But every Super Key is not a Candidate Key.
+
+
+## 2. Candidate Key
+
+Definition    
+
+    A Candidate Key is the smallest possible Super Key.
+
+It has no unnecessary attributes.
+Example
+
+Candidate Keys are:
+    
+    RollNo
+    AadhaarNo
+    Email
+
+These are minimal and uniquely identify every student.
+
+
+## Difference Between Super Key and Candidate Key
+
+    | Super Key                    | Candidate Key              |
+    | ---------------------------- | -------------------------- |
+    | May contain extra attributes | No extra attributes        |
+    | Not always minimal           | Always minimal             |
+    | Many Super Keys can exist    | Fewer Candidate Keys exist |
+    | Example: (RollNo, Name)      | Example: RollNo            |
+
+
+## 3. Primary Key
+Definition
+
+A Primary Key is the Candidate Key selected to uniquely identify every row in a table.
+
+A table can have only one Primary Key.
+
+Example : RollNo
+
+    Properties
+    Unique
+    Cannot be NULL
+    One per table
+    Stable (should not change frequently)
+
+4. Alternate Key
+Definition
+
+Candidate Keys that are not selected as the Primary Key are called Alternate Keys.
+
+Example
+
+    Candidate Keys
+
+Primary Key : RollNo
+Alternate Keys : AadhaarNo,Email
+
+## 5. Composite Key
+Definition
+
+A Composite Key is a key made up of two or more attributes.
+
+Example:
+
+    | StudentID | CourseID | Semester |
+    | --------- | -------- | -------- |
+    | 101       | CS101    | 3        |
+    | 101       | CS102    | 3        |
+    | 102       | CS101    | 3        |
+Neither StudentID nor CourseID alone is unique.
+Together,(StudentID, CourseID) uniquely identifies each record.
+Hence, (StudentID, CourseID) is the Composite Key.
+
+## 6. Foreign Key
+Definition
+
+A Foreign Key is an attribute in one table that refers to the Primary Key of another table.
+
+It is used to establish relationships between tables.
+
+    | DeptID (PK) | Department |
+    | ----------- | ---------- |
+    | D101        | HR         |
+    | D102        | IT         |
+    | D103        | Finance    |
+
+    | EmpID | Name  | DeptID (FK) |
+    | ----- | ----- | ----------- |
+    | 101   | Rahul | D101        |
+    | 102   | Amit  | D102        |
+    | 103   | Priya | D103        |
+
+Here, DeptID in Employee is the Foreign Key.
+It references,Department.DeptID
+
+    
 
 
 ## 10.  Rules for Refrential Integrity 
