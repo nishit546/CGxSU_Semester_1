@@ -336,7 +336,8 @@ Example : RollNo
     One per table
     Stable (should not change frequently)
 
-4. Alternate Key
+## 4. Alternate Key
+
 Definition
 
 Candidate Keys that are not selected as the Primary Key are called Alternate Keys.
@@ -365,6 +366,7 @@ Together,(StudentID, CourseID) uniquely identifies each record.
 Hence, (StudentID, CourseID) is the Composite Key.
 
 ## 6. Foreign Key
+
 Definition
 
 A Foreign Key is an attribute in one table that refers to the Primary Key of another table.
@@ -387,7 +389,6 @@ Here, DeptID in Employee is the Foreign Key.
 It references,Department.DeptID
 
     
-
 
 ## 10.  Rules for Refrential Integrity 
 
