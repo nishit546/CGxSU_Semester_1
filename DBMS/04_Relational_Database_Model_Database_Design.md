@@ -388,7 +388,107 @@ It is used to establish relationships between tables.
 Here, DeptID in Employee is the Foreign Key.
 It references,Department.DeptID
 
+
+## Key Constraints 
+
+### 1 NOT NULL Constraint
+
+The NOT NULL constraint ensures that an attribute (column) cannot contain NULL (empty) values.
+
+It means every row in that column must have a value.
+
+    A NOT NULL constraint prevents missing or unknown values in a column.
+
+Why Do We Need NOT NULL?
+
+Suppose we have the following STUDENT table.
+
+        | RollNo | Name  | Branch |
+        | -----: | ----- | ------ |
+        |    101 | Rahul | CSE    |
+        |    102 | NULL  | IT     |
+        |    103 | Priya | ECE    |
+
+Here, the second student's Name is missing.
+
+This may cause problems because every student should have a name.
+
+To avoid this, we apply the NOT NULL constraint on the Name column.
+
+### 2. UNIQUE Constraint
+Definition
+
+The UNIQUE constraint ensures that all values in a column (or a combination of columns) are unique. It prevents duplicate values from being stored in the specified column(s).
+
+    A UNIQUE constraint ensures that no two rows have the same value for the specified attribute(s).
+
+Why Do We Need the UNIQUE Constraint?
+
+Suppose a college stores students' email addresses.
+
+    | RollNo | Name  | Email                                     |
+    | -----: | ----- | ----------------------------------------- |
+    |    101 | Rahul | [rahul@gmail.com](mailto:rahul@gmail.com) |
+    |    102 | Amit  | [rahul@gmail.com](mailto:rahul@gmail.com) |
+    |    103 | Priya | [priya@gmail.com](mailto:priya@gmail.com) |
+
+Here, two students have the same email address.
+
+This creates ambiguity because an email address should belong to only one student.
+
+Therefore, the Email column should have a UNIQUE constraint.
+
+### 3. DEFAULT Constraint
+
+Definition
+
+The DEFAULT constraint automatically assigns a predefined (default) value to a column when no value is provided during data insertion.
+
+    A DEFAULT constraint provides a default value for a column if the user does not specify one.
+
+Example Without DEFAULT Constraint
+  
+    | EmpID | Name  | Department |
+    | ----: | ----- | ---------- |
+    |   101 | Rahul | HR         |
+    |   102 | Amit  | NULL       |
+    |   103 | Neha  | IT         |
+
+    Here, Amit has no department because no value was entered.    
+
+Example With DEFAULT Constraint
+
+Assume the Department column has:
+
+    DEFAULT 'General'
     
+    | EmpID | Name  | Department |
+    | ----: | ----- | ---------- |
+    |   101 | Rahul | HR         |
+    |   102 | Amit  | General    |
+    |   103 | Neha  | IT         |
+    
+Since no department was provided for Amit, the database automatically inserted "General".
+
+
+### 4.CHECK Constraint
+Definition
+
+The CHECK constraint is used to restrict the values that can be inserted or updated in a column. It ensures that data entered into a table satisfies a specified condition.
+
+    A CHECK constraint allows only those values that satisfy a given condition. 
+
+  Why Do We Need the CHECK Constraint?
+
+Suppose a college stores students' marks.
+Marks should always be between 0 and 100.
+Without a CHECK constraint, someone might enter:
+
+    | RollNo | Name  | Marks |
+    | -----: | ----- | ----: |
+    |    101 | Rahul |    95 |
+    |    102 | Amit  |   150 |
+    |    103 | Priya |   -10 |
 
 ## 10.  Rules for Refrential Integrity 
 
