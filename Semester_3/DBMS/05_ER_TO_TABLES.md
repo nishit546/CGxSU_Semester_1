@@ -102,3 +102,52 @@ Way-2
 
 
 
+## Lets Practice 
+
+Question 1 – Movie Ticket Booking System (Advanced)
+
+Requirements:
+
+    1.A theatre has multiple screens.
+    Each screen hosts multiple shows.
+    Each show is scheduled at a specific date and time.
+    Customers make bookings for shows.
+    Each booking is paid online.
+    Store the Seat Number, Booking Time, and Refund Amount for each booking.
+    
+Q1. Make E-R diagram from the given information
+
+Q2. How many minimum number of tables required to convert this ER into relational model
+
+Question 2 – Gym Management System
+
+Requirements:
+
+    A gym has multiple trainers.
+    Members enroll in the gym.
+    Trainers train multiple members.
+    Members can join multiple fitness programs.
+    Store Enrollment Date and Membership Type.
+    Members make monthly payments.
+
+Q1. Make E-R diagram from the given information
+
+Q2. How many minimum number of tables required to convert this ER into relational model
+
+
+Question 3 – Smart City Management System
+
+Requirements
+
+        Cities contain multiple zones.
+        Zones have roads.
+        Vehicles travel on roads.
+        Traffic police monitor roads.
+        Citizens pay utility bills.
+        Complaints are registered by citizens.
+        Municipal employees resolve complaints.
+
+
+Q1. Make E-R diagram from the given information
+
+Q2. How many minimum number of tables required to convert this ER into relational model
