@@ -101,6 +101,7 @@ Almost every company uses SQL somewhere in its technology stack.
 
 ---
 
+
 # SQL Categories
 
 SQL commands are divided into five categories.
@@ -357,6 +358,26 @@ Everything inside the database is deleted.
 | Slower | Faster |
 
 ---
+
+
+
+## Common SQL Data Types
+
+    | **Category**         | **Data Type**                   | **Description**                                                        | **Example**                 |
+    | -------------------- | ------------------------------- | ---------------------------------------------------------------------- | --------------------------- |
+    | **Numeric**          | `SMALLINT`                      | 2-byte integer (-32,768 to 32,767)                                     | `age SMALLINT`              |
+    |                      | `INT` / `INTEGER`               | 4-byte integer                                                         | `quantity INT`              |
+    |                      | `BIGINT`                        | 8-byte integer                                                         | `views BIGINT`              |
+    |                      | `DECIMAL(p,s)` / `NUMERIC(p,s)` | Exact decimal numbers (`p` = total digits, `s` = digits after decimal) | `price DECIMAL(8,2)`        |
+    |                      | `REAL`                          | 4-byte floating-point number                                           | `rating REAL`               |
+    |                      | `DOUBLE PRECISION`              | 8-byte floating-point number                                           | `accuracy DOUBLE PRECISION` |
+    | **Character/String** | `CHAR(n)`                       | Fixed-length string (pads with spaces)                                 | `gender CHAR(1)`            |
+    |                      | `VARCHAR(n)`                    | Variable-length string (up to *n* characters)                          | `name VARCHAR(100)`         |
+    |                      | `TEXT`                          | Long text/string                                                       | `bio TEXT`                  |
+    | **Date & Time**      | `DATE`                          | Stores only the date (`YYYY-MM-DD`)                                    | `joining_date DATE`         |
+    |                      | `TIMESTAMP`                     | Stores date and time                                                   | `created_at TIMESTAMP`      |
+    |                      | `INTERVAL`*                     | Represents a duration or time interval                                 | `INTERVAL '5 days'`         |
+    
 
 # Practical Example
 
