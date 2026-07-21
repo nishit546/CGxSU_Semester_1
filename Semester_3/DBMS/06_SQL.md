@@ -377,7 +377,32 @@ Everything inside the database is deleted.
     | **Date & Time**      | `DATE`                          | Stores only the date (`YYYY-MM-DD`)                                    | `joining_date DATE`         |
     |                      | `TIMESTAMP`                     | Stores date and time                                                   | `created_at TIMESTAMP`      |
     |                      | `INTERVAL`*                     | Represents a duration or time interval                                 | `INTERVAL '5 days'`         |
+
+
+
+
+### Example
+
+    CREATE TABLE strings (
+    Id INT PRIMARY KEY,
+    code CHAR(5) not null,
+    email VARCHAR(100),
+    bio TEXT,
+    age int check (age>=18)
+    );
     
+    INSERT INTO strings (Id, code, email, bio,age)
+    VALUES
+    (1, 'AD001', 'adilahmadshah897@gmail.com', 'Hello this is the world.',19);
+    
+    INSERT INTO strings (Id, code, email, bio,age)
+    VALUES
+    (2, 'AD002', 'adil@example.com', 'Learning SQL data types.',111);
+    
+    SELECT * FROM strings;
+
+
+
 
 # Practical Example
 
@@ -438,6 +463,27 @@ DROP TABLE Student;
 ```
 
 ---
+
+
+
+
+### Project 1 – Amazon Product Inventory
+    Task
+    
+    Create a database named Amazon_DB and create a table Products with the following requirements:
+    
+    Product_ID – Auto Increment Primary Key
+    Product_Name – String (maximum 100 characters)
+    SKU_Code – String (exactly 8 characters)
+    Price – Decimal number (maximum 999999.99)
+    Stock_Quantity – Must be greater than or equal to 0
+    Is_Available – Boolean (default TRUE)
+    Category – String (cannot be NULL)
+    Brand – String
+    Added_On – Date
+    Last_Updated – Timestamp
+
+
 
 # Interview Questions
 
