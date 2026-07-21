@@ -376,7 +376,8 @@ Everything inside the database is deleted.
     |                      | `TEXT`                          | Long text/string                                                       | `bio TEXT`                  |
     | **Date & Time**      | `DATE`                          | Stores only the date (`YYYY-MM-DD`)                                    | `joining_date DATE`         |
     |                      | `TIMESTAMP`                     | Stores date and time                                                   | `created_at TIMESTAMP`      |
-    |                      | `INTERVAL`*                     | Represents a duration or time interval                                 | `INTERVAL '5 days'`         |
+    |                      | `INTERVAL`*                     | Represents a duration or time interval                                 | `INTERVAL '5 days'`  
+    |    BOOLEAN                                                True or False
 
 
 
