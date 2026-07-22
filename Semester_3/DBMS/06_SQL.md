@@ -628,6 +628,18 @@ Example
 ### SQL Clauses Practice Questions
 
 Assume the table name is Products.
+    | Column Name    | Data Type    | Constraints                         |
+    | -------------- | ------------ | ----------------------------------- |
+    | Student_ID     | INT          | Primary Key, Auto Increment         |
+    | Student_Name   | VARCHAR(100) | NOT NULL                            |
+    | Roll_No        | CHAR(8)      | UNIQUE                              |
+    | Age            | INT          | Must be greater than or equal to 18 |
+    | Gender         | VARCHAR(10)  | NOT NULL                            |
+    | Course         | VARCHAR(50)  | NOT NULL                            |
+    | Department     | VARCHAR(50)  | NOT NULL                            |
+    | CGPA           | DECIMAL(3,2) | Default 0.00                        |
+    | Admission_Date | DATE         | NOT NULL                            |
+
 
 Q1.
 
