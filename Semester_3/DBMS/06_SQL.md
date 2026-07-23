@@ -627,7 +627,7 @@ Example
 
 ### SQL Clauses Practice Questions
 
-Assume the table name is Products.
+    Assume the table name is Products.
     | Column Name    | Data Type    | Constraints                         |
     | -------------- | ------------ | ----------------------------------- |
     | Student_ID     | INT          | Primary Key, Auto Increment         |
