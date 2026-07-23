@@ -822,3 +822,102 @@ Display Product_Name as Item_Name and Price as Item_Price.
 Q8.
 
 Display all unique categories from the Products table.
+
+
+##  SQL String Functions
+
+String functions are built-in SQL functions used to manipulate and analyze text data.
+
+---
+
+## 1. `UPPER()`
+
+Converts all characters in a string to **uppercase**.
+
+### Syntax
+
+```sql
+UPPER(column_name)
+```
+
+### Example
+
+```sql
+SELECT UPPER(Product_Name)
+FROM Products;
+```
+
+**Output**
+
+| Product_Name |
+|--------------|
+| LAPTOP |
+| MOUSE |
+| KEYBOARD |
+
+---
+
+## 2. `LOWER()`
+
+Converts all characters in a string to **lowercase**.
+
+### Syntax
+
+```sql
+LOWER(column_name)
+```
+
+### Example
+
+```sql
+SELECT LOWER(Product_Name)
+FROM Products;
+```
+
+**Output**
+
+| Product_Name |
+|--------------|
+| laptop |
+| mouse |
+| keyboard |
+
+---
+
+## 3. `LENGTH()`
+
+Returns the **number of characters** in a string.
+
+### Syntax
+
+```sql
+LENGTH(column_name)
+```
+
+### Example
+
+```sql
+SELECT Product_Name, LENGTH(Product_Name) AS Length
+FROM Products;
+```
+
+**Output**
+
+| Product_Name | Length |
+|--------------|--------|
+| Laptop | 6 |
+| Mouse | 5 |
+| Keyboard | 8 |
+
+---
+
+## Summary
+
+| Function | Description | Example |
+|----------|-------------|---------|
+| `UPPER()` | Converts text to uppercase | `UPPER('sql')` → `SQL` |
+| `LOWER()` | Converts text to lowercase | `LOWER('SQL')` → `sql` |
+| `LENGTH()` | Returns the number of characters | `LENGTH('Laptop')` → `6` |
+
+
+
