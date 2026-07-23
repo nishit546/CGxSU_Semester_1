@@ -911,6 +911,38 @@ FROM Products;
 
 ---
 
+
+
+
+## 4. `SUBSTRING()`
+
+Extracts a specified part of a string.
+
+### Syntax
+
+```sql
+SUBSTRING(column_name, start_position, length)
+```
+
+- `start_position` → Starting position (starts from **1**).
+- `length` → Number of characters to extract.
+
+### Example
+
+```sql
+SELECT SUBSTRING(Product_Name, 1, 4)
+FROM Products;
+```
+
+**Output**
+
+    | Product_Name |
+    |--------------|
+    | Lapt |
+    | Mous |
+    | Keyb |
+
+
 ## Summary
 
 | Function | Description | Example |
@@ -920,4 +952,95 @@ FROM Products;
 | `LENGTH()` | Returns the number of characters | `LENGTH('Laptop')` → `6` |
 
 
+## SQL `CASE` Statement
 
+The `CASE` statement is used to apply **conditional logic** in SQL. It works like an **IF...ELSE** statement and returns a value based on the first condition that is true.
+
+---
+
+## Syntax
+
+```sql
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ...
+    ELSE result
+END
+```
+
+---
+
+## Example 1: Product Availability
+
+```sql
+SELECT Product_Name,
+       Stock_Quantity,
+       CASE
+           WHEN Stock_Quantity = 0 THEN 'Out of Stock'
+           WHEN Stock_Quantity <= 10 THEN 'Low Stock'
+           ELSE 'In Stock'
+       END AS Stock_Status
+FROM Products;
+```
+
+**Output**
+
+| Product_Name | Stock_Quantity | Stock_Status |
+|--------------|---------------:|--------------|
+| Laptop | 25 | In Stock |
+| Mouse | 8 | Low Stock |
+| Keyboard | 0 | Out of Stock |
+
+---
+
+## Example 2: Grade Classification
+
+```sql
+SELECT Student_Name,
+       Marks,
+       CASE
+           WHEN Marks >= 90 THEN 'A'
+           WHEN Marks >= 75 THEN 'B'
+           WHEN Marks >= 60 THEN 'C'
+           ELSE 'Fail'
+       END AS Grade
+FROM Students;
+```
+
+---
+
+## Example 3: Price Category
+
+```sql
+SELECT Product_Name,
+       Price,
+       CASE
+           WHEN Price >= 50000 THEN 'Expensive'
+           WHEN Price >= 10000 THEN 'Moderate'
+           ELSE 'Budget'
+       END AS Price_Category
+FROM Products;
+```
+
+---
+
+## Key Points
+
+- `CASE` is used to implement **conditional logic** in SQL.
+- Conditions are checked **from top to bottom**.
+- The **first matching condition** is returned.
+- `ELSE` is optional. If omitted and no condition matches, `NULL` is returned.
+- `CASE` can be used with `SELECT`, `WHERE`, `ORDER BY`, `GROUP BY`, and `HAVING`.
+
+---
+
+## Summary
+
+| Keyword | Description |
+|---------|-------------|
+| `CASE` | Starts the conditional expression |
+| `WHEN` | Specifies a condition |
+| `THEN` | Value returned if the condition is true |
+| `ELSE` | Default value if no conditions match |
+| `END` | Ends the `CASE` expression |
