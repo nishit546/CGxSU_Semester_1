@@ -625,6 +625,154 @@ Example
         FROM Products;
 
 
+### 10.  SQL `LIKE` Operator
+
+The `LIKE` operator is used in SQL to search for a specified pattern in a column. It is commonly used with the `WHERE` clause to filter records based on text patterns.
+
+## Syntax
+
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE column_name LIKE pattern;
+```
+
+## Wildcards
+
+| Wildcard | Description |
+|----------|-------------|
+| `%` | Matches **zero or more characters** |
+| `_` | Matches **exactly one character** |
+
+---
+
+## Examples
+
+### 1. Starts With
+
+```sql
+SELECT * FROM Products
+WHERE Name LIKE 'A%';
+```
+
+**Result:** Returns all products whose name starts with **A**.
+
+Examples:
+- Apple
+- Acer Laptop
+- AirPods
+
+---
+
+### 2. Ends With
+
+```sql
+SELECT * FROM Products
+WHERE Name LIKE '%w';
+```
+
+**Result:** Returns all products whose name ends with **w**.
+
+Examples:
+- Saw
+- Screw
+- Window
+
+---
+
+### 3. Contains
+
+```sql
+SELECT * FROM Products
+WHERE Name LIKE '%phone%';
+```
+
+**Result:** Returns all products whose name contains **phone**.
+
+Examples:
+- Smartphone
+- Headphone
+- iPhone
+
+---
+
+### 4. Exactly One Character (`_`)
+
+```sql
+SELECT * FROM Products
+WHERE Name LIKE '_at';
+```
+
+**Result:** Returns names with exactly three letters ending in **at**.
+
+Examples:
+- Cat
+- Bat
+- Hat
+
+---
+
+### 5. Second Character is 'a'
+
+```sql
+SELECT * FROM Products
+WHERE Name LIKE '_a%';
+```
+
+Examples:
+- Samsung
+- Camera
+- Table
+
+---
+
+### 6. Exactly Five Characters
+
+```sql
+SELECT * FROM Products
+WHERE Name LIKE '_____';
+```
+
+**Result:** Returns names containing exactly **5 characters**.
+
+Examples:
+- Apple
+- Mouse
+
+---
+
+## Wildcard Summary
+
+| Pattern | Meaning |
+|---------|---------|
+| `'A%'` | Starts with **A** |
+| `'%A'` | Ends with **A** |
+| `'%A%'` | Contains **A** anywhere |
+| `'A_B%'` | Starts with **A**, third character is **B** |
+| `'_____'` | Exactly **5 characters** |
+| `'_a%'` | Second character is **a** |
+
+---
+
+## Key Points
+
+- `LIKE` is used for **pattern matching**.
+- `%` matches **zero or more characters**.
+- `_` matches **exactly one character**.
+- `LIKE` is commonly used with the `WHERE` clause.
+- It is mainly used with text-based columns (`CHAR`, `VARCHAR`, `TEXT`, etc.).
+
+## Example
+
+```sql
+SELECT Product_Name
+FROM Products
+WHERE Product_Name LIKE '%Book%';
+```
+
+This query returns all products whose name contains the word **"Book"**.
+
+
 ### SQL Clauses Practice Questions
 
     Assume the table name is Products.
