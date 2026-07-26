@@ -1,10 +1,27 @@
-## Take This Data set and perform the below operations
+# College Management System - SQL Practice Dataset
 
+## Objective
+
+Practice SQL using a simple College Management database.
+
+## Create Database
+
+``` sql
+CREATE DATABASE CollegeDB;
+USE CollegeDB;
+```
+
+## Create Tables and Insert Data
+
+### Departments
+
+``` sql
 CREATE TABLE Departments (
     department_id INT PRIMARY KEY,
     department_name VARCHAR(50),
     hod_name VARCHAR(50)
 );
+
 INSERT INTO Departments VALUES
 (1,'Computer Science','Dr. Sharma'),
 (2,'Information Technology','Dr. Patel'),
@@ -26,6 +43,11 @@ INSERT INTO Departments VALUES
 (18,'Architecture','Dr. Iyer'),
 (19,'Law','Dr. Mishra'),
 (20,'Pharmacy','Dr. Kapoor');
+```
+
+### Students
+
+``` sql
 CREATE TABLE Students (
     student_id INT PRIMARY KEY,
     student_name VARCHAR(50),
@@ -34,11 +56,11 @@ CREATE TABLE Students (
     city VARCHAR(50),
     marks DECIMAL(5,2),
     department_id INT,
-    FOREIGN KEY (department_id)
-    REFERENCES Departments(department_id)
+    FOREIGN KEY (department_id) REFERENCES Departments(department_id)
 );
+
 INSERT INTO Students VALUES
-(101,'Adil','Male',21,'Ahmedabad',88,1),
+(101,'ankit','Male',21,'Ahmedabad',88,1),
 (102,'Rahul','Male',20,'Delhi',75,2),
 (103,'Priya','Female',21,'Mumbai',92,1),
 (104,'Aman','Male',22,'Jaipur',68,3),
@@ -58,15 +80,19 @@ INSERT INTO Students VALUES
 (118,'Nisha','Female',22,'Lucknow',80,17),
 (119,'Dev','Male',20,'Delhi',86,18),
 (120,'Simran','Female',21,'Mumbai',93,19);
+```
 
+### Courses
+
+``` sql
 CREATE TABLE Courses (
     course_id INT PRIMARY KEY,
     course_name VARCHAR(50),
     credits INT,
     student_id INT,
-    FOREIGN KEY (student_id)
-    REFERENCES Students(student_id)
+    FOREIGN KEY (student_id) REFERENCES Students(student_id)
 );
+
 INSERT INTO Courses VALUES
 (1,'Database Systems',4,101),
 (2,'Operating Systems',4,102),
@@ -88,5 +114,63 @@ INSERT INTO Courses VALUES
 (18,'Big Data',4,118),
 (19,'IoT',3,119),
 (20,'Compiler Design',4,120);
+```
 
-desc Departments
+## Verify
+
+``` sql
+SHOW TABLES;
+DESC Departments;
+DESC Students;
+DESC Courses;
+
+SELECT * FROM Departments;
+SELECT * FROM Students;
+SELECT * FROM Courses;
+```
+
+## Relationship
+
+-   One Department → Many Students
+-   One Student → One Course (for this dataset)
+
+## Topics
+
+-   SELECT
+-   WHERE
+-   ORDER BY
+-   GROUP BY
+-   HAVING
+-   COUNT, SUM, AVG, MIN, MAX
+-   INNER JOIN
+-   LEFT JOIN
+
+## Practice Questions
+
+### Basic
+
+1.  Display all students.
+2.  Display all departments.
+3.  Display all courses.
+4.  Show only student names.
+5.  Show distinct cities.
+6.  Students with marks \> 80.
+7.  Students from Ahmedabad.
+8.  Female students.
+9.  Sort students by marks descending.
+10. Show top 5 students by marks.
+
+### Aggregation
+
+11. Count students.
+12. Average marks.
+13. Highest marks.
+14. Lowest marks.
+15. Total marks.
+16. Students per department.
+17. Students per city.
+18. Average marks by department.
+19. Departments having average marks \> 80.
+20. Cities having more than one student.
+
+
