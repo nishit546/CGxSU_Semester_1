@@ -173,4 +173,63 @@ SELECT * FROM Courses;
 19. Departments having average marks \> 80.
 20. Cities having more than one student.
 
+###  ORDER BY Practice
 
+21. Display students sorted by marks ascending.
+22. Display students sorted by marks descending.
+23. Sort students by age.
+24. Sort students by city alphabetically.
+25. Sort students by city and then marks descending.
+26. Display top 5 students by marks.
+27. Display lowest 5 students by marks.
+28. Sort departments by name.
+29. Sort courses by credits descending.
+30. Sort students by department and marks.
+
+###  Alias (AS)
+31. Display student_name as Name.
+32. Display marks as Score.
+33. Display department_name as Department. 
+34. Display hod_name as Head Of Department.
+35. Display course_name as Subject.
+36. Display student_name and marks with aliases.
+37. Display city as Location.
+38. Display age as Student Age.
+39. Display credits as Course Credits.
+40. Display department_id as Dept ID.
+
+###  GROUP BY
+41. Count students in each department.
+42. Count students in each city.
+43. Average marks by city.
+44. Average marks by department.
+45. Maximum marks in each department.
+46. Minimum marks in each department.
+47. Total marks by city.
+48. Average age by gender.
+49. Count male and female students.
+50. Count courses based on credits.
+
+### HAVING
+51. Departments having more than one student.
+52. Cities having more than one student.
+53. Departments with average marks above 80.
+54. Cities where average marks are above 75.
+55. Departments where maximum marks exceed 90.
+56. Cities where minimum marks are below 70.
+57. Departments having total marks greater than 150.
+58. Departments with exactly one student.
+59. Genders having average age above 20.
+60. Credits having more than two courses.
+
+###  LIKE Operator
+61. Student names starting with A.
+62. Student names starting with P.
+63. Student names ending with a.
+64. Student names ending with t.
+65. Student names containing "ri".
+66. Student names where second letter is 'a'.
+67. Student names having exactly five letters.
+68. Cities starting with A.
+69. Department names ending with "Science".
+70. Course names containing "Data".
