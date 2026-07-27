@@ -1,14 +1,14 @@
-## 31 July 
+## 01 August 
 
 | Time        | CG LAB 1              | Time        | CG LAB 2              |
 | ----------- | --------------------- | ----------- | --------------------- |
-| 9:00–10:30  | DSA (Samir Sir)       | 9:00–10:30  | DBMS (Adil Sir)    |
-| 10:30–12:00 | DBMS (Adil Sir)       | 10:30–12:00 | DSA (Samir Sir)      |
+| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  | DBMS (Adil Sir)    |
+| 10:30–12:00 | DBMS (Adil Sir)       | 10:30–12:00 |React Native (Ranjan Sir)     |
 | 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
 | 1:00–2:30   | Vanguard Activity      | 1:00–2:30   | Vanguard Activity    |
 | 2:30–4:00   | Vanguard Activity    | 2:30–4:00   | Vanguard Activity      |
 
-## 30 July 
+## 31 July 
 
 | Time        | CG LAB 1              | Time        | CG LAB 2              |
 | ----------- | --------------------- | ----------- | --------------------- |
