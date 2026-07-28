@@ -1044,3 +1044,529 @@ FROM Products;
 | `THEN` | Value returned if the condition is true |
 | `ELSE` | Default value if no conditions match |
 | `END` | Ends the `CASE` expression |
+
+
+
+
+
+
+
+# SQL Joins - Complete Guide 🚀
+
+
+---
+
+## What is a JOIN?
+
+A **JOIN** is used to combine rows from **two or more tables** based on a related column.
+
+Think of it like connecting two Excel sheets using a common column.
+
+Example:
+
+Students Table
+
+    | student_id | name |
+    |------------|------|
+    | 1 | ankit |
+    | 2 | Rahul |
+    | 3 | Priya |
+
+Marks Table
+    
+    | student_id | marks |
+    |------------|-------|
+    | 1 | 90 |
+    | 3 | 85 |
+
+Using JOIN we can get
+
+    | name | marks |
+    |------|------|
+    | ankit | 90 |
+    | Priya | 85 |
+
+---
+
+# Why Do We Need JOIN?
+
+Imagine an E-commerce database.
+
+Customers
+
+    | customer_id | name |
+    |-------------|------|
+    |1|ankit|
+    |2|Rahul|
+
+Orders
+
+    | order_id | customer_id | amount |
+    |-----------|-------------|--------|
+    |101|1|500|
+    |102|2|800|
+
+Instead of storing customer name repeatedly, we store customer_id.
+
+JOIN combines them whenever required.
+
+---
+
+# Types of SQL JOIN
+
+```
+                 JOINS
+                    |
+   --------------------------------
+   |        |        |            |
+ INNER    LEFT     RIGHT       FULL
+                    |
+              SELF JOIN
+                    |
+             CROSS JOIN
+```
+
+---
+
+# Sample Database
+
+We'll use these tables throughout.
+
+## Students
+
+    | student_id | name | city_id |
+    |------------|------|---------|
+    |1           |ankit  |1|
+    |2           |Rahul  |2|
+    |3           |Aman   |3|
+    |4           |Priya  |2|
+    |5           |Riya   |NULL|
+
+---
+
+## Cities
+
+        | city_id | city |
+        |---------|------|
+        |1        |Ahmedabad|
+        |2        |Delhi|
+        |3        |Mumbai|
+        |4        |Pune|
+
+---
+
+# 1. INNER JOIN
+
+## Definition
+
+Returns only matching records from both tables.
+
+        Students
+             |
+        INNER JOIN
+             |
+        Cities
+        
+        Only Matching Rows
+        ```
+
+
+### Syntax
+        
+        ```sql
+        SELECT *
+        FROM Students
+        INNER JOIN Cities
+        ON Students.city_id = Cities.city_id;
+        ```
+
+---
+
+### Result
+
+    | student_id | name | city |
+    |------------|------|------|
+    |1           |ankit |Ahmedabad|
+    |2           |Rahul |Delhi|
+    |3           |Aman  |Mumbai|
+    |4           |Priya |Delhi|
+
+Notice:
+
+Riya is not returned because city_id is NULL.
+
+---
+
+
+> INNER JOIN returns only those rows that have matching values in both tables.
+
+---
+
+
+
+# 2. LEFT JOIN
+
+## Definition
+
+    Returns
+    
+    - All rows from LEFT table
+    - Matching rows from RIGHT table
+    
+    If no match exists
+    
+    → NULL is returned.
+    
+    ---
+
+### Syntax
+
+    ```sql
+    SELECT *
+    FROM Students
+    LEFT JOIN Cities
+    ON Students.city_id = Cities.city_id;
+    ```
+
+---
+
+### Output
+
+    | name | city |
+    |------|------|
+    |Adil  |Ahmedabad|
+    |Rahul |Delhi|
+    |Aman  |Mumbai|
+    |Priya |Delhi|
+    |Riya  |NULL|
+
+Even though Riya has no city,
+she is still shown.
+
+---
+
+
+
+# 3. RIGHT JOIN
+
+##Definition
+
+    Opposite of LEFT JOIN.
+    Returns
+    - All rows from RIGHT table
+    - Matching rows from LEFT table
+
+
+
+### Syntax
+    
+    sql
+    SELECT *
+    FROM Students
+    RIGHT JOIN Cities
+    ON Students.city_id = Cities.city_id;
+
+
+---
+
+### Output
+
+| city     | student |
+|------    |----------|
+|Ahmedabad |Adil|
+|Delhi     |Rahul|
+|Delhi     |Priya|
+|Mumbai    |Aman|
+|Pune      |NULL|
+
+Notice
+
+Pune has no students.
+
+Still appears.
+
+---
+
+
+
+# 4. FULL OUTER JOIN
+
+Definiton
+
+    Returns
+    - All rows from LEFT
+    - All rows from RIGHT
+    Matched where possible.
+    Otherwise NULL.
+
+### Syntax
+
+        sql
+        SELECT *
+        FROM Students
+        FULL OUTER JOIN Cities
+        ON Students.city_id = Cities.city_id;
+
+
+---
+
+### Output
+
+    | student | city    |    
+    |---------|---------|
+    |Adil     |Ahmedabad|
+    |Rahul    |Delhi|
+    |Priya    |Delhi|
+    |Aman     |Mumbai|
+    |Riya     |NULL|
+    |NULL     |Pune|
+    
+    ---
+
+
+
+
+# 5. CROSS JOIN
+
+### Definition
+
+    Every row joins with every row.
+Formula
+    
+    ```
+    Rows = Table1 × Table2
+    ```
+
+Example
+
+Students = 5
+
+Cities = 4
+
+Output
+
+```
+5 × 4 = 20 rows
+```
+
+---
+
+### Syntax
+
+    ```sql
+    SELECT *
+    FROM Students
+    CROSS JOIN Cities;
+    ```
+
+---
+
+### Output
+
+```
+Adil Ahmedabad
+Adil Delhi
+Adil Mumbai
+Adil Pune
+
+Rahul Ahmedabad
+Rahul Delhi
+
+...
+```
+
+# 6. SELF JOIN
+
+## Definition 
+
+    A table joins with itself.
+    Useful when employees have managers.
+
+---
+
+Employee Table
+
+    |id|name|manager_id|
+    |--|----|----------|
+    |1 |CEO        |NULL|
+    |2 |Manager    |1|
+    |3|Developer   |2|
+
+---
+
+### Query
+    
+    sql
+    SELECT
+    E.name AS Employee,
+    M.name AS Manager
+    FROM Employee E
+    JOIN Employee M
+    ON E.manager_id = M.id;
+    
+
+---
+
+Output
+
+    |Employee|Manager|
+    |----------|--------|
+    |Manager|CEO|
+    |Developer|Manager|
+
+---
+
+# JOIN vs UNION
+
+    |    JOIN        |    UNION    |
+    |----------------|-------------|
+    |Combines columns|Combines rows|
+    |Uses ON         |No ON|
+    |Horizontal Merge|Vertical Merge|
+
+---
+
+# ON vs WHERE
+
+
+Wrong understanding
+
+```
+ON = WHERE
+```
+
+❌ False
+
+---
+
+ON
+
+Used for matching tables.
+    
+    sql
+    JOIN Orders
+    ON customer.id = orders.customer_id
+    
+
+WHERE
+
+    Filters result.
+    
+    sql
+    WHERE amount > 500
+    
+
+---
+
+# Execution Order
+
+```
+FROM
+
+↓
+
+JOIN
+
+↓
+
+ON
+
+↓
+
+WHERE
+
+↓
+
+GROUP BY
+
+↓
+
+HAVING
+
+↓
+
+SELECT
+
+↓
+
+ORDER BY
+
+↓
+
+LIMIT
+```
+
+---
+
+
+# Practice Questions
+
+## Easy
+
+1. Display student name and city.
+2. Show all students even if city is missing.
+3. Show all cities even if no students.
+4. Count students in every city.
+5. Show students without city.
+
+---
+
+## Medium
+
+6. List all orders with customer names.
+7. Show customers who never placed orders.
+8. Find products never ordered.
+9. Find highest order per customer.
+10. Display employee-manager relationship.
+
+---
+
+## Hard
+
+11. Second highest salary department-wise.
+12. Customers who ordered every product.
+13. Employees earning more than manager.
+14. Consecutive login analysis.
+15. Find duplicate customers using SELF JOIN.
+
+---
+
+# JOIN Summary Table
+
+| JOIN         |         Returns |
+|--------------|-----------------|
+| INNER JOIN | Matching rows only|
+| LEFT JOIN | All left + matching right |
+| RIGHT JOIN | All right + matching left |
+| FULL OUTER JOIN | All rows from both tables |
+| CROSS JOIN | Cartesian Product |
+| SELF JOIN | Table joined with itself |
+
+---
+
+# Memory Trick
+
+```
+INNER
+Intersection
+
+LEFT
+Everything Left
+
+RIGHT
+Everything Right
+
+FULL
+Everything
+
+CROSS
+Everything × Everything
+
+SELF
+Same Table
+```
+
+---
+
+
+
