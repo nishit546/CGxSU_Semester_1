@@ -132,56 +132,234 @@ The database becomes inconsistent.
 
 ## 1. Insertion Anomaly
 
-Cannot insert department information unless a student exists.
+### Definition
 
-Example
+An **Insertion Anomaly** occurs when you **cannot insert information about one entity without inserting information about another unrelated entity**.
 
-Cannot add:
-
-```
-Department
-AI
-HOD
-Dr. Kumar
-```
-
-because there is no student.
+This happens because multiple entities are stored in the same table.
 
 ---
+
+### Example (Before Normalization)
+
+Suppose we have a single table:
+
+| StudentID | StudentName | Department | HOD |
+|-----------|-------------|------------|------|
+| 101 | Adil | CSE | Rahul |
+| 102 | Ali | IT | Amit |
+
+Now the college creates a new department:
+
+- Department: AI
+- HOD: Neha
+
+But no students have enrolled in the AI department yet.
+
+Can we insert it?
+
+| StudentID | StudentName | Department | HOD |
+|-----------|-------------|------------|------|
+| NULL | NULL | AI | Neha | ❌ |
+
+We cannot because:
+
+- `StudentID` cannot be NULL (Primary Key).
+- `StudentName` is also required.
+- The table is designed to store **students**, not departments.
+
+So, we are forced to wait until the first student joins the AI department.
+
+This is called an **Insertion Anomaly**.
+
+---
+
+### After Normalization
+
+#### Students Table
+
+| StudentID | StudentName | DepartmentID |
+|-----------|-------------|--------------|
+| 101 | Adil | 10 |
+| 102 | Ali | 20 |
+
+#### Departments Table
+
+| DepartmentID | Department | HOD |
+|--------------|------------|------|
+| 10 | CSE | Rahul |
+| 20 | IT | Amit |
+| 30 | AI | Neha | ✅
+
+Now we can insert the AI department even if there are no students.
+
+No anomaly exists.
+
 
 ## 2. Update Anomaly
 
-Need to update the same information in many rows.
+An **Update Anomaly** occurs when the **same piece of information is stored in multiple rows**. If that information changes, you must update every occurrence. Missing even one update causes inconsistent data.
 
-Example
+### Example
 
+Before Update
+
+| StudentID | StudentName | Department | HOD |
+|------------|-------------|------------|------------|
+| 1 | Adil | CSE | Dr. Sharma |
+| 2 | Rahul | CSE | Dr. Sharma |
+| 3 | Aman | CSE | Dr. Sharma |
+| 4 | John | ECE | Dr. Patel |
+
+Suppose the Head of the CSE department changes from **Dr. Sharma** to **Dr. Gupta**.
+
+You must update **every row** where the department is CSE.
+
+After Correct Update
+
+| StudentID | StudentName | Department | HOD |
+|------------|-------------|------------|------------|
+| 1 | Adil | CSE | Dr. Gupta |
+| 2 | Rahul | CSE | Dr. Gupta |
+| 3 | Aman | CSE | Dr. Gupta |
+| 4 | John | ECE | Dr. Patel |
+
+### What if One Row is Missed?
+
+| StudentID | StudentName | Department | HOD |
+|------------|-------------|------------|------------|
+| 1 | Adil | CSE | Dr. Gupta |
+| 2 | Rahul | CSE | Dr. Sharma ❌ |
+| 3 | Aman | CSE | Dr. Gupta |
+| 4 | John | ECE | Dr. Patel |
+
+Now the database contains **conflicting information** because the CSE department appears to have two different HODs.
+
+This is called an **Update Anomaly**.
+
+### How Normalization Solves It
+
+Instead of storing the HOD in every student record, create a separate **Departments** table.
+
+### Students
+
+| StudentID | StudentName | DepartmentID |
+|------------|-------------|--------------|
+| 1 | Adil | 1 |
+| 2 | Rahul | 1 |
+| 3 | Aman | 1 |
+| 4 | John | 2 |
+
+### Departments
+
+| DepartmentID | Department | HOD |
+|--------------|------------|------------|
+| 1 | CSE | Dr. Sharma |
+| 2 | ECE | Dr. Patel |
+
+When the HOD changes, you update **only one row**:
+
+```sql
+UPDATE Departments
+SET HOD = 'Dr. Gupta'
+WHERE DepartmentID = 1;
 ```
-HOD changes.
-```
 
-Update hundreds of rows.
+Every student automatically reflects the new HOD through a `JOIN`, eliminating the update anomaly.
 
----
 
 ## 3. Deletion Anomaly
 
-Deleting the last student also deletes department information.
+A **Deletion Anomaly** occurs when deleting a record unintentionally removes other important information that should have been preserved.
 
-Example
+### Example
 
-Delete
+Suppose we have the following table.
 
+| StudentID | StudentName | Department | HOD |
+|------------|-------------|------------|------------|
+| 1 | Adil | CSE | Dr. Sharma |
+| 2 | Rahul | CSE | Dr. Sharma |
+| 3 | Aman | CSE | Dr. Sharma |
+| 4 | John | ECE | Dr. Patel |
+
+Notice that **John is the only student in the ECE department.**
+
+Now suppose John graduates and his record is deleted.
+
+```sql
+DELETE FROM Students
+WHERE StudentID = 4;
 ```
-John
+
+### After Deletion
+
+| StudentID | StudentName | Department | HOD |
+|------------|-------------|------------|------------|
+| 1 | Adil | CSE | Dr. Sharma |
+| 2 | Rahul | CSE | Dr. Sharma |
+| 3 | Aman | CSE | Dr. Sharma |
+
+### What Happened?
+
+The following information has also disappeared:
+
+- ❌ ECE department
+- ❌ Dr. Patel (HOD of ECE)
+
+Even though the department still exists, its information has been lost because it was stored only in the student's record.
+
+This is called a **Deletion Anomaly**.
+
+---
+
+## How Normalization Solves It
+
+Separate the student and department information into different tables.
+
+### Students
+
+| StudentID | StudentName | DepartmentID |
+|------------|-------------|--------------|
+| 1 | Adil | 1 |
+| 2 | Rahul | 1 |
+| 3 | Aman | 1 |
+| 4 | John | 2 |
+
+### Departments
+
+| DepartmentID | Department | HOD |
+|--------------|------------|------------|
+| 1 | CSE | Dr. Sharma |
+| 2 | ECE | Dr. Patel |
+
+Now, if John is deleted:
+
+```sql
+DELETE FROM Students
+WHERE StudentID = 4;
 ```
 
-Now
+### Students
 
-```
-ECE department
-```
+| StudentID | StudentName | DepartmentID |
+|------------|-------------|--------------|
+| 1 | Adil | 1 |
+| 2 | Rahul | 1 |
+| 3 | Aman | 1 |
 
-is completely lost.
+### Departments (Unchanged)
+
+| DepartmentID | Department | HOD |
+|--------------|------------|------------|
+| 1 | CSE | Dr. Sharma |
+| 2 | ECE | Dr. Patel |
+
+The **ECE department and its HOD remain safely stored** because department information is maintained in a separate table.
+
+### Key Point
+
+A **Deletion Anomaly** happens when deleting one record accidentally deletes other valuable information. **Normalization prevents this by storing each type of information only once in its own table.**
 
 ---
 
@@ -225,8 +403,7 @@ DepartmentID → DepartmentName
 |2NF|Partial dependency|
 |3NF|Transitive dependency|
 |BCNF|Remaining dependency issues|
-|4NF|Multi-valued dependency|
-|5NF|Join dependency|
+
 
 ---
 
