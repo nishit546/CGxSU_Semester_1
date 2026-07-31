@@ -2678,76 +2678,9 @@ Returns the highest-paid employee in each department.
 
 ---
 
-# 4. Correlated Subquery
 
-A correlated subquery depends on the outer query.
 
-It executes once for **every row** of the outer query.
-
-Example
-
-Employees earning more than their department average.
-
-```sql
-SELECT *
-FROM Employees e
-WHERE salary >
-(
-    SELECT AVG(salary)
-    FROM Employees
-    WHERE dept_id = e.dept_id
-);
-```
-
-Execution
-
-Outer Row
-
-```
-Adil
-```
-
-↓
-
-Inner Query
-
-```
-Average IT Salary
-```
-
-↓
-
-Check condition
-
-↓
-
-Next Employee
-
-Repeat.
-
----
-
-# Correlated Query Visualization
-
-```
-Outer Query
-     |
-     v
-Employee Row
-     |
-     v
-Run Inner Query
-     |
-     v
-Compare
-     |
-     v
-Return/Skip
-```
-
----
-
-# 5. Nested Subquery
+# 4. Nested Subquery
 
 Subquery inside another subquery.
 
