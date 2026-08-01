@@ -233,3 +233,179 @@ SELECT * FROM Courses;
 68. Cities starting with A.
 69. Department names ending with "Science".
 70. Course names containing "Data".
+
+
+## Interview Preparation
+Database Schema
+
+### Student
+
+            Student(
+            student_id INT PRIMARY KEY,
+            student_name VARCHAR(50),
+            age INT,
+            gender VARCHAR(10),
+            city VARCHAR(50),
+            department_id INT,
+            marks INT
+            )
+
+### Department
+
+            Department(
+            department_id INT PRIMARY KEY,
+            department_name VARCHAR(50),
+            hod VARCHAR(50)
+            )
+
+### Course
+
+            Course(
+                course_id INT PRIMARY KEY,
+                course_name VARCHAR(50),
+                department_id INT,
+                credits INT
+                )
+
+### Enrollment
+
+            Enrollment(
+            enrollment_id INT PRIMARY KEY,
+            student_id INT,
+            course_id INT,
+            semester INT
+        )
+
+
+### Part A – Basic SQL 
+
+1.Display all students.
+2.Display all departments.
+3.Display all courses.
+4.Display all enrollments.
+5.Display only student names.
+6.Display students from Ahmedabad.
+7.Display students older than 20 years.
+8.Display students scoring more than 80 marks.
+9.Display students scoring between 60 and 80 marks.
+10.Display students whose city is Surat.
+11.Display distinct cities.
+12.Display distinct department IDs.
+13.Sort students by marks.
+14.Sort students by city and marks.
+15.Display the first 10 students.
+16.Count total students.
+17.Find highest marks.
+18.Find lowest marks.
+19.Find average marks.
+20.Find total marks.
+
+## Part B – GROUP BY & HAVING 
+
+1.Count students department-wise.
+2.Count students city-wise.
+3.Average marks department-wise.
+4.Highest marks department-wise.
+5.Lowest marks department-wise.
+6.Total marks department-wise.
+7.Average age department-wise.
+8.Count students gender-wise.
+9.Departments having more than 5 students.
+10.Cities having more than 3 students.
+11.Departments having average marks above 70.
+12.Cities having highest marks above 90.
+13.Departments having lowest marks below 40.
+14.Departments having exactly 4 students.
+15.Cities having exactly 2 students.
+16.Departments whose total marks exceed 500.
+17.Cities whose average marks exceed 75.
+
+
+### Part C – JOINS 
+
+1.Display student name and department name.
+2.Display student name and HOD.
+3.Display all students with department details.
+4.Display all departments with their students.
+5.Display department name and number of students.
+6.Display department name and average marks.
+7.Display department name and highest marks.
+8.Display department name and lowest marks.
+9.Display course name and department name.
+10.Display all courses with HOD names.
+11.Display department name and total courses.
+12.Display all departments even if they have no students.
+13.Display departments having no students.
+14.Display all departments even if they have no courses.
+15.Display departments having no courses.
+
+### Part D – SELF JOIN
+
+1.Find students from the same city.
+2.Find students with the same marks.
+3.Find students with the same age.
+4.Find students from the same department.
+5.Find pairs of students from Ahmedabad.
+6.Find pairs of students having equal marks.
+7.Find pairs of students in the same course.
+8.Find students enrolled in the same semester.
+9.Find duplicate student names.
+10.Find duplicate cities.
+
+
+### Part E – SUBQUERIES 
+
+1.Find students scoring above average.
+2.Find students scoring below average.
+3.Find students with the highest marks.
+4.Find students with the lowest marks.
+5.Find second highest marks.
+6.Find third highest marks.
+7.Find Nth highest marks.
+8.Find departments having maximum average marks.
+9.Find departments having minimum average marks.
+10.Find students scoring above department average.
+
+
+### Part F – UNION (111–120)
+
+1.Display all student names and HOD names using UNION.
+2.Display all department names and course names using UNION.
+3.Display all IDs from Student and Course using UNION.
+4.Display all names using UNION ALL.
+5.Display all department IDs using UNION.
+6.Display all names from Student and Department.
+7.Display all course IDs and department IDs.
+8.Display all primary keys from all tables using UNION.
+
+### Part G – Company-Level SQL (121–150)
+
+1.Department with the highest average marks.
+2.Department with the maximum students.
+3.Department with the minimum students.
+4.Student with the highest marks in each department.
+5.Student with the lowest marks in each department.
+6.Top 3 departments by average marks.
+7.Department-wise student count and course count.
+8.Courses with no enrollment.
+9.Students enrolled in the maximum number of courses.
+10.Departments where every student scored above 60.
+11.Departments where at least one student scored 100.
+12.Departments with no female students.
+13.Cities where average marks exceed department average.
+14.HOD supervising the maximum students.
+15.Department having both maximum students and maximum courses.
+16.Student enrolled in the highest-credit course.
+17.Courses with highest credits.
+18.Departments offering maximum credits.
+19.Students enrolled in all department courses.
+20.Find students sharing both city and marks.
+21.Find duplicate enrollments.
+22.Find students enrolled in more than three courses.
+23.Department with the highest enrollment.
+24.Find courses having exactly five students.
+25.Find departments where no course exists.
+26.Find HODs with no students.
+27.Find students who have not enrolled in any course.
+28.Display department performance report.
+29.Generate a complete university summary report.
