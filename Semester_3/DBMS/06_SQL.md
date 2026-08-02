@@ -5364,4 +5364,179 @@ Runs for every row
 
 ---
 
-# Summary
+# DBMS Views
+
+## What is a View?
+
+A **View** is a **virtual table** in a database. It does not store data itself; instead, it stores an SQL query. Whenever the view is accessed, the database executes the stored query and displays the result.
+
+**Definition:**
+
+> A View is a virtual table created using a `SELECT` statement that displays data from one or more tables.
+
+---
+
+# Syntax
+
+```sql
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+
+---
+
+# Example
+
+### Student Table
+
+| student_id | name | marks |
+| ---------- | ---- | ----- |
+| 1          | Adil | 85    |
+| 2          | Ali  | 72    |
+| 3          | Sara | 91    |
+
+### Create a View
+
+```sql
+CREATE VIEW TopStudents AS
+SELECT student_id, name, marks
+FROM Student
+WHERE marks >= 80;
+```
+
+### View Output
+
+| student_id | name | marks |
+| ---------- | ---- | ----- |
+| 1          | Adil | 85    |
+| 3          | Sara | 91    |
+
+---
+
+# Display a View
+
+```sql
+SELECT * FROM TopStudents;
+```
+
+---
+
+# Update a View
+
+```sql
+CREATE OR REPLACE VIEW TopStudents AS
+SELECT student_id, name, marks
+FROM Student
+WHERE marks >= 75;
+```
+
+---
+
+# Delete a View
+
+```sql
+DROP VIEW TopStudents;
+```
+
+---
+
+# Types of Views
+
+## 1. Simple View
+
+* Based on a single table.
+* Does not contain aggregate functions.
+* Usually updatable.
+
+Example:
+
+```sql
+CREATE VIEW StudentInfo AS
+SELECT student_id, name
+FROM Student;
+```
+
+---
+
+## 2. Complex View
+
+* Based on multiple tables.
+* May contain JOIN, GROUP BY, Aggregate Functions, etc.
+* Usually not updatable.
+
+Example:
+
+```sql
+CREATE VIEW DepartmentReport AS
+SELECT d.department_name,
+       COUNT(s.student_id) AS TotalStudents
+FROM Department d
+JOIN Student s
+ON d.department_id = s.department_id
+GROUP BY d.department_name;
+```
+
+---
+
+# Advantages of Views
+
+* Improve security by hiding sensitive columns.
+* Simplify complex SQL queries.
+* Reuse frequently used queries.
+* Provide data abstraction.
+* Present customized data to different users.
+
+---
+
+# Disadvantages of Views
+
+* Can be slower for very complex queries.
+* Some views cannot be updated.
+* Depends on the underlying tables.
+* Changes in base tables may affect the view.
+
+---
+
+# Difference Between Table and View
+
+| Feature          | Table       | View                           |
+| ---------------- | ----------- | ------------------------------ |
+| Stores Data      | Yes         | No (Virtual)                   |
+| Occupies Storage | Yes         | Very Little (Query Definition) |
+| Can Have Indexes | Yes         | Generally No                   |
+| Based On         | Actual Data | Query Result                   |
+| Can Be Updated   | Yes         | Sometimes                      |
+
+---
+
+# Real-World Example
+
+Suppose a company has an **Employee** table:
+
+| employee_id | name | salary | department |
+| ----------- | ---- | ------ | ---------- |
+| 1           | Adil | 70000  | IT         |
+| 2           | Sara | 90000  | HR         |
+
+Employees should not see salary information.
+
+Create a view:
+
+```sql
+CREATE VIEW EmployeeDetails AS
+SELECT employee_id, name, department
+FROM Employee;
+```
+
+Now employees can run:
+
+```sql
+SELECT * FROM EmployeeDetails;
+```
+
+without accessing salary data.
+
+---
+
