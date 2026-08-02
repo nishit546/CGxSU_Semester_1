@@ -1,3 +1,78 @@
+## 08 August 
+
+| Time        | CG LAB 1              | Time        | CG LAB 2              |
+| ----------- | --------------------- | ----------- | --------------------- |
+| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  | DBMS (Adil Sir)    |
+| 10:30–12:00 | DBMS (Adil Sir)       | 10:30–12:00 |React Native (Ranjan Sir)     |
+| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
+| 1:00–2:30   | Vanguard Activity      | 1:00–2:30   | Vanguard Activity    |
+| 2:30–4:00   | Vanguard Activity    | 2:30–4:00   | Vanguard Activity      |
+
+## 07 August 
+
+| Time        | CG LAB 1              | Time        | CG LAB 2              |
+| ----------- | --------------------- | ----------- | --------------------- |
+| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  | DBMS (Adil Sir)    |
+| 10:30–12:00 | DBMS (Adil Sir)       | 10:30–12:00 | React Native (Ranjan Sir)      |
+| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
+| 1:00–2:30   | Communication Skills      | 1:00–2:30   | Leetcode (Adil Sir)     |
+| 2:30–4:00   | Leetcode (Adil Sir)    | 2:30–4:00   | Communication Skills        |
+| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
+| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
+| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+
+## 06 August 
+
+| Time        | CG LAB 1              | Time        | CG LAB 2              |
+| ----------- | --------------------- | ----------- | --------------------- |
+| 9:00–10:30  | DSA (Samir Sir)       | 9:00–10:30  | DBMS (Adil Sir)    |
+| 10:30–12:00 | DBMS (Adil Sir)       | 10:30–12:00 | DSA (Samir Sir)      |
+| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
+| 1:00–2:30   | React Native (Ranjan Sir)      | 1:00–2:30   | Leetcode (Samir Sir)     |
+| 2:30–4:00   | Leetcode (Samir Sir)    | 2:30–4:00   | React Native (Ranjan Sir)       |
+| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
+| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
+| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+
+## 05 August 
+
+| Time        | CG LAB 1              | Time        | CG LAB 2              |
+| ----------- | --------------------- | ----------- | --------------------- |
+| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  | DBMS (Adil Sir)    |
+| 10:30–12:00 | DBMS (Adil Sir)       | 10:30–12:00 | React Native (Ranjan Sir)      |
+| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
+| 1:00–2:30   | Communication Skills      | 1:00–2:30   | Leetcode (Adil Sir)     |
+| 2:30–4:00   | Leetcode (Adil Sir)    | 2:30–4:00   | Communication Skills        |
+| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
+| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
+| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+
+## 04 August 
+
+| Time        | CG LAB 1              | Time        | CG LAB 2              |
+| ----------- | --------------------- | ----------- | --------------------- |
+| 9:00–10:30  | DSA (Samir Sir)       | 9:00–10:30  | DBMS (Adil Sir)    |
+| 10:30–12:00 | DBMS (Adil Sir)       | 10:30–12:00 | DSA (Samir Sir)      |
+| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
+| 1:00–2:30   | React Native (Ranjan Sir)      | 1:00–2:30   | Leetcode (Samir Sir)     |
+| 2:30–4:00   | Leetcode (Samir Sir)    | 2:30–4:00   | React Native (Ranjan Sir)       |
+| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
+| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
+| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+
+## 03 August 
+
+| Time        | CG LAB 1              | Time        | CG LAB 2              |
+| ----------- | --------------------- | ----------- | --------------------- |
+| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  | DBMS (Adil Sir)    |
+| 10:30–12:00 | DBMS (Adil Sir)       | 10:30–12:00 | React Native (Ranjan Sir)      |
+| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
+| 1:00–2:30   | Communication Skills      | 1:00–2:30   | Leetcode (Adil Sir)     |
+| 2:30–4:00   | Leetcode (Adil Sir)    | 2:30–4:00   | Communication Skills        |
+| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
+| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
+| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+
 ## 01 August 
 
 | Time        | CG LAB 1              | Time        | CG LAB 2              |
