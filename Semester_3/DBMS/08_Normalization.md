@@ -14,32 +14,681 @@ Instead of storing everything in one large table, we split it into logical table
 
 ---
 
-# Why Do We Need Normalization?
+# Functional Dependency (FD)
 
-Imagine this table.
+## What is Functional Dependency?
+
+A **Functional Dependency (FD)** is a relationship between two attributes in a table where the value of one attribute uniquely determines the value of another attribute.
+
+If two rows have the same value for attribute **A**, they must also have the same value for attribute **B**.
+
+### Notation
+
+```
+A → B
+```
+
+### Meaning
+
+```
+A determines B
+```
+
+or
+
+```
+Knowing A allows us to determine B.
+```
+
+---
+
+# Example 1
 
 ## Student Table
 
-| StudentID | StudentName | Department | HOD | Course |
-|------------|-------------|------------|-----|---------|
-|1|Adil|CSE|Dr. Sharma|DBMS|
-|2|Rahul|CSE|Dr. Sharma|OS|
-|3|Aman|CSE|Dr. Sharma|CN|
-|4|John|ECE|Dr. Patel|Signals|
+| StudentID | StudentName | Department |
+| --------- | ----------- | ---------- |
+| 101       | Adil        | CSE        |
+| 102       | Rahul       | IT         |
+| 103       | Aman        | ECE        |
 
-Notice:
+Functional Dependencies
 
-- "CSE" repeats many times.
-- "Dr. Sharma" repeats many times.
-- Department information is duplicated.
+```
+StudentID → StudentName
+```
 
-Problems:
+```
+StudentID → Department
+```
 
-- Wasted storage
-- Difficult updates
-- Risk of inconsistent data
+Since every StudentID belongs to exactly one student and one department, StudentID uniquely determines both.
 
 ---
+
+# Example 2
+
+## Department Table
+
+| DepartmentID | DepartmentName | HOD        |
+| ------------ | -------------- | ---------- |
+| 10           | CSE            | Dr. Sharma |
+| 20           | IT             | Dr. Patel  |
+| 30           | ECE            | Dr. Khan   |
+
+Functional Dependencies
+
+```
+DepartmentID → DepartmentName
+```
+
+```
+DepartmentID → HOD
+```
+
+One DepartmentID always has one DepartmentName and one HOD.
+
+---
+
+# Key Terms
+
+## Determinant
+
+The attribute on the **left side** of the dependency.
+
+Example
+
+```
+StudentID → StudentName
+```
+
+Here,
+
+```
+StudentID
+```
+
+is the **Determinant**.
+
+---
+
+## Dependent Attribute
+
+The attribute on the **right side** of the dependency.
+
+Example
+
+```
+StudentID → StudentName
+```
+
+Here,
+
+```
+StudentName
+```
+
+is the **Dependent Attribute**.
+
+---
+
+# Why Functional Dependency is Important
+
+Functional Dependency helps us:
+
+* Identify duplicate data
+* Remove redundancy
+* Design normalized tables
+* Find candidate keys
+* Convert tables into 2NF, 3NF and BCNF
+
+---
+
+# Types of Functional Dependency
+
+---
+
+# 1. Trivial Functional Dependency
+
+## Definition
+
+A Functional Dependency is **Trivial** if the attribute on the right side is already present on the left side.
+
+Mathematically,
+
+```
+If B ⊆ A
+
+then
+
+A → B
+```
+
+### Example
+
+Suppose the dependency is
+
+```
+(StudentID, CourseID) → StudentID
+```
+
+Since **StudentID** is already present on the left side, this dependency is **Trivial**.
+
+Another example
+
+```
+(A, B) → A
+```
+
+```
+(A, B) → B
+```
+
+Both are Trivial Functional Dependencies.
+
+---
+
+# 2. Non-Trivial Functional Dependency
+
+## Definition
+
+A dependency is **Non-Trivial** when the right-side attribute is **not** present on the left side.
+
+### Example
+
+Student Table
+
+| StudentID | StudentName |
+| --------- | ----------- |
+| 101       | Adil        |
+| 102       | Rahul       |
+
+Dependency
+
+```
+StudentID → StudentName
+```
+
+StudentName is not part of StudentID.
+
+Hence, it is a **Non-Trivial Functional Dependency**.
+
+# Armstrong's Axioms
+
+## What are Armstrong's Axioms?
+
+**Armstrong's Axioms** are a set of rules used to **infer new Functional Dependencies (FDs)** from existing Functional Dependencies.
+
+They are mainly used to:
+
+* Find new Functional Dependencies
+* Check whether a Functional Dependency is valid
+* Find Attribute Closure
+* Identify Candidate Keys
+* Normalize databases
+
+---
+
+# Why Do We Need Armstrong's Axioms?
+
+Suppose we know:
+
+```text
+StudentID → DepartmentID
+DepartmentID → DepartmentName
+```
+
+Can we conclude that
+
+```text
+StudentID → DepartmentName
+```
+
+Yes.
+
+Armstrong's Axioms help us derive such dependencies logically.
+
+---
+
+# Armstrong's Three Basic Axioms
+
+## 1. Reflexivity Rule
+
+### Rule
+
+If **Y is a subset of X**, then
+
+```text
+X → Y
+```
+
+### Meaning
+
+A set of attributes always determines its own subset.
+
+### Example
+
+Suppose
+
+```text
+(StudentID, CourseID)
+```
+
+Then,
+
+```text
+(StudentID, CourseID) → StudentID
+```
+
+```text
+(StudentID, CourseID) → CourseID
+```
+
+Both are valid because the right-side attribute already exists on the left side.
+
+### Real Example
+
+Table
+
+| StudentID | CourseID |
+| --------- | -------- |
+| 101       | DBMS     |
+| 102       | OS       |
+
+Functional Dependency
+
+```text
+(StudentID, CourseID) → StudentID
+```
+
+This is also a **Trivial Functional Dependency**.
+
+---
+
+## 2. Augmentation Rule
+
+### Rule
+
+If
+
+```text
+X → Y
+```
+
+then
+
+```text
+XZ → YZ
+```
+
+for any attribute set **Z**.
+
+### Meaning
+
+If a dependency is true, adding the same attribute(s) to both sides keeps it true.
+
+### Example
+
+Given
+
+```text
+StudentID → StudentName
+```
+
+Add CourseID to both sides.
+
+We get
+
+```text
+(StudentID, CourseID) → (StudentName, CourseID)
+```
+
+This dependency is also valid.
+
+### Real Example
+
+Students
+
+| StudentID | StudentName |
+| --------- | ----------- |
+| 101       | Adil        |
+| 102       | Rahul       |
+
+Known FD
+
+```text
+StudentID → StudentName
+```
+
+After Augmentation
+
+```text
+(StudentID, Semester) → (StudentName, Semester)
+```
+
+---
+
+## 3. Transitivity Rule
+
+### Rule
+
+If
+
+```text
+X → Y
+```
+
+and
+
+```text
+Y → Z
+```
+
+then
+
+```text
+X → Z
+```
+
+### Meaning
+
+If X determines Y, and Y determines Z, then X also determines Z.
+
+### Example
+
+Suppose
+
+```text
+StudentID → DepartmentID
+```
+
+and
+
+```text
+DepartmentID → DepartmentName
+```
+
+Then,
+
+```text
+StudentID → DepartmentName
+```
+
+### Real Example
+
+| StudentID | DepartmentID | DepartmentName |
+| --------- | ------------ | -------------- |
+| 101       | 10           | CSE            |
+| 102       | 20           | IT             |
+
+Dependencies
+
+```text
+StudentID → DepartmentID
+```
+
+```text
+DepartmentID → DepartmentName
+```
+
+Derived Dependency
+
+```text
+StudentID → DepartmentName
+```
+
+This is called **Transitivity**.
+
+---
+
+# Secondary Rules (Derived from Armstrong's Axioms)
+
+These rules are obtained using the three basic axioms.
+
+---
+
+## 1. Union Rule (Additivity)
+
+### Rule
+
+If
+
+```text
+X → Y
+```
+
+and
+
+```text
+X → Z
+```
+
+then
+
+```text
+X → YZ
+```
+
+### Example
+
+Given
+
+```text
+StudentID → StudentName
+```
+
+```text
+StudentID → Department
+```
+
+Then
+
+```text
+StudentID → (StudentName, Department)
+```
+
+---
+
+## 2. Decomposition Rule (Projectivity)
+
+### Rule
+
+If
+
+```text
+X → YZ
+```
+
+then
+
+```text
+X → Y
+```
+
+and
+
+```text
+X → Z
+```
+
+### Example
+
+Given
+
+```text
+StudentID → (StudentName, Department)
+```
+
+Then
+
+```text
+StudentID → StudentName
+```
+
+```text
+StudentID → Department
+```
+
+---
+
+## 3. Pseudotransitivity Rule
+
+### Rule
+
+If
+
+```text
+X → Y
+```
+
+and
+
+```text
+WY → Z
+```
+
+then
+
+```text
+WX → Z
+```
+
+### Example
+
+Given
+
+```text
+StudentID → DepartmentID
+```
+
+```text
+(DepartmentID, CourseID) → Faculty
+```
+
+Then
+
+```text
+(StudentID, CourseID) → Faculty
+```
+
+---
+
+# Summary Table
+
+| Rule               | Formula                          | Example                                                                              |
+| ------------------ | -------------------------------- | ------------------------------------------------------------------------------------ |
+| Reflexivity        | If Y ⊆ X, then X → Y             | (StudentID, CourseID) → StudentID                                                    |
+| Augmentation       | If X → Y, then XZ → YZ           | StudentID → StudentName ⇒ (StudentID, CourseID) → (StudentName, CourseID)            |
+| Transitivity       | If X → Y and Y → Z, then X → Z   | StudentID → DepartmentID, DepartmentID → DepartmentName ⇒ StudentID → DepartmentName |
+| Union              | If X → Y and X → Z, then X → YZ  | StudentID → Name, StudentID → Department                                             |
+| Decomposition      | If X → YZ, then X → Y and X → Z  | StudentID → (Name, Department)                                                       |
+| Pseudotransitivity | If X → Y and WY → Z, then WX → Z | StudentID → DepartmentID, (DepartmentID, CourseID) → Faculty                         |
+
+---
+
+# Memory Trick
+
+```text
+Reflexivity
+=
+Subset
+
+Augmentation
+=
+Add same attributes on both sides
+
+Transitivity
+=
+Chain Rule
+
+Union
+=
+Combine
+
+Decomposition
+=
+Split
+
+Pseudotransitivity
+=
+Mixed Chain Rule
+```
+
+---
+
+# Interview Questions
+
+### Q1. What are Armstrong's Axioms?
+
+Armstrong's Axioms are a set of inference rules used to derive new Functional Dependencies from existing Functional Dependencies.
+
+---
+
+### Q2. Name the three basic Armstrong's Axioms.
+
+* Reflexivity
+* Augmentation
+* Transitivity
+
+---
+
+### Q3. What is the Reflexivity Rule?
+
+If **Y is a subset of X**, then
+
+```text
+X → Y
+```
+
+---
+
+### Q4. What is the Augmentation Rule?
+
+If
+
+```text
+X → Y
+```
+
+then
+
+```text
+XZ → YZ
+```
+
+---
+
+### Q5. What is the Transitivity Rule?
+
+If
+
+```text
+X → Y
+```
+
+and
+
+```text
+Y → Z
+```
+
+then
+
+```text
+X → Z
+```
+
+---
+
+### Q6. What are the derived rules of Armstrong's Axioms?
+
+* Union
+* Decomposition
+* Pseudotransitivity
+
+
+
+.
 
 # Why Normalize if We Can Use JOIN?
 
@@ -363,37 +1012,6 @@ A **Deletion Anomaly** happens when deleting one record accidentally deletes oth
 
 ---
 
-# Functional Dependency
-
-A functional dependency means one attribute determines another.
-
-Notation
-
-```
-A → B
-```
-
-Meaning
-
-```
-A determines B
-```
-
-Example
-
-```
-StudentID → StudentName
-```
-
-One student ID always has one student name.
-
-Another
-
-```
-DepartmentID → DepartmentName
-```
-
----
 
 # Normal Forms Overview
 
