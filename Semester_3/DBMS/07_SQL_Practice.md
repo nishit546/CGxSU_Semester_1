@@ -235,96 +235,82 @@ SELECT * FROM Courses;
 70. Course names containing "Data".
 
 
-## Interview Preparation
-Database Schema
+# SQL Interview Preparation
+
+## Database Schema
 
 ### Student
 
-            Student(
-            student_id INT PRIMARY KEY,
-            student_name VARCHAR(50),
-            age INT,
-            gender VARCHAR(10),
-            city VARCHAR(50),
-            department_id INT,
-            marks INT
-            )
+```sql
+Student(
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(50),
+    age INT,
+    gender VARCHAR(10),
+    city VARCHAR(50),
+    department_id INT,
+    marks INT
+)
+```
 
 ### Department
 
-            Department(
-            department_id INT PRIMARY KEY,
-            department_name VARCHAR(50),
-            hod VARCHAR(50)
-            )
+```sql
+Department(
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(50),
+    hod VARCHAR(50)
+)
+```
 
 ### Course
 
-            Course(
-                course_id INT PRIMARY KEY,
-                course_name VARCHAR(50),
-                department_id INT,
-                credits INT
-                )
+```sql
+Course(
+    course_id INT PRIMARY KEY,
+    course_name VARCHAR(50),
+    department_id INT,
+    credits INT
+)
+```
 
 ### Enrollment
 
-            Enrollment(
-            enrollment_id INT PRIMARY KEY,
-            student_id INT,
-            course_id INT,
-            semester INT
-        )
-
-
-# SQL Interview Preparation Questions
+```sql
+Enrollment(
+    enrollment_id INT PRIMARY KEY,
+    student_id INT,
+    course_id INT,
+    semester INT
+)
+```
 
 ---
 
+# SQL Interview Preparation Questions
+
 ## Part A – Basic SQL
 
-1. Display all students.
-2. Display all departments.
-3. Display all courses.
-4. Display all enrollments.
-5. Display only student names.
-6. Display students from Ahmedabad.
-7. Display students older than 20 years.
-8. Display students scoring more than 80 marks.
-9. Display students scoring between 60 and 80 marks.
-10. Display students whose city is Surat.
-11. Display distinct cities.
-12. Display distinct department IDs.
-13. Sort students by marks.
-14. Sort students by city and marks.
-15. Display the first 10 students.
-16. Count total students.
-17. Find highest marks.
-18. Find lowest marks.
-19. Find average marks.
-20. Find total marks.
+1. Display all enrollments.
+2. Display students older than 20 years.
+3. Display students scoring between 60 and 80 marks.
+4. Display distinct department IDs.
 
 ---
 
 ## Part B – GROUP BY & HAVING
 
-1. Count students department-wise.
-2. Count students city-wise.
-3. Average marks department-wise.
-4. Highest marks department-wise.
-5. Lowest marks department-wise.
-6. Total marks department-wise.
-7. Average age department-wise.
-8. Count students gender-wise.
-9. Departments having more than 5 students.
-10. Cities having more than 3 students.
-11. Departments having average marks above 70.
-12. Cities having highest marks above 90.
-13. Departments having lowest marks below 40.
-14. Departments having exactly 4 students.
-15. Cities having exactly 2 students.
-16. Departments whose total marks exceed 500.
-17. Cities whose average marks exceed 75.
+1. Total marks department-wise.
+2. Average age department-wise.
+3. Departments having more than 5 students.
+4. Cities having more than 3 students.
+5. Departments having average marks above 70.
+6. Cities having highest marks above 90.
+7. Departments having lowest marks below 40.
+8. Departments having exactly 4 students.
+9. Cities having exactly 2 students.
+10. Departments whose total marks exceed 500.
+11. Cities whose average marks exceed 75.
 
 ---
 
