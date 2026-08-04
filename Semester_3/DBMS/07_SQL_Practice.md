@@ -377,6 +377,18 @@ Enrollment(
 
 ---
 
+Part G – Views
+Create a view for students scoring above 80.
+Create department-wise average marks view.
+Create a student-department view.
+Display data using a view.
+Update data through a view.
+Drop a view.
+Create a JOIN view.
+Create a LEFT JOIN view.
+Create a view using CASE.
+Create a top students view.
+
 ## Part G – Company-Level SQL
 
 1. Department with the highest average marks.
