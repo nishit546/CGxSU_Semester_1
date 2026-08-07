@@ -1109,9 +1109,9 @@ Now every non-key column depends on the entire key.
 
 ## Rule
 
-- Must satisfy 2NF.
-- Remove transitive dependency.
-
+-1. Must satisfy 2NF.
+2. No Transitivity dependency exist
+      Non prime attribute should not find the non prime attribute
 Example
 
 Wrong
