@@ -1058,7 +1058,9 @@ Every cell contains exactly one value.
 - Must satisfy 1NF.
   
 There should not be any partial dependency
+
 1.All non - prime attributes must be fully dependent on primary key
+
 2.Non Prime attribute can not depend on the part of Primary Key
 
 
