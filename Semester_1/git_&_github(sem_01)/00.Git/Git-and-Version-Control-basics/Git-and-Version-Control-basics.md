@@ -1,4 +1,4 @@
-# Git & Version Control --- Student Notes
+# Git & Version Control
 
 ## Topic 1: Version Control Basics
 
@@ -248,30 +248,6 @@ Each developer has their own repository.
 
 ------------------------------------------------------------------------
 
-## Comparison of VCS Types
-
-  -----------------------------------------------------------------------
-  Feature           Local VCS         Centralized VCS   Distributed VCS
-  ----------------- ----------------- ----------------- -----------------
-  Repository        Local computer    Central server    Every clone +
-  location                                              optional remote
-
-  Collaboration     Limited           Good              Excellent
-
-  Offline commits   Yes               Usually no        Yes
-
-  Complete history  Yes               Usually no        Yes
-  locally                                               
-
-  Network           Low               High              Low for local
-  dependency                                            work
-
-  Examples          RCS               SVN, CVS          Git, Mercurial
-
-  Branching support Limited/varies    Supported         Strong
-
-  Common today      Less common       Still used        Very common
-  -----------------------------------------------------------------------
 
 ### Important Point
 
@@ -427,29 +403,6 @@ git config --global user.email
 
 ------------------------------------------------------------------------
 
-## Local vs Global Configuration
-
-### Global Configuration
-
-The `--global` option applies the setting to your user account on the
-computer.
-
-``` bash
-git config --global user.name "Your Name"
-```
-
-### Local Repository Configuration
-
-A setting can also be configured for only the current repository.
-
-``` bash
-git config user.name "Project Name"
-```
-
-Local repository configuration takes precedence over the global value
-for that repository.
-
-------------------------------------------------------------------------
 
 # Topic 6: Create Your First Git Repository
 
@@ -960,19 +913,6 @@ Combining changes from different branches.
 
 A repository hosted somewhere outside your local computer, such as on a
 Git hosting platform.
-
-## Clone
-
-Creating a local copy of a remote Git repository.
-
-## Push
-
-Sending local commits to a remote repository.
-
-## Pull
-
-Fetching changes from a remote repository and integrating them into the
-current branch.
 
 ------------------------------------------------------------------------
 
