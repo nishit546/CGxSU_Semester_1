@@ -1,4 +1,4 @@
-# LEC-14: Indexing in DBMS
+# Indexing in DBMS
 
 ## 1. What is Indexing?
 
