@@ -410,86 +410,9 @@ is enough.
 
 ---
 
-# 6. `git pull`, `git fetch`, `git merge`
+# 6. `git pull`
 
-These commands are used to bring changes from a remote repository into your local repository.
-
----
-
-## `git fetch`
-
-`git fetch` downloads information and commits from the remote repository.
-
-It does **not automatically merge those changes into your current branch**.
-
-```bash
-git fetch
-```
-
-Or:
-
-```bash
-git fetch origin
-```
-
-Think:
-
-```text
-Remote Repository
-       |
-       | git fetch
-       v
-Local Git Repository
-```
-
-Your current working files are not automatically changed by the fetch itself.
-
-### Why use `git fetch`?
-
-It lets you inspect remote changes before deciding what to do with them.
-
----
-
-## `git merge`
-
-`git merge` combines changes from one branch into another branch.
-
-Suppose you are on:
-
-```text
-main
-```
-
-and want to merge:
-
-```text
-feature-login
-```
-
-Run:
-
-```bash
-git switch main
-git merge feature-login
-```
-
-Git attempts to combine the histories.
-
-### Basic idea
-
-```text
-main
-  \
-   feature-login
-
-       ↓ git merge feature-login
-
-main
-  \
-   feature-login
-       \
-        merged changes
-```
+This command used to bring changes from a remote repository into your local repository.
 
 ---
 
@@ -501,16 +424,6 @@ Basic command:
 
 ```bash
 git pull
-```
-
-A common mental model is:
-
-```text
-git pull
-    ≈
-git fetch
-+
-git merge
 ```
 
 For example:
@@ -526,24 +439,6 @@ Get changes from origin/main
         +
 Integrate them into current branch
 ```
-
-### `git fetch` vs `git pull`
-
-| Command | Downloads Changes | Automatically Integrates |
-|---|---:|---:|
-| `git fetch` | Yes | No |
-| `git pull` | Yes | Usually yes |
-| `git merge` | No | Yes |
-
-### Simple way to remember
-
-```text
-fetch → Get changes
-merge → Combine changes
-pull  → Get + integrate
-```
-
----
 
 # 7. `git show`
 
@@ -604,7 +499,7 @@ shows the details of that commit.
 
 ---
 
-# 8. `git branch`, `git switch`, `git checkout`
+# 8. `git branch`, `git switch`
 
 Git branches allow developers to work on different features or changes without directly modifying the main development branch.
 
@@ -660,48 +555,6 @@ may show:
 
 ---
 
-## `git checkout`
-
-`git checkout` is an older, multi-purpose Git command.
-
-For switching branches:
-
-```bash
-git checkout feature-login
-```
-
-For creating and switching to a branch:
-
-```bash
-git checkout -b feature-login
-```
-
-Modern Git provides `git switch` specifically for branch operations, which makes the intention clearer.
-
-### Comparison
-
-```bash
-git switch feature-login
-```
-
-and:
-
-```bash
-git checkout feature-login
-```
-
-both switch to an existing branch.
-
-For new Git users, prefer:
-
-```bash
-git switch
-```
-
-for branch switching.
-
----
-
 # 9. Create and Switch to a Branch
 
 There are two steps:
@@ -732,16 +585,6 @@ Create feature-login
         +
 Switch to feature-login
 ```
-
-### Older method
-
-You may also see:
-
-```bash
-git checkout -b feature-login
-```
-
-This does the same basic job.
 
 ### Example
 
@@ -1101,101 +944,7 @@ as remote names.
 
 ---
 
-# 14. `git remote add` and `git remote remove`
-
-## `git remote add`
-
-Used to connect an existing local Git repository to a remote repository.
-
-### Syntax
-
-```bash
-git remote add <remote-name> <repository-url>
-```
-
-### Common Example
-
-```bash
-git remote add origin https://github.com/username/project.git
-```
-
-Now check:
-
-```bash
-git remote -v
-```
-
-You should see:
-
-```text
-origin  https://github.com/username/project.git (fetch)
-origin  https://github.com/username/project.git (push)
-```
-
-### Typical Workflow
-
-If you create a repository locally:
-
-```bash
-mkdir my-project
-cd my-project
-git init
-```
-
-Create a commit:
-
-```bash
-git add .
-git commit -m "Initial commit"
-```
-
-Then connect it to GitHub:
-
-```bash
-git remote add origin https://github.com/username/my-project.git
-```
-
-Push:
-
-```bash
-git push -u origin main
-```
-
----
-
-## `git remote remove`
-
-Removes a remote connection from your local Git repository.
-
-### Syntax
-
-```bash
-git remote remove <remote-name>
-```
-
-Example:
-
-```bash
-git remote remove origin
-```
-
-Check:
-
-```bash
-git remote -v
-```
-
-The remote will no longer be listed.
-
-### Important
-
-This does **not delete the GitHub repository**.
-
-It only removes the remote connection from your local repository.
-
----
-
-# 15. `.gitignore`
+# 14. `.gitignore`
 
 `.gitignore` is a special file that tells Git which files and folders should be ignored.
 
