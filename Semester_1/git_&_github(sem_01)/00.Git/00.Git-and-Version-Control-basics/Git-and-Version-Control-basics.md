@@ -1033,7 +1033,7 @@ git init
 git status
 git add .
 git commit -m "Initial commit"
-git
+git log
 git log --oneline
 git diff
 git diff --staged

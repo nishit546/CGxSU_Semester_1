@@ -381,33 +381,6 @@ instead of:
 git push origin main
 ```
 
-### Example with a feature branch
-
-```bash
-git switch -c feature-login
-```
-
-Make changes:
-
-```bash
-git add .
-git commit -m "Add login feature"
-```
-
-First push:
-
-```bash
-git push -u origin feature-login
-```
-
-After that:
-
-```bash
-git push
-```
-
-is enough.
-
 ---
 
 # 6. `git pull`
