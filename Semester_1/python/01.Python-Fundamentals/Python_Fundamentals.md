@@ -29,31 +29,31 @@ Python is used in many areas:
 ### Important characteristics of Python
 
   -----------------------------------------------------------------------
-  Feature                             Meaning
+  Feature                   |         Meaning
   ----------------------------------- -----------------------------------
-  High-level                          You can write programs without
+  High-level                :        You can write programs without
                                       dealing directly with hardware
                                       details.
 
-  Interpreted                         Python code is executed by the
+  Interpreted               :         Python code is executed by the
                                       Python runtime.
 
-  Dynamically typed                   You do not normally declare a
+  Dynamically typed         :         You do not normally declare a
                                       variable's type explicitly.
 
-  General-purpose                     Python can be used for many
+  General-purpose           :         Python can be used for many
                                       different types of applications.
 
-  Object-oriented                     Python supports classes and
+  Object-oriented           :          Python supports classes and
                                       objects.
 
-  Easy to read                        Python syntax is designed to be
+  Easy to read              :          Python syntax is designed to be
                                       simple and readable.
 
-  Cross-platform                      Python programs can run on Windows,
+  Cross-platform            :          Python programs can run on Windows,
                                       macOS, Linux, and other systems.
 
-  Open source                         Python is freely available and has
+  Open source               :          Python is freely available and has
                                       a large community.
   -----------------------------------------------------------------------
 
@@ -728,16 +728,16 @@ Common Python data types include:
 
   Data Type    Example              Description
   ------------ -------------------- -------------------------------
-  `int`        `10`                 Integer numbers
-  `float`      `10.5`               Decimal numbers
-  `complex`    `2 + 3j`             Complex numbers
-  `str`        `"Hello"`            Text
-  `bool`       `True`               Boolean value
-  `list`       `[1, 2, 3]`          Ordered, mutable collection
-  `tuple`      `(1, 2, 3)`          Ordered, immutable collection
-  `set`        `{1, 2, 3}`          Collection of unique values
-  `dict`       `{"name": "Amit"}`   Key-value collection
-  `NoneType`   `None`               Represents absence of a value
+  `int`        `10`                 Integer numbers |
+  `float`      `10.5`               Decimal numbers |
+  `complex`    `2 + 3j`             Complex numbers  |
+  `str`        `"Hello"`            Text |
+  `bool`       `True`               Boolean value |
+  `list`       `[1, 2, 3]`          Ordered, mutable collection |
+  `tuple`      `(1, 2, 3)`          Ordered, immutable collection |
+  `set`        `{1, 2, 3}`          Collection of unique values |
+  `dict`       `{"name": "Amit"}`   Key-value collection | 
+  `NoneType`   `None`               Represents absence of a value |
 
 For this beginner topic, focus first on:
 
