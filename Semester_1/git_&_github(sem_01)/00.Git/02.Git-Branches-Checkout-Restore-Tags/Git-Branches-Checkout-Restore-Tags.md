@@ -60,41 +60,6 @@ Use `git reflog`, recreate the branch, then push:
 git push -u origin feature/login
 ```
 
-## Restore Deleted File
-
-### Before staging
-
-``` bash
-git restore file.txt
-```
-
-### After staging deletion
-
-``` bash
-git restore --staged file.txt
-git restore file.txt
-```
-
-### After commit
-
-``` bash
-git restore --source=HEAD~1 file.txt
-```
-
-## Restore Previous Version
-
-View history:
-
-``` bash
-git log --oneline
-```
-
-Restore one file:
-
-``` bash
-git restore --source=abc123 app.js
-```
-
 Temporarily visit an old commit:
 
 ``` bash
@@ -117,7 +82,6 @@ git revert abc123
 ## Interview Tips
 
 -   `git checkout` is older than `git switch`.
--   `git restore` restores files.
 -   `git reflog` often helps recover deleted branches.
 
 ## Git Tag
