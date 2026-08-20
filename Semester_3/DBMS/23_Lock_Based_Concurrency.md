@@ -1,5 +1,5 @@
 
-# . Practical MySQL Example
+# Practical Concurrency Example
 
 ## Create Database and Table
 
