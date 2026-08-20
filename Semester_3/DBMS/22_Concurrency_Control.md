@@ -299,23 +299,6 @@ X = Exclusive Lock
 
 ---
 
-# Practical MySQL Lock Demonstration
-
-## 8. Create Database and Table
-
-Use MySQL Workbench.
-
-```sql
-CREATE DATABASE lock_demo;
-
-USE lock_demo;
-
-CREATE TABLE accounts (
-    account_id INT PRIMARY KEY,
-    name VARCHAR(50),
-    balance INT
-);
-
 INSERT INTO accounts VALUES
 (1, 'Adil', 10000),
 (2, 'Rahul', 5000);
