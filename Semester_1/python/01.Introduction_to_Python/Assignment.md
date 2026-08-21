@@ -68,7 +68,7 @@ welcome.py
 
 Write a small program that displays a welcome message. Add one useful comment describing the purpose of the program.
 
-### 30.
+### 16.
 Create a Python file named:
 
 ```text
