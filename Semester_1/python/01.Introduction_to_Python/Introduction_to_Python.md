@@ -244,20 +244,25 @@ Python is often called an **interpreted language**, but saying only "Python is i
 A more accurate beginner-friendly explanation is:
 
 ```text
-Python Source Code
+  Python Source Code
         |
         v
-Python Compiler
+   Python Compiler
         |
         v
-Python Bytecode
+     Bytecode
         |
         v
-Python Virtual Machine (PVM)
+  (Python Interpreter)
+Python Virtual Machine (runtime)
         |
         v
-Execution
+  Machine instructions
+        |
+        v
+       CPU
 ```
+
 
 ### Step 1: Write Python Source Code
 
