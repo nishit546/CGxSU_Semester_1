@@ -297,10 +297,3 @@ Where:
 S = Shared Lock  
 X = Exclusive Lock
 
----
-
-INSERT INTO accounts VALUES
-(1, 'Adil', 10000),
-(2, 'Rahul', 5000);
-
-SELECT * FROM accounts;
