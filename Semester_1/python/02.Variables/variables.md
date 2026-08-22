@@ -950,8 +950,6 @@ when these values represent a student's information.
 
 # Quick Revision Activity
 
-Before moving to the next topic, explain these concepts in your own words:
-
 1. Variable
 2. Assignment
 3. Reassignment
@@ -960,4 +958,3 @@ Before moving to the next topic, explain these concepts in your own words:
 6. `snake_case`
 7. Multiple assignment
 
-Also make sure you can look at a variable name and explain whether it is valid, and why.
