@@ -27,5 +27,3 @@
 13. What does `router.refresh()` re-run on the server, and what does it not clear?
 
 14. What is the difference between `router.back()` and `router.replace()`?
-
-15. A page needs normal in-app links, a post-login redirect, and a hard server guard. Which navigation tool fits each case?
