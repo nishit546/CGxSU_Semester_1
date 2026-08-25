@@ -408,7 +408,7 @@ Python has many data types, but in this topic we are focusing on these basic one
 
 | Data Type | Example | Common Use |
 |---|---|---|
-| `int` | `18` | Whole numbers |
+| `int` | `18` | Negative & Positive Whole numbers | 
 | `float` | `5.8` | Decimal numbers |
 | `str` | `"Rahul"` | Text |
 | `bool` | `True` | True/false information |
