@@ -90,6 +90,6 @@ In your own words, explain why JavaScript became so popular and multipurpose. Me
 
 ---
 
-### Deadline : 9th September, 2026.
+### Deadline : 12th September, 2026.
 
 ---
