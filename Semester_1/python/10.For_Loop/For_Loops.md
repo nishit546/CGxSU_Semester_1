@@ -75,17 +75,7 @@ Without loops, these tasks would require unnecessary repeated code.
 
 ---
 
-# 3. Two Common Types of Loops
-
-Python provides different ways to perform repetition.
-
-We have already seen the:
-
-```python
-while
-```
-
-loop.
+# 3. Common Types of Loops
 
 Now we will learn:
 
@@ -95,23 +85,9 @@ for
 
 loop.
 
-Both are used for repetition, but they are useful in different situations.
-
 ---
 
-# 4. `while` Loop vs `for` Loop
-
-A `while` loop is commonly useful when repetition depends on a condition.
-
-Example:
-
-```python
-number = 5
-
-while number > 0:
-    print(number)
-    number = number - 1
-```
+# 4. `for` Loop
 
 A `for` loop is especially useful when we want to go through a known sequence of values or repeat something for a known range.
 
