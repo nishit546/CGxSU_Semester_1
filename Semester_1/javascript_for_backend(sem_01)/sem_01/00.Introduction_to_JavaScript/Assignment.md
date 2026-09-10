@@ -16,7 +16,7 @@
 
 **Q4.** What is **Dynamic Typing** in JavaScript?
 
-**Q5.** Expand **ECMAScript**. What is its relation with JavaScript?
+**Q5.** Expanin **ECMAScript**. What is its relation with JavaScript?
 
 ---
 
