@@ -151,35 +151,22 @@ Start with the given value, then use `/=` to update it:
 
 ***
 
-## 6. Modulus and Assign `%=`
 
-Start with the given value, then use `%=` to update it:
+## Modulus and Assign `%=` 
 
-1. A number is 137. Find the remainder when divided by 10 using `%=` and print the result.  
-2. A number is 250. Find the remainder when divided by 7 using `%=` and print the result.  
-3. A number is 1,000. Find the remainder when divided by 13 using `%=` and print the result.  
-4. A number is 89. Find the remainder when divided by 5 using `%=` and print the result.  
-5. A number is 365. Find the remainder when divided by 12 using `%=` and print the result.
-
-***
-
-## 7. Exponentiation and Assign `**=`  (3 questions)
-
-Start with the given value, then use `**=` to update it:
-
-1. A number is 5. Raise it to the power 3 using `**=` and print the result.  
-2. A number is 4. Raise it to the power 4 using `**=` and print the result.  
-3. A number is 10. Raise it to the power 2 using `**=` and print the result.
+1. A shop has 137 candies and packs them in boxes of 10; find the candies left using `%=`.  
+2. A coach has 250 students and makes teams of 7; find the students left using `%=`.  
+3. A project runs for 1,000 days; find the days left after full weeks using `%=`.  
+4. A hall has 89 chairs arranged in rows of 5; find the chairs left using `%=`.  
+5. A loan runs for 365 months; find the months left after full years using `%=`.
 
 ***
 
-You can now give this assignment directly to students as `js-operators-assignment.js` instructions.
+## Exponentiation and Assign `**=` 
 
-## 6. Exponentiation `**`
+1. A square garden has side 10 m; find its area using `**=`.  
+2. A cube box has edge 4 cm; find its volume using `**=`.  
+3. An image’s size factor is 3; find the total area growth factor using `**=`.
 
-Write a JavaScript program to solve each problem:
 
-1. Find the volume of a cube with a side length of 6 cm using `side ** 3`.
-2. A bacteria culture doubles every hour. Calculate the number of bacteria after 4 hours using exponentiation.
-3. Calculate the total number of cells in a square arrangement with 9 cells on each side using `side ** 2`.
 
