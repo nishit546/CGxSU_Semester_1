@@ -169,7 +169,7 @@ Start with the given value, then use `/=` to update it:
 3. An image’s size factor is 3; find the total area growth factor using `**=`.
 
 
-# Part C: Comparison & Relational Operators – Short Real-Life Scenarios
+# Part C: Comparison & Relational Operators 
 
 For each question, declare variables, perform the comparison, and print `true` or `false`.  
 Use meaningful variable names and add brief comments.
