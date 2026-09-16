@@ -567,4 +567,15 @@ Therefore:
     High Availability
           ↓
     Fault Tolerance
-```
+
+### Disadvantages of Database Clustering
+
+High Cost – Requires multiple servers and additional infrastructure.
+
+Complexity – Setup, configuration, and management are more complicated.
+
+Data Synchronization – Keeping multiple nodes consistent can be challenging.
+
+Network Dependency – Network failures or latency can affect the cluster.
+
+Difficult Maintenance – Monitoring, troubleshooting, and updating multiple nodes is harder.
