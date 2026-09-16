@@ -953,7 +953,7 @@ console.log(typeof Infinity);    // "number"
 
 ***
 
-## 7. Type Coercion (Short and Simple)
+## 7. Type Coercion 
 
 **Definition:**  
 Type coercion means JavaScript automatically converts one data type to another when needed.
