@@ -169,4 +169,103 @@ Start with the given value, then use `/=` to update it:
 3. An image’s size factor is 3; find the total area growth factor using `**=`.
 
 
+# Part C: Comparison & Relational Operators
 
+For each question, declare variables, perform the comparison, and print the result (`true` or `false`).  
+Use meaningful variable names and add comments where needed.
+
+***
+
+## 1. Loose Equality `==`
+
+Write a JavaScript program for each:
+
+1. Check if `25` is equal to `"25"` using `==` and print the result.  
+2. Check if `0` is equal to `false` using `==` and print the result.  
+3. Check if `""` (empty string) is equal to `false` using `==` and print the result.  
+4. Check if `null` is equal to `undefined` using `==` and print the result.  
+5. Take two numbers from your own choice and check if they are equal using `==`.
+
+***
+
+## 2. Loose Inequality `!=`
+
+Write a JavaScript program for each:
+
+1. Check if `10` is not equal to `"20"` using `!=` and print the result.  
+2. Check if `0` is not equal to `false` using `!=` and print the result.  
+3. Check if `"hello"` is not equal to `"world"` using `!=` and print the result.  
+4. Check if `null` is not equal to `undefined` using `!=` and print the result.  
+5. Take any two values of your choice and check if they are not equal using `!=`.
+
+***
+
+## 3. Strict Equality `===`
+
+Write a JavaScript program for each:
+
+1. Check if `25` is strictly equal to `"25"` using `===` and print the result.  
+2. Check if `100` is strictly equal to `100` using `===` and print the result.  
+3. Check if `true` is strictly equal to `1` using `===` and print the result.  
+4. Check if `null` is strictly equal to `undefined` using `===` and print the result.  
+5. Take two values of the same type and check if they are strictly equal using `===`.
+
+***
+
+## 4. Strict Inequality `!==`
+
+Write a JavaScript program for each:
+
+1. Check if `25` is strictly not equal to `"25"` using `!==` and print the result.  
+2. Check if `50` is strictly not equal to `60` using `!==` and print the result.  
+3. Check if `true` is strictly not equal to `"true"` using `!==` and print the result.  
+4. Check if `null` is strictly not equal to `undefined` using `!==` and print the result.  
+5. Take any two values of your choice and check if they are strictly not equal using `!==`.
+
+***
+
+## 5. Greater Than `>`
+
+Write a JavaScript program for each:
+
+1. Check if `25` is greater than `20` using `>` and print the result.  
+2. Check if a person’s age (e.g., `22`) is greater than `18` and print the result.  
+3. Check if `100` is greater than `"50"` (string) and print the result.  
+4. Check if `0` is greater than `null` (remember: `null` becomes `0`) and print the result.  
+5. Take any two numbers of your choice and check if the first is greater than the second.
+
+***
+
+## 6. Less Than `<`
+
+Write a JavaScript program for each:
+
+1. Check if `15` is less than `30` using `<` and print the result.  
+2. Check if a student’s marks (e.g., `65`) are less than passing marks (`75`) and print the result.  
+3. Check if `"10"` is less than `"2"` (string comparison) and print the result.  
+4. Check if `null` is less than `1` and print the result.  
+5. Take any two numbers of your choice and check if the first is less than the second.
+
+***
+
+## 7. Greater Than or Equal `>=`
+
+Write a JavaScript program for each:
+
+1. Check if `50` is greater than or equal to `50` using `>=` and print the result.  
+2. Check if a person’s age (e.g., `18`) is greater than or equal to `18` (voting age) and print the result.  
+3. Check if `75` is greater than or equal to `60` and print the result.  
+4. Check if `null` is greater than or equal to `0` and print the result.  
+5. Take any two numbers of your choice and check if the first is greater than or equal to the second.
+
+***
+
+## 8. Less Than or Equal `<=`
+
+Write a JavaScript program for each:
+
+1. Check if `40` is less than or equal to `40` using `<=` and print the result.  
+2. Check if a student’s marks (e.g., `80`) are less than or equal to maximum marks (`100`) and print the result.  
+3. Check if `25` is less than or equal to `30` and print the result.  
+4. Check if `null` is less than or equal to `0` and print the result.  
+5. Take any two numbers of your choice and check if the first is less than or equal to the second.
