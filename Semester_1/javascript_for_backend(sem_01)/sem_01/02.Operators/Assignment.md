@@ -169,103 +169,87 @@ Start with the given value, then use `/=` to update it:
 3. An image’s size factor is 3; find the total area growth factor using `**=`.
 
 
-# Part C: Comparison & Relational Operators
+# Part C: Comparison & Relational Operators – Short Real-Life Scenarios
 
-For each question, declare variables, perform the comparison, and print the result (`true` or `false`).  
-Use meaningful variable names and add comments where needed.
+For each question, declare variables, perform the comparison, and print `true` or `false`.  
+Use meaningful variable names and add brief comments.
 
 ***
 
 ## 1. Loose Equality `==`
 
-Write a JavaScript program for each:
-
-1. Check if `25` is equal to `"25"` using `==` and print the result.  
-2. Check if `0` is equal to `false` using `==` and print the result.  
-3. Check if `""` (empty string) is equal to `false` using `==` and print the result.  
-4. Check if `null` is equal to `undefined` using `==` and print the result.  
-5. Take two numbers from your own choice and check if they are equal using `==`.
+1. Stored password is `1234`, user enters `"1234"`. Check if they are equal using `==`.  
+2. User answer is `0`, default answer is `false`. Check if they are equal using `==`.  
+3. User input is `""`, submitted flag is `false`. Check if they are equal using `==`.  
+4. Backend returns `null`, frontend has `undefined`. Check if both mean “no value” using `==`.  
+5. Two devices send scores `500` and `"500"`. Check if they are equal using `==`.
 
 ***
 
 ## 2. Loose Inequality `!=`
 
-Write a JavaScript program for each:
-
-1. Check if `10` is not equal to `"20"` using `!=` and print the result.  
-2. Check if `0` is not equal to `false` using `!=` and print the result.  
-3. Check if `"hello"` is not equal to `"world"` using `!=` and print the result.  
-4. Check if `null` is not equal to `undefined` using `!=` and print the result.  
-5. Take any two values of your choice and check if they are not equal using `!=`.
+1. Two discount codes are `"SAVE10"` and `"SAVE20"`. Check if they are different using `!=`.  
+2. User role is `"admin"`, default role is `"guest"`. Check if they are not equal using `!=`.  
+3. Correct answer is `42`, user answer is `"40"`. Check if they are not equal using `!=`.  
+4. Email input is `""`, empty flag is `false`. Check if they are not equal using `!=`.  
+5. User ID is `null`, valid ID is `101`. Check if they are not equal using `!=`.
 
 ***
 
 ## 3. Strict Equality `===`
 
-Write a JavaScript program for each:
-
-1. Check if `25` is strictly equal to `"25"` using `===` and print the result.  
-2. Check if `100` is strictly equal to `100` using `===` and print the result.  
-3. Check if `true` is strictly equal to `1` using `===` and print the result.  
-4. Check if `null` is strictly equal to `undefined` using `===` and print the result.  
-5. Take two values of the same type and check if they are strictly equal using `===`.
+1. Stored password is `1234`, entered password is `"1234"`. Check strict equality using `===`.  
+2. Two account numbers are `1234567890` and `1234567890`. Check if they are strictly equal.  
+3. Feature flag is `true`, required state is `1`. Check if they are strictly equal.  
+4. Database value is `null`, cache value is `undefined`. Check strict equality.  
+5. Two scores are `85` and `85`. Check if they are strictly equal.
 
 ***
 
 ## 4. Strict Inequality `!==`
 
-Write a JavaScript program for each:
-
-1. Check if `25` is strictly not equal to `"25"` using `!==` and print the result.  
-2. Check if `50` is strictly not equal to `60` using `!==` and print the result.  
-3. Check if `true` is strictly not equal to `"true"` using `!==` and print the result.  
-4. Check if `null` is strictly not equal to `undefined` using `!==` and print the result.  
-5. Take any two values of your choice and check if they are strictly not equal using `!==`.
+1. String ID is `"101"`, number ID is `101`. Check if they are strictly not equal.  
+2. Boolean status is `true`, numeric status is `1`. Check if they are strictly not equal.  
+3. Password is `"abc123"`, confirm password is `"abc124"`. Check strict inequality.  
+4. Server data is `null`, local data is `undefined`. Check if they are strictly not equal.  
+5. Player IDs are `10` and `20`. Check if they are strictly not equal.
 
 ***
 
 ## 5. Greater Than `>`
 
-Write a JavaScript program for each:
-
-1. Check if `25` is greater than `20` using `>` and print the result.  
-2. Check if a person’s age (e.g., `22`) is greater than `18` and print the result.  
-3. Check if `100` is greater than `"50"` (string) and print the result.  
-4. Check if `0` is greater than `null` (remember: `null` becomes `0`) and print the result.  
-5. Take any two numbers of your choice and check if the first is greater than the second.
+1. Age is `20`, voting age is `18`. Check if the person can vote.  
+2. Cart total is `650`, free shipping limit is `500`. Check if shipping is free.  
+3. Player score is `1200`, required score is `1000`. Check if level is unlocked.  
+4. Monthly income is `40000`, minimum required is `30000`. Check if loan is approved.  
+5. Steps today are `11000`, target is `10000`. Check if target is exceeded.
 
 ***
 
 ## 6. Less Than `<`
 
-Write a JavaScript program for each:
-
-1. Check if `15` is less than `30` using `<` and print the result.  
-2. Check if a student’s marks (e.g., `65`) are less than passing marks (`75`) and print the result.  
-3. Check if `"10"` is less than `"2"` (string comparison) and print the result.  
-4. Check if `null` is less than `1` and print the result.  
-5. Take any two numbers of your choice and check if the first is less than the second.
+1. Marks are `30`, fail threshold is `35`. Check if the student has failed.  
+2. Expenses are `8000`, budget is `10000`. Check if expenses are under budget.  
+3. Items left are `7`, low stock limit is `10`. Check if stock is low.  
+4. Vehicle speed is `40`, minimum speed is `50`. Check if vehicle is too slow.  
+5. Remaining time is `4` minutes, warning limit is `5`. Check if warning is needed.
 
 ***
 
 ## 7. Greater Than or Equal `>=`
 
-Write a JavaScript program for each:
-
-1. Check if `50` is greater than or equal to `50` using `>=` and print the result.  
-2. Check if a person’s age (e.g., `18`) is greater than or equal to `18` (voting age) and print the result.  
-3. Check if `75` is greater than or equal to `60` and print the result.  
-4. Check if `null` is greater than or equal to `0` and print the result.  
-5. Take any two numbers of your choice and check if the first is greater than or equal to the second.
+1. Age is `18`, voting age is `18`. Check if the person is eligible to vote.  
+2. Percentage is `75`, minimum required is `75`. Check if scholarship is granted.  
+3. User age is `14`, minimum age is `13`. Check if subscription is allowed.  
+4. Current score is `500`, minimum score is `500`. Check if player can proceed.  
+5. Experience is `3` years, required is `2` years. Check if candidate is eligible.
 
 ***
 
 ## 8. Less Than or Equal `<=`
 
-Write a JavaScript program for each:
-
-1. Check if `40` is less than or equal to `40` using `<=` and print the result.  
-2. Check if a student’s marks (e.g., `80`) are less than or equal to maximum marks (`100`) and print the result.  
-3. Check if `25` is less than or equal to `30` and print the result.  
-4. Check if `null` is less than or equal to `0` and print the result.  
-5. Take any two numbers of your choice and check if the first is less than or equal to the second.
+1. People in lift are `7`, max capacity is `8`. Check if it is safe to add one more.  
+2. File size is `5` MB, max allowed is `5` MB. Check if upload is allowed.  
+3. Participant age is `12`, max junior age is `12`. Check if they qualify as junior.  
+4. Data used is `9.5` GB, limit is `10` GB. Check if user is within limit.  
+5. Class strength is `40`, max allowed is `40`. Check if class is at valid capacity.
