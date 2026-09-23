@@ -1,87 +1,90 @@
 ## 30 September 
 
-| Time        | CG LAB 1              | Time        | CG LAB 2              |
-| ----------- | --------------------- | ----------- | --------------------- |
-| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  |DSA (Vikas Sir)      |
-| 10:30–12:00 | DSA (Vikas Sir)         | 10:30–12:00 | React Native (Ranjan Sir)      |
-| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
-| 1:00–2:30   | DBMS (Adil Sir)     | 1:00–2:30   | Next js (Satyajeet Sir)    |
-| 2:30–4:00   | Next js (Satyajeet Sir)    | 2:30–4:00   | DBMS (Adil Sir)       |
-| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
-| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
-| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+| Time        | CG LAB 1                  | Time        | CG LAB 2                      |
+|-------------|---------------------------|-------------|-------------------------------|
+| 9:00–10:30  | React Native (Ranjan Sir) | 9:00–11:00  | Next.js (Satyajeet Sir)       |
+| 10:30–12:00 | DBMS (Adil Sir)           | 11:00–12:00 | Aptitude (Divyam Sir)         |
+| 12:00–1:00  | Break                     | 12:00–1:00  | Break                         |
+| 1:00–3:00   | Next.js (Satyajeet Sir)   | 1:00–2:30   | React Native (Ranjan Sir)     |
+| 3:00–4:00   | Aptitude (Divyam Sir)     | 2:30–4:00   | DBMS (Adil Sir)               |
+| 4:00–4:15   | Break                     | 4:00–4:15   | Break                         |
+| 4:15–5:15   | Industry Readiness 07     | 4:15–5:15   | Industry Readiness 07         |
+| 5:15–6:00   | Industry Readiness 08     | 5:15–6:00   | Industry Readiness 08         |
 
 ## 29 September 
 
-| Time        | CG LAB 1              | Time        | CG LAB 2              |
-| ----------- | --------------------- | ----------- | --------------------- |
-| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  | Next js (Satyajeet Sir)     |
-| 10:30–12:00 | Next js (Satyajeet Sir)        | 10:30–12:00 | React Native (Ranjan Sir)      |
-| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
-| 1:00–2:30   | Apptitude (Divyam Sir)     | 1:00–2:30   | DBMS (Adil Sir)     |
-| 2:30–4:00   | DBMS (Adil Sir)    | 2:30–4:00   | Apptitude (Divyam Sir)       |
-| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
-| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
-| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+| Time        | CG LAB 1                  | Time        | CG LAB 2                      |
+|-------------|---------------------------|-------------|-------------------------------|
+| 9:00–10:30  | React Native (Ranjan Sir) | 9:00–11:00  | Next.js (Satyajeet Sir)       |
+| 10:30–12:00 | DBMS (Adil Sir)           | 11:00–12:00 | Aptitude (Divyam Sir)         |
+| 12:00–1:00  | Break                     | 12:00–1:00  | Break                         |
+| 1:00–3:00   | Next.js (Satyajeet Sir)   | 1:00–2:30   | React Native (Ranjan Sir)     |
+| 3:00–4:00   | Aptitude (Divyam Sir)     | 2:30–4:00   | DBMS (Adil Sir)               |
+| 4:00–4:15   | Break                     | 4:00–4:15   | Break                         |
+| 4:15–5:15   | Industry Readiness 07     | 4:15–5:15   | Industry Readiness 07         |
+| 5:15–6:00   | Industry Readiness 08     | 5:15–6:00   | Industry Readiness 08         |
 
 ## 28 September 
 
-| Time        | CG LAB 1              | Time        | CG LAB 2              |
-| ----------- | --------------------- | ----------- | --------------------- |
-| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  | Next js (Satyajeet Sir)     |
-| 10:30–12:00 | Next js (Satyajeet Sir)        | 10:30–12:00 | React Native (Ranjan Sir)      |
-| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
-| 1:00–2:30   | Apptitude (Divyam Sir)     | 1:00–2:30   | DBMS (Adil Sir)     |
-| 2:30–4:00   | DBMS (Adil Sir)    | 2:30–4:00   | Apptitude (Divyam Sir)       |
-| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
-| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
-| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+| Time        | CG LAB 1                  | Time        | CG LAB 2                      |
+|-------------|---------------------------|-------------|-------------------------------|
+| 9:00–10:30  | React Native (Ranjan Sir) | 9:00–11:00  | Next.js (Satyajeet Sir)       |
+| 10:30–12:00 | DBMS (Adil Sir)           | 11:00–12:00 | Aptitude (Divyam Sir)         |
+| 12:00–1:00  | Break                     | 12:00–1:00  | Break                         |
+| 1:00–3:00   | Next.js (Satyajeet Sir)   | 1:00–2:30   | React Native (Ranjan Sir)     |
+| 3:00–4:00   | Aptitude (Divyam Sir)     | 2:30–4:00   | DBMS (Adil Sir)               |
+| 4:00–4:15   | Break                     | 4:00–4:15   | Break                         |
+| 4:15–5:15   | Industry Readiness 07     | 4:15–5:15   | Industry Readiness 07         |
+| 5:15–6:00   | Industry Readiness 08     | 5:15–6:00   | Industry Readiness 08         |
 
 ## 26 September 
 
-| Time        | CG LAB 1              | Time        | CG LAB 2              |
-| ----------- | --------------------- | ----------- | --------------------- |
-| 9:00–10:30  | DBMS (Adil Sir)       | 9:00–10:30  | Next js (Satyajeet Sir)    |
-| 10:30–12:00 | Next js (Satyajeet Sir)        | 10:30–12:00 | DBMS (Adil Sir)      |
-| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
-| 1:00–2:30   | Vanguard Activity      | 1:00–2:30   | Vanguard Activity    |
-| 2:30–4:00   | Vanguard Activity    | 2:30–4:00   | Vanguard Activity      |
+| Time        | CG LAB 1                  | Time        | CG LAB 2                      |
+|-------------|---------------------------|-------------|-------------------------------|
+| 9:00–10:30  | React Native (Ranjan Sir) | 9:00–11:00  | Next.js (Satyajeet Sir)       |
+| 10:30–12:00 | DBMS (Adil Sir)           | 11:00–12:00 | Aptitude (Divyam Sir)         |
+| 12:00–1:00  | Break                     | 12:00–1:00  | Break                         |
+| 1:00–3:00   | Next.js (Satyajeet Sir)   | 1:00–2:30   | React Native (Ranjan Sir)     |
+| 3:00–4:00   | Aptitude (Divyam Sir)     | 2:30–4:00   | DBMS (Adil Sir)               |
+| 4:00–4:15   | Break                     | 4:00–4:15   | Break                         |
+| 4:15–5:15   | Industry Readiness 07     | 4:15–5:15   | Industry Readiness 07         |
+| 5:15–6:00   | Industry Readiness 08     | 5:15–6:00   | Industry Readiness 08         |
 
 ## 25 September 
 
-| Time        | CG LAB 1              | Time        | CG LAB 2              |
-| ----------- | --------------------- | ----------- | --------------------- |
-| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  |DSA (Vikas Sir)      |
-| 10:30–12:00 | DSA (Vikas Sir)         | 10:30–12:00 | React Native (Ranjan Sir)      |
-| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
-| 1:00–2:30   | DBMS (Adil Sir)     | 1:00–2:30   | Next js (Satyajeet Sir)    |
-| 2:30–4:00   | Next js (Satyajeet Sir)    | 2:30–4:00   | DBMS (Adil Sir)       |
-| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
-| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
-| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+| Time        | CG LAB 1                  | Time        | CG LAB 2                      |
+|-------------|---------------------------|-------------|-------------------------------|
+| 9:00–10:30  | React Native (Ranjan Sir) | 9:00–11:00  | Next.js (Satyajeet Sir)       |
+| 10:30–12:00 | DBMS (Adil Sir)           | 11:00–12:00 | Aptitude (Divyam Sir)         |
+| 12:00–1:00  | Break                     | 12:00–1:00  | Break                         |
+| 1:00–3:00   | Next.js (Satyajeet Sir)   | 1:00–2:30   | React Native (Ranjan Sir)     |
+| 3:00–4:00   | Aptitude (Divyam Sir)     | 2:30–4:00   | DBMS (Adil Sir)               |
+| 4:00–4:15   | Break                     | 4:00–4:15   | Break                         |
+| 4:15–5:15   | Industry Readiness 07     | 4:15–5:15   | Industry Readiness 07         |
+| 5:15–6:00   | Industry Readiness 08     | 5:15–6:00   | Industry Readiness 08         |
 
 ## 24 September 
 
-| Time        | CG LAB 1              | Time        | CG LAB 2              |
-| ----------- | --------------------- | ----------- | --------------------- |
-| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  |DSA (Vikas Sir)      |
-| 10:30–12:00 | DSA (Vikas Sir)         | 10:30–12:00 | React Native (Ranjan Sir)      |
-| 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
-| 1:00–2:30   | DBMS (Adil Sir)     | 1:00–2:30   | Next js (Satyajeet Sir)    |
-| 2:30–4:00   | Next js (Satyajeet Sir)    | 2:30–4:00   | DBMS (Adil Sir)       |
-| 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
-| 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
-| 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
+| Time        | CG LAB 1                  | Time        | CG LAB 2                      |
+|-------------|---------------------------|-------------|-------------------------------|
+| 9:00–10:30  | React Native (Ranjan Sir) | 9:00–11:00  | Next.js (Satyajeet Sir)       |
+| 10:30–12:00 | DBMS (Adil Sir)           | 11:00–12:00 | Aptitude (Divyam Sir)         |
+| 12:00–1:00  | Break                     | 12:00–1:00  | Break                         |
+| 1:00–3:00   | Next.js (Satyajeet Sir)   | 1:00–2:30   | React Native (Ranjan Sir)     |
+| 3:00–4:00   | Aptitude (Divyam Sir)     | 2:30–4:00   | DBMS (Adil Sir)               |
+| 4:00–4:15   | Break                     | 4:00–4:15   | Break                         |
+| 4:15–5:15   | Industry Readiness 07     | 4:15–5:15   | Industry Readiness 07         |
+| 5:15–6:00   | Industry Readiness 08     | 5:15–6:00   | Industry Readiness 08         |
 
 ## 23 September 
 
 | Time        | CG LAB 1              | Time        | CG LAB 2              |
 | ----------- | --------------------- | ----------- | --------------------- |
-| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  |DSA (Vikas Sir)      |
-| 10:30–12:00 | DSA (Vikas Sir)         | 10:30–12:00 | React Native (Ranjan Sir)      |
+| 9:00–10:30  | React Native (Ranjan Sir)      | 9:00–10:30  | Next js (Satyajeet Sir)     |
+| 10:30–12:00 | Next js (Satyajeet Sir)        | 10:30–12:00 | React Native (Ranjan Sir)      |
 | 12:00–1:00  | Break                 | 12:00–1:00  | Break                 |
-| 1:00–2:30   | DBMS (Adil Sir)     | 1:00–2:30   | Next js (Satyajeet Sir)    |
-| 2:30–4:00   | Next js (Satyajeet Sir)    | 2:30–4:00   | DBMS (Adil Sir)       |
+| 1:00–2:30   | Apptitude (Divyam Sir)     | 1:00–2:30   | DBMS (Adil Sir)     |
+| 2:30–4:00   | DBMS (Adil Sir)    | 2:30–4:00   | Apptitude (Divyam Sir)       |
 | 4:00–4:15   | Break                 | 4:00–4:15   | Break                 |
 | 4:15–5:15   | Industry Readiness 07 | 4:15–5:15   | Industry Readiness 07 |
 | 5:15–6:00   | Industry Readiness 08 | 5:15–6:00   | Industry Readiness 08 |
