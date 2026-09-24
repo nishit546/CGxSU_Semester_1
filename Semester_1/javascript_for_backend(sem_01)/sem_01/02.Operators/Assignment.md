@@ -253,3 +253,57 @@ Use meaningful variable names and add brief comments.
 3. Participant age is `12`, max junior age is `12`. Check if they qualify as junior.  
 4. Data used is `9.5` GB, limit is `10` GB. Check if user is within limit.  
 5. Class strength is `40`, max allowed is `40`. Check if class is at valid capacity.
+
+---
+
+# Part D: Logical Operators  
+
+***
+
+## 1. Logical AND `&&`
+
+Write a JavaScript program for each:
+
+1. Stored username is `"admin"` and password is `1234`. Check if both are valid using `&&` and print the result.  
+2. A user is logged in (`isLoggedIn = true`) and has permission (`hasPermission = true`). Check if they can access a page using `&&`.  
+3. A product is in stock (`inStock = true`) and its price is less than ₹1000 (`price = 800`). Check if it can be bought using `&&`.  
+4. A student has marks `75` and attendance `80`. Passing requires marks greater than `65` **and** attendance greater than `70`. Check using `&&`.  
+5. Two conditions: `isWeekend = true` and `isHoliday = false`. A party happens only if both are true. Check using `&&`.
+
+***
+
+## 2. Logical OR `||`
+
+Write a JavaScript program for each:
+
+1. A user can login with either a correct password (`passwordCorrect = true`) or a valid OTP (`otpValid = false`). Check if login is allowed using `||`.  
+2. A discount applies if the user is a member (`isMember = false`) or has a coupon (`hasCoupon = true`). Check using `||`.  
+3. Entry is allowed if age is above `18` (`age = 16`) **or** height is above `150` cm (`height = 155`). Check using `||`.  
+4. A form is valid if either email is given (`emailGiven = true`) or phone is given (`phoneGiven = false`). Check using `||`.  
+5. A game level opens if score is above `1000` (`score = 900`) **or** time bonus is collected (`timeBonus = true`). Check using `||`.
+
+***
+
+## 3. Logical NOT `!`
+
+Write a JavaScript program for each:
+
+1. A user is not banned (`isBanned = false`). Check if they can login by negating `isBanned` using `!`.  
+2. A task is not completed (`isCompleted = false`). Check if it is still pending using `!`.  
+3. A light is on (`isOn = true`). Check if it is off using `!`.  
+4. A subscription is not active (`isActive = false`). Check if the user cannot access premium content using `!`.  
+5. A file is not read‑only (`isReadOnly = false`). Check if it can be edited using `!`.
+
+***
+
+## 4. Mixed Logical Operators (`&&`, `||`, `!`)
+
+Write a JavaScript program for each:
+
+1. A user can enter if they are a member (`isMember = true`) **and** not banned (`isBanned = false`). Check using `&&` and `!`.  
+2. A discount is given if the user is a student (`isStudent = true`) **or** a senior (`isSenior = false`), but not if they are banned (`isBanned = true`). Check using `||`, `&&`, and `!`.  
+3. A form is valid if name is given (`nameGiven = true`) **and** (email or phone is given: `emailGiven = false`, `phoneGiven = true`). Check using `&&` and `||`.  
+4. Access is allowed if (user is admin `isAdmin = true` **or** has a token `hasToken = false`) **and** not suspended (`isSuspended = false`). Check using `||`, `&&`, and `!`.  
+5. A game level opens if score is above `1000` (`score = 1200`) **and** (time bonus collected `timeBonus = false` **or** extra life `extraLife = true`). Check using `&&` and `||`.
+
+
