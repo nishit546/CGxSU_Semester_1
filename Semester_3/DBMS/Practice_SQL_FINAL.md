@@ -1,4 +1,4 @@
-#  SQL Practice — Students, Courses & Enrollments
+# SQL Practice — Students, Courses & Enrollments
 
 ## 1. Database Schema
 
@@ -32,7 +32,7 @@
 
 ---
 
-## 2. Create Database Tables
+# 2. Create Database Tables
 
     CREATE TABLE Students(
         student_id INT PRIMARY KEY,
@@ -62,130 +62,216 @@
 
 # SQL Practice Questions
 
-## Level 1 — Aggregation & Subqueries
+
 
 ### Question 1
-Find the **second-highest marks** obtained by any student.
+Display all students from the `Students` table.
 
 ---
 
 ### Question 2
-Find the students who scored **more than the average marks of all students**.
+Display the names of all students who belong to the **Computer Science** department.
 
 ---
 
 ### Question 3
-Find the students whose marks are **greater than the average marks of their own course**.
+Find all students who live in **Ahmedabad**.
 
 ---
 
 ### Question 4
-Find the **course with the highest average marks**.
+Display all courses having **more than 3 credits**.
 
 ---
 
 ### Question 5
-Find the student who has obtained the **highest marks in each course**.
+Find students who were admitted in **2024**.
 
 ---
 
 ### Question 6
-Find students who are enrolled in **more courses than the average number of courses taken by a student**.
+Display all enrollments where the marks are **greater than 70**.
 
 ---
 
 ### Question 7
-Find students who are enrolled in **every course** available in the `Courses` table.
+Find the **highest marks** obtained in the `Enrollments` table.
 
 ---
 
 ### Question 8
-Find courses in which **no student has scored below 40**.
+Find the **lowest marks** obtained in the `Enrollments` table.
 
 ---
 
 ### Question 9
-Find students who have **never scored below 50** in any course.
+Find the **average marks** of all students.
 
 ---
 
 ### Question 10
-Find students who have scored **above 80 in at least two different courses**.
+Find the **total number of students**.
 
 ---
 
 ### Question 11
-Find the **department having the highest average student marks**.
+Find the **total number of courses**.
 
 ---
 
 ### Question 12
-Find the **top 3 students from each department** based on their average marks.
+Find the number of students in each department.
 
 ---
 
 ### Question 13
-Find students whose **average marks are higher than the average marks of their department**.
+Find the average marks obtained in each course.
 
 ---
 
 ### Question 14
-Find the course with the **largest difference between highest and lowest marks**.
+Find the number of students enrolled in each course.
 
 ---
 
 ### Question 15
-Find students who have taken **more courses than every student from the Computer Science department**.
+Find students who scored between **60 and 80** marks.
 
----
+
 
 ### Question 16
-Find students who have taken **at least one course but have never scored below 60**.
+Display the **student name, course name, and marks** for every enrollment.
 
 ---
 
 ### Question 17
-Find the **most popular course**, i.e. the course having the maximum number of enrolled students.
+Find all students who have scored **more than 80 marks**.
 
 ---
 
 ### Question 18
-Find the **second-most popular course** based on enrollment count.
+Find students who have scored **less than 40 marks** in any course.
 
 ---
 
 ### Question 19
-Find students who are enrolled in **exactly the same courses as another student**.
+Find students who have enrolled in **more than 2 courses**.
 
 ---
 
 ### Question 20
-Find pairs of students who have taken **at least two courses together**.
+Find courses having **more than 3 enrolled students**.
 
 ---
 
 ### Question 21
-Find the student(s) who have the **highest total marks** across all their enrolled courses.
+Find the **highest marks obtained in each course**.
 
 ---
 
 ### Question 22
-Find the student who has the **highest average marks without using `LIMIT` or `TOP`**.
+Find the **lowest marks obtained in each course**.
 
 ---
 
 ### Question 23
-Find courses where the **average marks are higher than the overall average marks of all enrollments**.
+Find the **average marks of each student**.
 
 ---
 
 ### Question 24
-Find the department where students have the **highest average marks**, considering only students who are enrolled in at least 2 courses.
+Display students whose **average marks are greater than 70**.
 
 ---
 
 ### Question 25
-Find students who scored **higher than every student from at least one other department**.
+Find students who have scored **above 80 in at least one course**.
+
+---
+
+### Question 26
+Find the **total marks obtained by each student**.
+
+---
+
+### Question 27
+Find the department having the **highest number of students**.
+
+---
+
+### Question 28
+Find the course having the **highest number of enrollments**.
+
+---
+
+### Question 29
+Find students who are **not enrolled in any course**.
+
+---
+
+### Question 30
+Display the following information:
+
+    Student Name
+    Course Name
+    Marks
+    Result
+
+Use `CASE`:
+
+    marks >= 40 → Pass
+    marks < 40  → Fail
+
+---
+
+
+### Question 31
+Find the **second-highest marks** obtained in the `Enrollments` table.
+
+---
+
+### Question 32
+Find the student(s) who obtained the **highest marks** in the entire database.
+
+---
+
+### Question 33
+Find the **course with the highest average marks**.
+
+---
+
+### Question 34
+Find students whose marks are **greater than the overall average marks**.
+
+---
+
+### Question 35
+Find students who have enrolled in **at least 2 courses** and have an average mark greater than 70.
+
+---
+
+### Question 36
+Find students who have **never scored below 50** in any course.
+
+---
+
+### Question 37
+Find courses where the **average marks are greater than 70**.
+
+---
+
+### Question 38
+Find the **latest enrollment date for each student**.
+
+---
+
+### Question 39
+Find students who enrolled in a course during **2025**.
+
+---
+
+### Question 40
+Find students who scored **above 80 in at least two different courses**.
 
 ---
 
