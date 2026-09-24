@@ -2,16 +2,17 @@
 
 ## Instructions
 
-1. You can use any online JavaScript compiler to solve the questions.
-3. Alternatively, you can use Visual Studio Code if required.
-3. Add your code in a JavaScript file named `js-operators-assignment.js` for submission and upload on GitHub.
-4. Use `let` or `const` to declare variables.
-5. Use `console.log()` to display the output.
-6. Do not use functions, loops, arrays, or advanced concepts.
-7. Write clear and meaningful variable names.
-8. Solve every question independently.
+1. You can use any online JavaScript compiler to solve the questions.  
+2. Alternatively, you can use Visual Studio Code if required.  
+3. Add your code in a JavaScript file named `js-operators-assignment.js` for submission and upload on GitHub.  
+4. Use `let` or `const` to declare variables.  
+5. Use `console.log()` to display the output.  
+6. Do not use functions, loops, arrays, or advanced concepts.  
+7. Write clear and meaningful variable names.  
+8. Solve every question independently.  
 9. Add comments to explain your code where needed.
 
+***
 
 # Part A: Arithmetic Operators
 
@@ -21,10 +22,51 @@
 
 Write a JavaScript program to solve each problem:
 
-1. A school collected ₹15,000 from one class and ₹12,500 from another class. Find the total collection.
-2. A person reads 18 pages in the morning and 25 pages in the evening. Find the total pages read.
+1. A school collected ₹15,000 from one class and ₹12,500 from another class. Find the total collection.  
+2. A person reads 18 pages in the morning and 25 pages in the evening. Find the total pages read.  
 3. A shop sold 125 items on Monday and 178 items on Tuesday. Find the total items sold.
 
+### Additional Questions (Addition `+`)
+
+4. Predict the output:
+   ```js
+   let a = "10";
+   let b = 5;
+   let result = a + b;
+   console.log(result);
+   ```
+
+5. Predict the output:
+   ```js
+   let x = 5;
+   let y = "3";
+   let result = x + y;
+   console.log(result);
+   ```
+
+6. Predict the output:
+   ```js
+   let p = "Hello";
+   let q = "World";
+   let result = p + " " + q;
+   console.log(result);
+   ```
+
+7. Predict the output:
+   ```js
+   let m = 0;
+   let n = false;
+   let result = m + n;
+   console.log(result);
+   ```
+
+8. Predict the output:
+   ```js
+   let val1 = 100;
+   let val2 = "200";
+   let val3 = val1 + val2;
+   console.log(val3);
+   ```
 
 ***
 
@@ -32,10 +74,49 @@ Write a JavaScript program to solve each problem:
 
 Write a JavaScript program to solve each problem:
 
-1. A bus has 80 seats, and 53 seats are occupied. Find the number of empty seats.
-2. A student has 500 marks and loses 35 marks due to incorrect answers. Find the final marks.
+1. A bus has 80 seats, and 53 seats are occupied. Find the number of empty seats.  
+2. A student has 500 marks and loses 35 marks due to incorrect answers. Find the final marks.  
 3. A warehouse has 2,500 boxes and sends 875 boxes to a store. Find the remaining boxes.
 
+### Additional Questions (Subtraction `-`)
+
+4. Predict the output:
+   ```js
+   let a = "10";
+   let b = 3;
+   let result = a - b;
+   console.log(result);
+   ```
+
+5. Predict the output:
+   ```js
+   let x = "20";
+   let y = "5";
+   let result = x - y;
+   console.log(result);
+   ```
+
+6. Predict the output:
+   ```js
+   let p = "abc";
+   let q = 1;
+   let result = p - q;
+   console.log(result);
+   ```
+
+7. Predict the output:
+   ```js
+   let m = 10;
+   let n = 0;
+   let result = m / n;
+   console.log(result);
+   ```
+
+8. Predict the output:
+   ```js
+   let val = 0 / 0;
+   console.log(val);
+   ```
 
 ***
 
@@ -43,10 +124,51 @@ Write a JavaScript program to solve each problem:
 
 Write a JavaScript program to solve each problem:
 
-1. One notebook costs ₹45. Calculate the cost of buying 8 notebooks.
-2. A machine produces 120 bottles per hour. Calculate its production in 6 hours.
+1. One notebook costs ₹45. Calculate the cost of buying 8 notebooks.  
+2. A machine produces 120 bottles per hour. Calculate its production in 6 hours.  
 3. A garden has 7 rows with 15 plants in each row. Find the total number of plants.
 
+### Additional Questions (Multiplication `*`)
+
+4. Predict the output:
+   ```js
+   let a = "5";
+   let b = 4;
+   let result = a * b;
+   console.log(result);
+   ```
+
+5. Predict the output:
+   ```js
+   let x = "10";
+   let y = "2";
+   let result = x * y;
+   console.log(result);
+   ```
+
+6. Predict the output:
+   ```js
+   let p = "hello";
+   let q = 2;
+   let result = p * q;
+   console.log(result);
+   ```
+
+7. Predict the output:
+   ```js
+   let m = 5;
+   let n = "0";
+   let result = m * n;
+   console.log(result);
+   ```
+
+8. Predict the output:
+   ```js
+   let val1 = 3;
+   let val2 = "4";
+   let val3 = val1 * val2;
+   console.log(val3);
+   ```
 
 ***
 
@@ -54,14 +176,53 @@ Write a JavaScript program to solve each problem:
 
 Write a JavaScript program to solve each problem:
 
-1. A teacher distributes 144 pencils equally among 12 students. Find the number of pencils each student receives.
-2. A train travels 360 kilometres in 6 hours. Find its average distance travelled per hour.
+1. A teacher distributes 144 pencils equally among 12 students. Find the number of pencils each student receives.  
+2. A train travels 360 kilometres in 6 hours. Find its average distance travelled per hour.  
 3. A company distributes ₹72,000 equally among 9 departments. Find the amount received by each department.
 
+### Additional Questions (Division `/`)
+
+4. Predict the output:
+   ```js
+   let a = "20";
+   let b = 4;
+   let result = a / b;
+   console.log(result);
+   ```
+
+5. Predict the output:
+   ```js
+   let x = "100";
+   let y = "5";
+   let result = x / y;
+   console.log(result);
+   ```
+
+6. Predict the output:
+   ```js
+   let p = 10;
+   let q = 0;
+   let result = p / q;
+   console.log(result);
+   ```
+
+7. Predict the output:
+   ```js
+   let m = -10;
+   let n = 0;
+   let result = m / n;
+   console.log(result);
+   ```
+
+8. Predict the output:
+   ```js
+   let val = 0 / 0;
+   console.log(val);
+   ```
 
 ***
 
-## 5. Modulus `%`  (5 questions)
+## 5. Modulus `%`
 
 Write a JavaScript program to solve each problem:
 
@@ -71,9 +232,51 @@ Write a JavaScript program to solve each problem:
 4. A factory produces 237 toys and packs them in boxes of 6. Find how many toys are left after packing full boxes.  
 5. A bus can carry 40 passengers. If 185 people are waiting, find how many people will be left after filling as many full buses as possible.
 
+### Additional Questions (Modulus `%`)
+
+6. Predict the output:
+   ```js
+   let a = 10;
+   let b = 0;
+   let result = a % b;
+   console.log(result);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = 0;
+   let y = 5;
+   let result = x % y;
+   console.log(result);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = -10;
+   let q = 3;
+   let result = p % q;
+   console.log(result);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = 10;
+   let n = -3;
+   let result = m % n;
+   console.log(result);
+   ```
+
+10. Predict the output:
+    ```js
+    let val1 = -10;
+    let val2 = -3;
+    let val3 = val1% val2;
+    console.log(val3);
+    ```
+
 ***
 
-## 6. Exponentiation `**`  (5 questions)
+## 6. Exponentiation `**`
 
 Write a JavaScript program to solve each problem:
 
@@ -82,6 +285,45 @@ Write a JavaScript program to solve each problem:
 3. Calculate the total number of cells in a square arrangement with 9 cells on each side using `side ** 2`.  
 4. Find the value of \( 5^4 \) (5 raised to the power 4) using the exponentiation operator.  
 5. A digital image has 1,024 pixels on each side (square image). Find the total number of pixels using `pixels ** 2`.
+
+### Additional Questions (Exponentiation `**`)
+
+6. Predict the output:
+   ```js
+   let side = -2;
+   let area = side ** 2;
+   console.log(area);
+   ```
+
+7. Predict the output:
+   ```js
+   let base = 2;
+   let power = -1;
+   let result = base ** power;
+   console.log(result);
+   ```
+
+8. Predict the output:
+   ```js
+   let val = 2 ** -2;
+   console.log(val);
+   ```
+
+9. Predict the output:
+   ```js
+   let x = 3;
+   let y = 2;
+   let z = x ** y;
+   console.log(z);
+   ```
+
+10. Predict the output:
+    ```js
+    let a = 10;
+    let b = 0;
+    let result = a ** b;
+    console.log(result);
+    ```
 
 ***
 
@@ -101,6 +343,47 @@ Write a JavaScript program for each:
 4. Store your city name in a variable `city` and print it.  
 5. Store the value of PI (3.14159) in a variable `piValue` and print it.
 
+### Additional Questions (Simple Assignment `=`)
+
+6. Predict the output:
+   ```js
+   let a, b, c;
+   a = b = c = 10;
+   console.log(a, b, c);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = 5;
+   let y = x;
+   x = 10;
+   console.log(x, y);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = 100;
+   let q = p;
+   let r = q;
+   console.log(p, q, r);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = "Hello";
+   let n = m;
+   m = "World";
+   console.log(m, n);
+   ```
+
+10. Predict the output:
+    ```js
+    let val1 = 25;
+    let val2 = val1;
+    let val3 = val2;
+    console.log(val1, val2, val3);
+    ```
+
 ***
 
 ## 2. Add and Assign `+=`
@@ -112,6 +395,43 @@ Start with the given value, then use `+=` to update it:
 3. A phone battery is at 45%. It gets charged by 30%. Use `+=` to update the battery percentage and print it.  
 4. A game player has 1,250 points. He earns 375 more points. Use `+=` to update the score and print it.  
 5. A library has 840 books. 160 new books are added. Use `+=` to update the total number of books and print it.
+
+### Additional Questions (Add and Assign `+=`)
+
+6. Predict the output:
+   ```js
+   let a = "10";
+   a += 5;
+   console.log(a);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = 5;
+   x += "3";
+   console.log(x);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = 0;
+   p += false;
+   console.log(p);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = 10;
+   m += true;
+   console.log(m);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = "Hello";
+    val += "World";
+    console.log(val);
+    ```
 
 ***
 
@@ -125,6 +445,43 @@ Start with the given value, then use `-=` to update it:
 4. A warehouse has 2,400 boxes. 950 boxes are sent out. Use `-=` to update the remaining boxes and print it.  
 5. A game player has 2,000 points. He loses 625 points. Use `-=` to update the score and print it.
 
+### Additional Questions (Subtract and Assign `-=`)
+
+6. Predict the output:
+   ```js
+   let a = "20";
+   a -= 5;
+   console.log(a);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "100";
+   x -= "50";
+   console.log(x);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = 10;
+   p -= "abc";
+   console.log(p);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = 5;
+   m -= true;
+   console.log(m);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = 20;
+    val -= false;
+    console.log(val);
+    ```
+
 ***
 
 ## 4. Multiply and Assign `*=`
@@ -136,6 +493,43 @@ Start with the given value, then use `*=` to update it:
 3. A savings amount is ₹2,000. It doubles (becomes 2 times). Use `*=` to update the amount and print it.  
 4. A garden has 50 plants. After a season, the number of plants becomes 5 times. Use `*=` to update the total plants and print it.  
 5. A game score is 150. A bonus multiplies the score by 3. Use `*=` to update the score and print it.
+
+### Additional Questions (Multiply and Assign `*=`)
+
+6. Predict the output:
+   ```js
+   let a = "10";
+   a *= 2;
+   console.log(a);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "5";
+   x *= "4";
+   console.log(x);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = "hello";
+   p *= 2;
+   console.log(p);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = 5;
+   m *= "0";
+   console.log(m);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = 3;
+    val *= "4";
+    console.log(val);
+    ```
 
 ***
 
@@ -149,10 +543,46 @@ Start with the given value, then use `/=` to update it:
 4. A distance of 450 km is covered in 5 equal trips. Use `/=` to update the distance per trip and print it.  
 5. A total of 2,500 marks is divided equally among 10 students. Use `/=` to update the marks per student and print it.
 
+### Additional Questions (Divide and Assign `/=`)
+
+6. Predict the output:
+   ```js
+   let a = "100";
+   a /= 5;
+   console.log(a);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "200";
+   x /= "4";
+   console.log(x);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = 10;
+   p /= 0;
+   console.log(p);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = -10;
+   m /= 0;
+   console.log(m);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = 0;
+    val /= 0;
+    console.log(val);
+    ```
+
 ***
 
-
-## Modulus and Assign `%=` 
+## 6. Modulus and Assign `%=`
 
 1. A shop has 137 candies and packs them in boxes of 10; find the candies left using `%=`.  
 2. A coach has 250 students and makes teams of 7; find the students left using `%=`.  
@@ -160,16 +590,91 @@ Start with the given value, then use `/=` to update it:
 4. A hall has 89 chairs arranged in rows of 5; find the chairs left using `%=`.  
 5. A loan runs for 365 months; find the months left after full years using `%=`.
 
+### Additional Questions (Modulus and Assign `%=`)
+
+6. Predict the output:
+   ```js
+   let a = 10;
+   a %= 0;
+   console.log(a);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = 0;
+   x %= 5;
+   console.log(x);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = -10;
+   p %= 3;
+   console.log(p);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = 10;
+   m %= -3;
+   console.log(m);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = -10;
+    val %= -3;
+    console.log(val);
+    ```
+
 ***
 
-## Exponentiation and Assign `**=` 
+## 7. Exponentiation and Assign `**=`
 
 1. A square garden has side 10 m; find its area using `**=`.  
 2. A cube box has edge 4 cm; find its volume using `**=`.  
 3. An image’s size factor is 3; find the total area growth factor using `**=`.
 
+### Additional Questions (Exponentiation and Assign `**=`)
 
-# Part C: Comparison & Relational Operators 
+4. Predict the output:
+   ```js
+   let side = -2;
+   side **= 2;
+   console.log(side);
+   ```
+
+5. Predict the output:
+   ```js
+   let base = 2;
+   base **= -1;
+   console.log(base);
+   ```
+
+6. Predict the output:
+   ```js
+   let val = 2;
+   val **= -2;
+   console.log(val);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = 3;
+   x **= 0;
+   console.log(x);
+   ```
+
+8. Predict the output:
+   ```js
+   let a = 10;
+   a **= 1;
+   console.log(a);
+   ```
+
+***
+
+# Part C: Comparison & Relational Operators
 
 For each question, declare variables, perform the comparison, and print `true` or `false`.  
 Use meaningful variable names and add brief comments.
@@ -184,6 +689,43 @@ Use meaningful variable names and add brief comments.
 4. Backend returns `null`, frontend has `undefined`. Check if both mean “no value” using `==`.  
 5. Two devices send scores `500` and `"500"`. Check if they are equal using `==`.
 
+### Additional Questions (Loose Equality `==`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = false;
+   console.log(a == b);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "";
+   let y = false;
+   console.log(x == y);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = "0";
+   let q = 0;
+   console.log(p == q);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = [];
+   let n = 0;
+   console.log(m == n);
+   ```
+
+10. Predict the output:
+    ```js
+    let val1 = [];
+    let val2 = false;
+    console.log(val1 == val2);
+    ```
+
 ***
 
 ## 2. Loose Inequality `!=`
@@ -193,6 +735,43 @@ Use meaningful variable names and add brief comments.
 3. Correct answer is `42`, user answer is `"40"`. Check if they are not equal using `!=`.  
 4. Email input is `""`, empty flag is `false`. Check if they are not equal using `!=`.  
 5. User ID is `null`, valid ID is `101`. Check if they are not equal using `!=`.
+
+### Additional Questions (Loose Inequality `!=`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = false;
+   console.log(a != b);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "";
+   let y = false;
+   console.log(x != y);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = "0";
+   let q = 0;
+   console.log(p != q);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = null;
+   let n = undefined;
+   console.log(m != n);
+   ```
+
+10. Predict the output:
+    ```js
+    let val1 = [];
+    let val2 = 0;
+    console.log(val1 != val2);
+    ```
 
 ***
 
@@ -204,6 +783,42 @@ Use meaningful variable names and add brief comments.
 4. Database value is `null`, cache value is `undefined`. Check strict equality.  
 5. Two scores are `85` and `85`. Check if they are strictly equal.
 
+### Additional Questions (Strict Equality `===`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = false;
+   console.log(a === b);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "";
+   let y = false;
+   console.log(x === y);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = "0";
+   let q = 0;
+   console.log(p === q);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = null;
+   let n = undefined;
+   console.log(m === n);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = NaN;
+    console.log(val === val);
+    ```
+
 ***
 
 ## 4. Strict Inequality `!==`
@@ -213,6 +828,42 @@ Use meaningful variable names and add brief comments.
 3. Password is `"abc123"`, confirm password is `"abc124"`. Check strict inequality.  
 4. Server data is `null`, local data is `undefined`. Check if they are strictly not equal.  
 5. Player IDs are `10` and `20`. Check if they are strictly not equal.
+
+### Additional Questions (Strict Inequality `!==`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = false;
+   console.log(a !== b);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "";
+   let y = false;
+   console.log(x !== y);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = "0";
+   let q = 0;
+   console.log(p !== q);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = null;
+   let n = undefined;
+   console.log(m !== n);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = NaN;
+    console.log(val !== val);
+    ```
 
 ***
 
@@ -224,6 +875,42 @@ Use meaningful variable names and add brief comments.
 4. Monthly income is `40000`, minimum required is `30000`. Check if loan is approved.  
 5. Steps today are `11000`, target is `10000`. Check if target is exceeded.
 
+### Additional Questions (Greater Than `>`)
+
+6. Predict the output:
+   ```js
+   let a = 5;
+   let b = 5;
+   console.log(a > b);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "10";
+   let y = "2";
+   console.log(x > y);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = "5";
+   let q = 10;
+   console.log(p > q);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = null;
+   let n = 0;
+   console.log(m > n);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = undefined;
+    console.log(val > 0);
+    ```
+
 ***
 
 ## 6. Less Than `<`
@@ -233,6 +920,42 @@ Use meaningful variable names and add brief comments.
 3. Items left are `7`, low stock limit is `10`. Check if stock is low.  
 4. Vehicle speed is `40`, minimum speed is `50`. Check if vehicle is too slow.  
 5. Remaining time is `4` minutes, warning limit is `5`. Check if warning is needed.
+
+### Additional Questions (Less Than `<`)
+
+6. Predict the output:
+   ```js
+   let a = 5;
+   let b = 5;
+   console.log(a < b);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "10";
+   let y = "2";
+   console.log(x < y);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = null;
+   let q = 1;
+   console.log(p < q);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = null;
+   let n = 0;
+   console.log(m < n);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = undefined;
+    console.log(val < 0);
+    ```
 
 ***
 
@@ -244,6 +967,43 @@ Use meaningful variable names and add brief comments.
 4. Current score is `500`, minimum score is `500`. Check if player can proceed.  
 5. Experience is `3` years, required is `2` years. Check if candidate is eligible.
 
+### Additional Questions (Greater Than or Equal `>=`)
+
+6. Predict the output:
+   ```js
+   let a = 5;
+   let b = 5;
+   console.log(a >= b);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = null;
+   let y = 0;
+   console.log(x >= y);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = undefined;
+   let q = 0;
+   console.log(p >= q);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = "5";
+   let n = 5;
+   console.log(m >= n);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = "10";
+    let limit = 5;
+    console.log(val >= limit);
+    ```
+
 ***
 
 ## 8. Less Than or Equal `<=`
@@ -254,9 +1014,46 @@ Use meaningful variable names and add brief comments.
 4. Data used is `9.5` GB, limit is `10` GB. Check if user is within limit.  
 5. Class strength is `40`, max allowed is `40`. Check if class is at valid capacity.
 
----
+### Additional Questions (Less Than or Equal `<=`)
 
-# Part D: Logical Operators  
+6. Predict the output:
+   ```js
+   let a = 5;
+   let b = 5;
+   console.log(a <= b);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = null;
+   let y = 0;
+   console.log(x <= y);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = undefined;
+   let q = 0;
+   console.log(p <= q);
+   ```
+
+9. Predict the output:
+   ```js
+   let m = "5";
+   let n = 5;
+   console.log(m <= n);
+   ```
+
+10. Predict the output:
+    ```js
+    let val = "3";
+    let limit = 5;
+    console.log(val <= limit);
+    ```
+
+***
+
+# Part D: Logical Operators
 
 ***
 
@@ -270,6 +1067,49 @@ Write a JavaScript program for each:
 4. A student has marks `75` and attendance `80`. Passing requires marks greater than `65` **and** attendance greater than `70`. Check using `&&`.  
 5. Two conditions: `isWeekend = true` and `isHoliday = false`. A party happens only if both are true. Check using `&&`.
 
+### Additional Questions (Logical AND `&&`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = 10;
+   let result = a && b;
+   console.log(result);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = 5;
+   let y = 10;
+   let result = (x > 3 && y) || 0;
+   console.log(result);
+   ```
+
+8. Predict the output:
+   ```js
+   let p = "Hello";
+   let q = "";
+   let r = "World";
+   let result = p && q && r;
+   console.log(result);
+   ```
+
+9. Predict the output:
+   ```js
+   let val = 5;
+   let condition = val && (val = 0);
+   console.log(condition);
+   console.log(val);
+   ```
+
+10. Predict the output:
+    ```js
+    let x = 10;
+    let y = 20;
+    let result = (x && y) && (x > y);
+    console.log(result);
+    ```
+
 ***
 
 ## 2. Logical OR `||`
@@ -281,6 +1121,48 @@ Write a JavaScript program for each:
 3. Entry is allowed if age is above `18` (`age = 16`) **or** height is above `150` cm (`height = 155`). Check using `||`.  
 4. A form is valid if either email is given (`emailGiven = true`) or phone is given (`phoneGiven = false`). Check using `||`.  
 5. A game level opens if score is above `1000` (`score = 900`) **or** time bonus is collected (`timeBonus = true`). Check using `||`.
+
+### Additional Questions (Logical OR `||`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = false;
+   let c = "";
+   let d = null;
+   let e = 42;
+   let result = a || b || c || d || e;
+   console.log(result);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "Hello" || 0;
+   let y = 0 || "Hi";
+   console.log(x, y);
+   ```
+
+8. Predict the output:
+   ```js
+   let a = 10;
+   let b = 20;
+   let result = (a < 5) || (b > 15);
+   console.log(result);
+   ```
+
+9. Predict the output:
+   ```js
+   let val = 5;
+   let condition = val || (val = 0);
+   console.log(condition);
+   console.log(val);
+   ```
+
+10. Predict the output:
+    ```js
+    let x = "" || 0 || false || null || undefined || "OK";
+    console.log(x);
+    ```
 
 ***
 
@@ -294,6 +1176,45 @@ Write a JavaScript program for each:
 4. A subscription is not active (`isActive = false`). Check if the user cannot access premium content using `!`.  
 5. A file is not read‑only (`isReadOnly = false`). Check if it can be edited using `!`.
 
+### Additional Questions (Logical NOT `!`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = 1;
+   console.log(!a, !b);
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "Hello";
+   let y = "";
+   console.log(!x, !y);
+   ```
+
+8. Predict the output:
+   ```js
+   let val = 5;
+   let result = !val;
+   console.log(result);
+   ```
+
+9. Predict the output:
+   ```js
+   let a = 10;
+   let b = 20;
+   let result = !(a && b);
+   console.log(result);
+   ```
+
+10. Predict the output:
+    ```js
+    let x = 0;
+    let y = 1;
+    let result = !(x || y);
+    console.log(result);
+    ```
+
 ***
 
 ## 4. Mixed Logical Operators (`&&`, `||`, `!`)
@@ -306,4 +1227,50 @@ Write a JavaScript program for each:
 4. Access is allowed if (user is admin `isAdmin = true` **or** has a token `hasToken = false`) **and** not suspended (`isSuspended = false`). Check using `||`, `&&`, and `!`.  
 5. A game level opens if score is above `1000` (`score = 1200`) **and** (time bonus collected `timeBonus = false` **or** extra life `extraLife = true`). Check using `&&` and `||`.
 
+### Additional Questions (Mixed Logical Operators)
 
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = 10;
+   let c = 20;
+   let result = a || b && c;
+   console.log(result);
+   ```
+
+7. Predict the output:
+   ```js
+   let p = true;
+   let q = false;
+   let r = true;
+   let result = p && q || r;
+   console.log(result);
+   ```
+
+8. Predict the output:
+   ```js
+   let x = 10;
+   let y = 20;
+   let result = !(x && y) || (x > 5 && y < 30) && true;
+   console.log(result);
+   ```
+
+9. Predict the output:
+   ```js
+   let a = 5;
+   let b = 0;
+   let c = 10;
+   let result = a && b || c;
+   console.log(result);
+   ```
+
+10. Predict the output:
+    ```js
+    let val1 = false;
+    let val2 = true;
+    let val3 = false;
+    let result = !(val1 || val2) && val3 || true;
+    console.log(result);
+    ```
+
+---
