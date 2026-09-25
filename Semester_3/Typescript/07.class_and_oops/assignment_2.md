@@ -1,4 +1,4 @@
-# TypeScript Classes & Objects — Practice Assignment 3
+# TypeScript Classes & Objects — Practice Assignment 2
 
 ## ✈️ Flight Management System
 
