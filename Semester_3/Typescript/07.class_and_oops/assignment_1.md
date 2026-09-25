@@ -1,4 +1,4 @@
-# TypeScript Classes & Objects — Practice Assignment 2
+# TypeScript Classes & Objects — Practice Assignment 1
 
 ## 🏦 Bank Account Management System
 
