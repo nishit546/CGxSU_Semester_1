@@ -63,6 +63,19 @@ A subclass can:
 - Add new properties and methods.
 - Override inherited methods.
 
+TypeScript supports **single inheritance** with classes.
+
+A class can extend only **one parent class**.
+
+```ts
+// ❌ Not allowed
+
+class Animal {}
+class Machine {}
+
+// class Robot extends Animal, Machine {}
+```
+
 ---
 
 ## `super`
